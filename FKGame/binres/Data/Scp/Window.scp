@@ -1,0 +1,23 @@
+///////////////////////////////
+// *******  资源脚本  *******
+//
+//  每行最大长度2048字节
+///////////////////////////////
+
+MaxID = 203692
+fontname = 宋体
+fontsize = 10
+
+Object CursorType = 1
+{
+	Object CT_ARROW = 2
+	{
+		animate = 0
+		hot = 0,0
+		mask = 1
+		frames = 1
+		interval = 180
+		alpha = 256
+		src = Cursor\Arrow.tga
+	}
+}

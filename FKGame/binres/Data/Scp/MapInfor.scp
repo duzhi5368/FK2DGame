@@ -1,0 +1,1837 @@
+///////////////////////////////
+// *******  资源脚本  *******
+//
+//  每行最大长度2048字节
+///////////////////////////////
+
+MaxID = 122
+ver = 1.5.0.0
+
+Object 所有地图 = 1
+{
+
+	Object 断壁谷:map = 2
+	{
+		applyserver = 1
+		open = 1
+		mapid = 1
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 断壁谷
+		mapfile = db.map
+		maifile = db.mai
+		minimapfile = dbjpg
+		worldmapfile = WorldMap\RegionMap\Ground\db.jpg
+		staticrelivepoint = 1, 150, 285
+		dynamicrelivepoint = 1, 150, 285
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\db.res
+		chunnelcreater = scp\\db_cs.res
+		boxcreater = scp\\db_box.res
+		backgroundmusic = 1
+		mapsizetile = 251,380
+		OriginalMapID = 1
+		landfallpoint = 180, 238
+	}
+
+	Object 昆仑:map = 3
+	{
+		applyserver = 4
+		open = 1
+		mapid = 2
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 昆仑
+		mapfile = klc2.map
+		maifile = klc2.mai
+		minimapfile = klc2jpg
+		worldmapfile = WorldMap\RegionMap\Ground\klc2.jpg
+		staticrelivepoint = 2, 908, 409
+		dynamicrelivepoint = 2, 908, 409
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\klc2.res
+		chunnelcreater = scp\\klc2_cs.res
+		boxcreater = scp\\klc2_box.res
+		backgroundmusic = 2
+		mapsizetile = 401,605
+		OriginalMapID = 2
+		landfallpoint = 835, 517
+	}
+
+	Object 轩辕:map = 4
+	{
+		applyserver = 1
+		open = 1
+		mapid = 3
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 轩辕
+		mapfile = xyc2.map
+		maifile = xyc2.mai
+		minimapfile = xyc2jpg
+		worldmapfile = WorldMap\RegionMap\Ground\xyc2.jpg
+		staticrelivepoint = 3, 525, 240
+		dynamicrelivepoint = 3, 525, 240
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\xyc2.res
+		chunnelcreater = scp\\xyc2_cs.res
+		boxcreater = scp\\xyc2_box.res
+		backgroundmusic = 3
+		mapsizetile = 401,605
+		OriginalMapID = 3
+		landfallpoint = 491, 315
+	}
+
+	Object 琅琊盆地:map = 5
+	{
+		applyserver = 4
+		open = 1
+		mapid = 4
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 琅琊盆地
+		mapfile = lypd.map
+		maifile = lypd.mai
+		minimapfile = lypdjpg
+		worldmapfile = WorldMap\RegionMap\Ground\lypd.jpg
+		staticrelivepoint = 4, 270, 318
+		dynamicrelivepoint = 4, 270, 318
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\lypd.res
+		chunnelcreater = scp\\lypd_cs.res
+		boxcreater = scp\\lypd_box.res
+		backgroundmusic = 4
+		mapsizetile = 301,455
+		OriginalMapID = 4
+		landfallpoint = 251, 371
+	}
+
+	Object 巨人野 = 6
+	{
+		applyserver = 4
+		open = 1
+		mapid = 5
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 巨人野
+		mapfile = jry.map
+		maifile = lypd.mai
+		minimapfile = jryjpg
+		worldmapfile = WorldMap\RegionMap\Ground\jry.jpg
+		staticrelivepoint = 5, 235, 603
+		dynamicrelivepoint = 5, 235, 603
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\jry.res
+		chunnelcreater = scp\\jry_cs.res
+		boxcreater = scp\\jry_box.res
+		backgroundmusic = 5
+		mapsizetile = 301,455
+		OriginalMapID = 5
+		landfallpoint = 300, 619
+	}
+
+	Object 西烈荒原 = 7
+	{
+		applyserver = 3
+		open = 1
+		mapid = 6
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 西烈荒原
+		mapfile = xlhy.map
+		maifile = lypd.mai
+		minimapfile = xlhyjpg
+		worldmapfile = WorldMap\RegionMap\Ground\xlhy.jpg
+		staticrelivepoint = 6, 488, 360
+		dynamicrelivepoint = 6, 488, 360
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\xlhy.res
+		chunnelcreater = scp\\xlhy_cs.res
+		boxcreater = scp\\xlhy_box.res
+		backgroundmusic = 6
+		mapsizetile = 301,455
+		OriginalMapID = 6
+		landfallpoint = 476, 233
+	}
+
+	Object 阪泉 = 8
+	{
+		applyserver = 1
+		open = 1
+		mapid = 7
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 阪泉
+		mapfile = bq.map
+		maifile = lypd.mai
+		minimapfile = bqjpg
+		worldmapfile = WorldMap\RegionMap\Ground\bq.jpg
+		staticrelivepoint = 7, 422, 415
+		dynamicrelivepoint = 7, 422, 415
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bq.res
+		chunnelcreater = scp\\bq_cs.res
+		boxcreater = scp\\bq_box.res
+		backgroundmusic = 7
+		mapsizetile = 301,455
+		OriginalMapID = 7
+		landfallpoint = 568, 157
+	}
+
+	Object 北郡一 = 9
+	{
+		applyserver = 1
+		open = 1
+		mapid = 8
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡（一）
+		mapfile = bj.map
+		maifile = bj.mai
+		minimapfile = bjjpg
+		worldmapfile = WorldMap\RegionMap\Ground\bj.jpg
+		staticrelivepoint = 8, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bj.res
+		chunnelcreater = scp\\bj_cs.res
+		boxcreater = scp\\bj_box.res
+		backgroundmusic = 8
+		mapsizetile = 251,380
+		OriginalMapID = 8
+		landfallpoint = 238, 355
+	}
+
+	Object 暮秀雨林 = 10
+	{
+		applyserver = 4
+		open = 1
+		mapid = 9
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 暮秀雨林
+		mapfile = mxyl.map
+		maifile = mxyl.mai
+		minimapfile = mxyljpg
+		worldmapfile = WorldMap\RegionMap\Ground\mxyl.jpg
+		staticrelivepoint = 9, 242, 495
+		dynamicrelivepoint = 9, 242, 495
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\mxyl.res
+		chunnelcreater = scp\\mxyl_cs.res
+		boxcreater = scp\\mxyl_box.res
+		backgroundmusic = 9
+		mapsizetile = 351,530
+		OriginalMapID = 9
+		landfallpoint = 175, 379
+	}
+
+	Object 朝歌山一层 = 26
+	{
+		applyserver = 1
+		open = 1
+		mapid = 101
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 朝歌山一层
+		mapfile = cgs01.map
+		maifile = cgs01.mai
+		minimapfile = cgs01jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\cgs01.jpg
+		staticrelivepoint = 10, 507, 344
+		dynamicrelivepoint = 10, 507, 344
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\cgs01.res
+		chunnelcreater = scp\\cgs01_cs.res
+		boxcreater = scp\\cgs01_box.res
+		backgroundmusic = 101
+		mapsizetile = 201,305
+		OriginalMapID = 101
+		landfallpoint = 432, 237
+	}
+
+	Object 朝歌山二层 = 27
+	{
+		applyserver = 1
+		open = 1
+		mapid = 102
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 朝歌山二层
+		mapfile = cgs02.map
+		maifile = cgs02.mai
+		minimapfile = cgs02jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\cgs02.jpg
+		staticrelivepoint = 10, 507, 344
+		dynamicrelivepoint = 10, 507, 344
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\cgs02.res
+		chunnelcreater = scp\\cgs02_cs.res
+		boxcreater = scp\\cgs02_box.res
+		backgroundmusic = 102
+		mapsizetile = 151,230
+		OriginalMapID = 102
+		landfallpoint = 213, 41
+	}
+
+	Object 苍秀岭 = 28
+	{
+		applyserver = 4
+		open = 0
+		mapid = 103
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 苍秀岭
+		mapfile = cxl.map
+		maifile = cxl.mai
+		minimapfile = cxljpg
+		worldmapfile = 0
+		staticrelivepoint = 17, 337, 337
+		dynamicrelivepoint = 17, 337, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\cxl.res
+		chunnelcreater = scp\\cxl_cs.res
+		boxcreater = 
+		backgroundmusic = 103
+		mapsizetile = 301,455
+		OriginalMapID = 103
+		landfallpoint = 549, 124
+	}
+
+	Object 奇兵洞一层 = 29
+	{
+		applyserver = 2
+		open = 1
+		mapid = 104
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 奇兵洞一层
+		mapfile = qbd01.map
+		maifile = qbd.mai
+		minimapfile = qbd01jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\qbd01.jpg
+		staticrelivepoint = 16, 345, 497
+		dynamicrelivepoint = 16, 345, 497
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\qbd01.res
+		chunnelcreater = scp\\qbd01_cs.res
+		boxcreater = scp\\qbd01_box.res
+		backgroundmusic = 104
+		mapsizetile = 301,455
+		OriginalMapID = 104
+		landfallpoint = 453, 124
+	}
+
+	Object 奇兵洞二层 = 30
+	{
+		applyserver = 2
+		open = 1
+		mapid = 105
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 奇兵洞二层
+		mapfile = qbd02.map
+		maifile = qbd.mai
+		minimapfile = qbd02jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\qbd02.jpg
+		staticrelivepoint = 16, 345, 497
+		dynamicrelivepoint = 16, 345, 497
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\qbd02.res
+		chunnelcreater = scp\\qbd02_cs.res
+		boxcreater = scp\\qbd02_box.res
+		backgroundmusic = 105
+		mapsizetile = 301,455
+		OriginalMapID = 105
+		landfallpoint = 541, 398
+	}
+
+	Object 七迷洞一层 = 31
+	{
+		applyserver = 3
+		open = 1
+		mapid = 106
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 七迷洞一层
+		mapfile = qmd01.map
+		maifile = qmd.mai
+		minimapfile = qmd01jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\qmd01.jpg
+		staticrelivepoint = 4, 270, 318
+		dynamicrelivepoint = 4, 270, 318
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\qmd01.res
+		chunnelcreater = scp\\qmd01_cs.res
+		boxcreater = scp\\qmd01_box.res
+		backgroundmusic = 106
+		mapsizetile = 301,455
+		OriginalMapID = 106
+		landfallpoint = 455, 175
+	}
+
+	Object 七迷洞二层 = 34
+	{
+		applyserver = 3
+		open = 1
+		mapid = 107
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 七迷洞二层
+		mapfile = qmd02.map
+		maifile = qmd.mai
+		minimapfile = qmd02jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\qmd02.jpg
+		staticrelivepoint = 4, 270, 318
+		dynamicrelivepoint = 4, 270, 318
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\qmd02.res
+		chunnelcreater = scp\\qmd02_cs.res
+		boxcreater = scp\\qmd02_box.res
+		backgroundmusic = 107
+		mapsizetile = 301,455
+		OriginalMapID = 107
+		landfallpoint = 430, 105
+	}
+
+	Object 昆仑密道 = 56
+	{
+		applyserver = 4
+		open = 1
+		mapid = 201
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 昆仑密道
+		mapfile = tkl.map
+		maifile = gd.mai
+		minimapfile = tkljpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\tkl.jpg
+		staticrelivepoint = 2, 908, 409
+		dynamicrelivepoint = 2, 908, 409
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\tkl.res
+		chunnelcreater = scp\\tkl_cs.res
+		boxcreater = 
+		backgroundmusic = 201
+		mapsizetile = 101,155
+		OriginalMapID = 201
+		landfallpoint = 48, 119
+	}
+
+	Object 秋枫原密道 = 57
+	{
+		applyserver = 2
+		open = 1
+		mapid = 202
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 秋枫原密道
+		mapfile = tqf.map
+		maifile = gd.mai
+		minimapfile = tqfjpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\tqf.jpg
+		staticrelivepoint = 13, 204, 394
+		dynamicrelivepoint = 13, 204, 394
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\tqf.res
+		chunnelcreater = scp\\tqf_cs.res
+		boxcreater = 
+		backgroundmusic = 202
+		mapsizetile = 101,155
+		OriginalMapID = 202
+		landfallpoint = 146, 37
+	}
+
+	Object 林海 = 58
+	{
+		applyserver = 2
+		open = 1
+		mapid = 11
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 林海
+		mapfile = lh.map
+		maifile = lh.mai
+		minimapfile = lhjpg
+		worldmapfile = WorldMap\RegionMap\Ground\lh.jpg
+		staticrelivepoint = 11, 231, 397
+		dynamicrelivepoint = 11, 231, 397
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\lh.res
+		chunnelcreater = scp\\lh_cs.res
+		boxcreater = scp\\lh_box.res
+		backgroundmusic = 11
+		mapsizetile = 251,380
+		OriginalMapID = 11
+		landfallpoint = 172, 479
+	}
+
+	Object 南郡 = 59
+	{
+		applyserver = 4
+		open = 1
+		mapid = 14
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 南郡
+		mapfile = nj.map
+		maifile = nj.mai
+		minimapfile = njjpg
+		worldmapfile = WorldMap\RegionMap\Ground\nj.jpg
+		staticrelivepoint = 14, 319, 244
+		dynamicrelivepoint = 14, 319, 244
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\nj.res
+		chunnelcreater = scp\\nj_cs.res
+		boxcreater = scp\\nj_box.res
+		backgroundmusic = 14
+		mapsizetile = 301,455
+		OriginalMapID = 14
+		landfallpoint = 270, 337
+	}
+
+	Object 天圣原:map = 63
+	{
+		applyserver = 3
+		open = 1
+		mapid = 10
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 天圣原
+		mapfile = tsy.map
+		maifile = nhz.mai
+		minimapfile = tsyjpg
+		worldmapfile = WorldMap\RegionMap\Ground\tsy.jpg
+		staticrelivepoint = 10, 507, 344
+		dynamicrelivepoint = 10, 507, 344
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\tsy.res
+		chunnelcreater = scp\\tsy_cs.res
+		boxcreater = scp\\tsy_box.res
+		backgroundmusic = 10
+		mapsizetile = 351,530
+		OriginalMapID = 10
+		landfallpoint = 594, 560
+	}
+
+	Object 宁海州:map = 64
+	{
+		applyserver = 1
+		open = 1
+		mapid = 12
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 宁海州
+		mapfile = nhz02.map
+		maifile = nhz02.mai
+		minimapfile = nhz02jpg
+		worldmapfile = WorldMap\RegionMap\Ground\nhz02.jpg
+		staticrelivepoint = 12, 293, 447
+		dynamicrelivepoint = 12, 293, 447
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\nhz.res
+		chunnelcreater = scp\\nhz_cs.res
+		boxcreater = scp\\nhz_box.res
+		backgroundmusic = 210
+		mapsizetile = 351,530
+		OriginalMapID = 12
+		landfallpoint = 264, 566
+	}
+
+	Object 丛雨沼泽:map = 65
+	{
+		applyserver = 2
+		open = 1
+		mapid = 16
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 丛雨沼泽
+		mapfile = cyzz.map
+		maifile = cyzz.mai
+		minimapfile = cyzzjpg
+		worldmapfile = WorldMap\RegionMap\Ground\cyzz.jpg
+		staticrelivepoint = 16, 350, 493
+		dynamicrelivepoint = 16, 350, 493
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\cyzz.res
+		chunnelcreater = scp\\cyzz_cs.res
+		boxcreater = scp\\cyzz_box.res
+		backgroundmusic = 16
+		mapsizetile = 301,455
+		OriginalMapID = 16
+		landfallpoint = 179, 472
+	}
+
+	Object 北郡山洞一:map = 66
+	{
+		applyserver = 1
+		open = 1
+		mapid = 203
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡山洞
+		mapfile = bjsd.map
+		maifile = gd.mai
+		minimapfile = bjsdjpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\bjsd.jpg
+		staticrelivepoint = 8, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bjsd.res
+		chunnelcreater = scp\\bjsd_cs.res
+		boxcreater = 
+		backgroundmusic = 203
+		mapsizetile = 101,155
+		OriginalMapID = 203
+		landfallpoint = 70, 130
+	}
+
+	Object 北郡二 = 69
+	{
+		applyserver = 4
+		open = 1
+		mapid = 301
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡（二）
+		mapfile = bj.map
+		maifile = bj.mai
+		minimapfile = bjjpg
+		worldmapfile = WorldMap\RegionMap\Ground\bj.jpg
+		staticrelivepoint = 301, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bj2.res
+		chunnelcreater = scp\\bj2_cs.res
+		boxcreater = scp\\bj2_box.res
+		backgroundmusic = 301
+		mapsizetile = 251,380
+		OriginalMapID = 8
+		landfallpoint = 238, 355
+	}
+
+	Object 北郡三 = 70
+	{
+		applyserver = 2
+		open = 1
+		mapid = 302
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡（三）
+		mapfile = bj.map
+		maifile = bj.mai
+		minimapfile = bjjpg
+		worldmapfile = WorldMap\RegionMap\Ground\bj.jpg
+		staticrelivepoint = 302, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bj3.res
+		chunnelcreater = scp\\bj3_cs.res
+		boxcreater = scp\\bj3_box.res
+		backgroundmusic = 302
+		mapsizetile = 251,380
+		OriginalMapID = 8
+		landfallpoint = 238, 355
+	}
+
+	Object 北郡四 = 71
+	{
+		applyserver = 1
+		open = 1
+		mapid = 303
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡（四）
+		mapfile = bj.map
+		maifile = bj.mai
+		minimapfile = bjjpg
+		worldmapfile = WorldMap\RegionMap\Ground\bj.jpg
+		staticrelivepoint = 303, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bj4.res
+		chunnelcreater = scp\\bj4_cs.res
+		boxcreater = scp\\bj4_box.res
+		backgroundmusic = 303
+		mapsizetile = 251,380
+		OriginalMapID = 8
+		landfallpoint = 238, 355
+	}
+
+	Object 北郡五 = 72
+	{
+		applyserver = 4
+		open = 1
+		mapid = 304
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡（五）
+		mapfile = bj.map
+		maifile = bj.mai
+		minimapfile = bjjpg
+		worldmapfile = WorldMap\RegionMap\Ground\bj.jpg
+		staticrelivepoint = 304, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bj5.res
+		chunnelcreater = scp\\bj5_cs.res
+		boxcreater = scp\\bj5_box.res
+		backgroundmusic = 304
+		mapsizetile = 251,380
+		OriginalMapID = 8
+		landfallpoint = 238, 355
+	}
+
+	Object 北郡山洞二:map = 73
+	{
+		applyserver = 4
+		open = 1
+		mapid = 305
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡山洞
+		mapfile = bjsd.map
+		maifile = gd.mai
+		minimapfile = bjsdjpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\bjsd.jpg
+		staticrelivepoint = 301, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bjsd2.res
+		chunnelcreater = scp\\bjsd2_cs.res
+		boxcreater = 
+		backgroundmusic = 305
+		mapsizetile = 101,155
+		OriginalMapID = 203
+		landfallpoint = 70, 130
+	}
+
+	Object 北郡山洞三:map = 74
+	{
+		applyserver = 2
+		open = 1
+		mapid = 306
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡山洞
+		mapfile = bjsd.map
+		maifile = gd.mai
+		minimapfile = bjsdjpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\bjsd.jpg
+		staticrelivepoint = 302, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bjsd3.res
+		chunnelcreater = scp\\bjsd3_cs.res
+		boxcreater = 
+		backgroundmusic = 306
+		mapsizetile = 101,155
+		OriginalMapID = 203
+		landfallpoint = 70, 130
+	}
+
+	Object 北郡山洞四:map = 75
+	{
+		applyserver = 1
+		open = 1
+		mapid = 307
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡山洞
+		mapfile = bjsd.map
+		maifile = gd.mai
+		minimapfile = bjsdjpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\bjsd.jpg
+		staticrelivepoint = 303, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bjsd4.res
+		chunnelcreater = scp\\bjsd4_cs.res
+		boxcreater = 
+		backgroundmusic = 307
+		mapsizetile = 101,155
+		OriginalMapID = 203
+		landfallpoint = 70, 130
+	}
+
+	Object 北郡山洞五:map = 76
+	{
+		applyserver = 4
+		open = 1
+		mapid = 308
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡山洞
+		mapfile = bjsd.map
+		maifile = gd.mai
+		minimapfile = bjsdjpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\bjsd.jpg
+		staticrelivepoint = 304, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bjsd5.res
+		chunnelcreater = scp\\bjsd5_cs.res
+		boxcreater = 
+		backgroundmusic = 308
+		mapsizetile = 101,155
+		OriginalMapID = 203
+		landfallpoint = 70, 130
+	}
+
+	Object 秋枫原:map = 77
+	{
+		applyserver = 3
+		open = 1
+		mapid = 13
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 秋枫原
+		mapfile = qfy.map
+		maifile = qfy.mai
+		minimapfile = qfyjpg
+		worldmapfile = WorldMap\RegionMap\Ground\qfy.jpg
+		staticrelivepoint = 13, 204, 394
+		dynamicrelivepoint = 13, 204, 394
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\qfy.res
+		chunnelcreater = scp\\qfy_cs.res
+		boxcreater = scp\\qfy_box.res
+		backgroundmusic = 13
+		mapsizetile = 301,455
+		OriginalMapID = 13
+		landfallpoint = 224, 334
+	}
+
+	Object 伏羲陵一层:map = 78
+	{
+		applyserver = 2
+		open = 1
+		mapid = 108
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 伏羲陵墓道
+		mapfile = fxl01.map
+		maifile = fxl01.mai
+		minimapfile = fxl01jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\fxl01.jpg
+		staticrelivepoint = 6, 488, 360
+		dynamicrelivepoint = 6, 488, 360
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\fxl01.res
+		chunnelcreater = scp\\fxl01_cs.res
+		boxcreater = scp\\fxl01_box.res
+		backgroundmusic = 108
+		mapsizetile = 151,230
+		OriginalMapID = 108
+		landfallpoint = 220, 66
+	}
+
+	Object 伏羲陵二层:map = 79
+	{
+		applyserver = 2
+		open = 1
+		mapid = 109
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 伏羲陵上层
+		mapfile = fxl02.map
+		maifile = fxl02.mai
+		minimapfile = fxl02jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\fxl02.jpg
+		staticrelivepoint = 6, 488, 360
+		dynamicrelivepoint = 6, 488, 360
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\fxl02.res
+		chunnelcreater = scp\\fxl02_cs.res
+		boxcreater = 
+		backgroundmusic = 109
+		mapsizetile = 351,530
+		OriginalMapID = 109
+		landfallpoint = 608, 191
+	}
+
+	Object 伏羲陵三层:map = 80
+	{
+		applyserver = 2
+		open = 1
+		mapid = 110
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 伏羲陵下层
+		mapfile = fxl03.map
+		maifile = fxl03.mai
+		minimapfile = fxl03jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\fxl03.jpg
+		staticrelivepoint = 6, 488, 360
+		dynamicrelivepoint = 6, 488, 360
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\fxl03.res
+		chunnelcreater = scp\\fxl03_cs.res
+		boxcreater = 
+		backgroundmusic = 110
+		mapsizetile = 301,455
+		OriginalMapID = 110
+		landfallpoint = 470, 167
+	}
+
+	Object 北郡六 = 83
+	{
+		applyserver = 2
+		open = 1
+		mapid = 309
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡（六）
+		mapfile = bj.map
+		maifile = bj.mai
+		minimapfile = bjjpg
+		worldmapfile = WorldMap\RegionMap\Ground\bj.jpg
+		staticrelivepoint = 309, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bj6.res
+		chunnelcreater = scp\\bj6_cs.res
+		boxcreater = scp\\bj6_box.res
+		backgroundmusic = 309
+		mapsizetile = 251,380
+		OriginalMapID = 8
+		landfallpoint = 238, 355
+	}
+
+	Object 北郡七 = 84
+	{
+		applyserver = 1
+		open = 1
+		mapid = 310
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡（七）
+		mapfile = bj.map
+		maifile = bj.mai
+		minimapfile = bjjpg
+		worldmapfile = WorldMap\RegionMap\Ground\bj.jpg
+		staticrelivepoint = 310, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bj7.res
+		chunnelcreater = scp\\bj7_cs.res
+		boxcreater = scp\\bj7_box.res
+		backgroundmusic = 310
+		mapsizetile = 251,380
+		OriginalMapID = 8
+		landfallpoint = 238, 355
+	}
+
+	Object 北郡八 = 85
+	{
+		applyserver = 4
+		open = 1
+		mapid = 311
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡（八）
+		mapfile = bj.map
+		maifile = bj.mai
+		minimapfile = bjjpg
+		worldmapfile = WorldMap\RegionMap\Ground\bj.jpg
+		staticrelivepoint = 311, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bj8.res
+		chunnelcreater = scp\\bj8_cs.res
+		boxcreater = scp\\bj8_box.res
+		backgroundmusic = 311
+		mapsizetile = 251,380
+		OriginalMapID = 8
+		landfallpoint = 238, 355
+	}
+
+	Object 北郡山洞六:map = 86
+	{
+		applyserver = 2
+		open = 1
+		mapid = 312
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡山洞
+		mapfile = bjsd.map
+		maifile = gd.mai
+		minimapfile = bjsdjpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\bjsd.jpg
+		staticrelivepoint = 309, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bjsd6.res
+		chunnelcreater = scp\\bjsd6_cs.res
+		boxcreater = 
+		backgroundmusic = 312
+		mapsizetile = 101,155
+		OriginalMapID = 203
+		landfallpoint = 70, 130
+	}
+
+	Object 北郡山洞七:map = 87
+	{
+		applyserver = 1
+		open = 1
+		mapid = 313
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡山洞
+		mapfile = bjsd.map
+		maifile = gd.mai
+		minimapfile = bjsdjpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\bjsd.jpg
+		staticrelivepoint = 310, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bjsd7.res
+		chunnelcreater = scp\\bjsd7_cs.res
+		boxcreater = 
+		backgroundmusic = 313
+		mapsizetile = 101,155
+		OriginalMapID = 203
+		landfallpoint = 70, 130
+	}
+
+	Object 北郡山洞八:map = 88
+	{
+		applyserver = 4
+		open = 1
+		mapid = 314
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 北郡山洞
+		mapfile = bjsd.map
+		maifile = gd.mai
+		minimapfile = bjsdjpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\bjsd.jpg
+		staticrelivepoint = 311, 175, 337
+		dynamicrelivepoint = 8, 175, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\bjsd8.res
+		chunnelcreater = scp\\bjsd8_cs.res
+		boxcreater = 
+		backgroundmusic = 314
+		mapsizetile = 101,155
+		OriginalMapID = 203
+		landfallpoint = 70, 130
+	}
+
+	Object 药王殿一层 = 91
+	{
+		applyserver = 4
+		open = 1
+		mapid = 123
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 药王殿一层
+		mapfile = ywd01.map
+		maifile = ywd01.mai
+		minimapfile = ywd01jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\ywd01.jpg
+		staticrelivepoint = 9, 242, 495
+		dynamicrelivepoint = 9, 242, 495
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\ywd01.res
+		chunnelcreater = scp\\ywd01_cs.res
+		boxcreater = 
+		backgroundmusic = 123
+		mapsizetile = 151,230
+		OriginalMapID = 123
+		landfallpoint = 286, 205
+	}
+
+	Object 药王殿二层 = 92
+	{
+		applyserver = 4
+		open = 1
+		mapid = 124
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 药王殿二层
+		mapfile = ywd02.map
+		maifile = ywd02.mai
+		minimapfile = ywd02jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\ywd02.jpg
+		staticrelivepoint = 9, 242, 495
+		dynamicrelivepoint = 9, 242, 495
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\ywd02.res
+		chunnelcreater = scp\\ywd02_cs.res
+		boxcreater = 
+		backgroundmusic = 124
+		mapsizetile = 301,455
+		OriginalMapID = 124
+		landfallpoint = 413, 243
+	}
+
+	Object 青云寨一层 = 93
+	{
+		applyserver = 4
+		open = 1
+		mapid = 114
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 青云寨一层
+		mapfile = qyz01.map
+		maifile = qyz01.mai
+		minimapfile = qyz01jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\qyz01.jpg
+		staticrelivepoint = 14, 332, 231
+		dynamicrelivepoint = 14, 332, 231
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\qyz01.res
+		chunnelcreater = scp\\qyz01_cs.res
+		boxcreater = 
+		backgroundmusic = 114
+		mapsizetile = 301,455
+		OriginalMapID = 114
+		landfallpoint = 600, 414
+	}
+
+	Object 青云寨二层 = 94
+	{
+		applyserver = 4
+		open = 1
+		mapid = 115
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 青云寨二层
+		mapfile = qyz02.map
+		maifile = qyz02.mai
+		minimapfile = qyz02jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\qyz02.jpg
+		staticrelivepoint = 14, 332, 231
+		dynamicrelivepoint = 14, 332, 231
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\qyz02.res
+		chunnelcreater = scp\\qyz02_cs.res
+		boxcreater = 
+		backgroundmusic = 115
+		mapsizetile = 251,380
+		OriginalMapID = 115
+		landfallpoint = 248, 153
+	}
+
+	Object 青云寨三层 = 95
+	{
+		applyserver = 4
+		open = 1
+		mapid = 116
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 青云寨三层
+		mapfile = qyz03.map
+		maifile = qyz03.mai
+		minimapfile = qyz03jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\qyz03.jpg
+		staticrelivepoint = 14, 332, 231
+		dynamicrelivepoint = 14, 332, 231
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\qyz03.res
+		chunnelcreater = scp\\qyz03_cs.res
+		boxcreater = 
+		backgroundmusic = 116
+		mapsizetile = 151,230
+		OriginalMapID = 116
+		landfallpoint = 95, 179
+	}
+
+	Object 小副本:map = 96
+	{
+		applyserver = 2
+		open = 0
+		mapid = 204
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 诡墓
+		mapfile = fb001.map
+		maifile = cgs01.mai
+		minimapfile = fb001jpg
+		worldmapfile = 0
+		staticrelivepoint = 16, 345, 497
+		dynamicrelivepoint = 16, 345, 497
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\fb001.res
+		chunnelcreater = scp\\fb001_cs.res
+		boxcreater = 
+		backgroundmusic = 204
+		mapsizetile = 201,305
+		OriginalMapID = 204
+		landfallpoint = 271, 52
+	}
+
+	Object 东离草原:map = 97
+	{
+		applyserver = 3
+		open = 1
+		mapid = 17
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 东离草原
+		mapfile = dlcy.map
+		maifile = dlcy.mai
+		minimapfile = dlcyjpg
+		worldmapfile = WorldMap\RegionMap\Ground\dlcy.jpg
+		staticrelivepoint = 17, 337, 337
+		dynamicrelivepoint = 17, 337, 337
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\dlcy.res
+		chunnelcreater = scp\\dlcy_cs.res
+		boxcreater = scp\\dlcy_box.res
+		backgroundmusic = 17
+		mapsizetile = 301,455
+		OriginalMapID = 17
+		landfallpoint = 439, 340
+	}
+
+	Object 赤水:map = 98
+	{
+		applyserver = 3
+		open = 1
+		mapid = 15
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 赤水
+		mapfile = csc.map
+		maifile = csc.mai
+		minimapfile = cscjpg
+		worldmapfile = WorldMap\RegionMap\Ground\csc.jpg
+		staticrelivepoint = 15, 187, 493
+		dynamicrelivepoint = 15, 187, 493
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\csc.res
+		chunnelcreater = scp\\csc_cs.res
+		boxcreater = scp\\csc_box.res
+		backgroundmusic = 15
+		mapsizetile = 401,605
+		OriginalMapID = 15
+		landfallpoint = 259, 407
+	}
+
+	Object 炼骨窟一层:map = 99
+	{
+		applyserver = 1
+		open = 1
+		mapid = 111
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 炼骨窟一层
+		mapfile = lgk01.map
+		maifile = lgk.mai
+		minimapfile = lgk01jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\lgk01.jpg
+		staticrelivepoint = 5, 235, 603
+		dynamicrelivepoint = 5, 235, 603
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\lgk01.res
+		chunnelcreater = scp\\lgk01_cs.res
+		boxcreater = scp\\lgk01_box.res
+		backgroundmusic = 111
+		mapsizetile = 251,380
+		OriginalMapID = 111
+		landfallpoint = 285, 466
+	}
+
+	Object 炼骨窟二层:map = 100
+	{
+		applyserver = 1
+		open = 1
+		mapid = 112
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 炼骨窟二层
+		mapfile = lgk02.map
+		maifile = lgk.mai
+		minimapfile = lgk02jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\lgk02.jpg
+		staticrelivepoint = 5, 235, 603
+		dynamicrelivepoint = 5, 235, 603
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\lgk02.res
+		chunnelcreater = scp\\lgk02_cs.res
+		boxcreater = scp\\lgk02_box.res
+		backgroundmusic = 112
+		mapsizetile = 251,380
+		OriginalMapID = 112
+		landfallpoint = 432, 181
+	}
+
+	Object 炼骨窟三层:map = 101
+	{
+		applyserver = 1
+		open = 1
+		mapid = 113
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 炼骨窟三层
+		mapfile = lgk03.map
+		maifile = lgk.mai
+		minimapfile = lgk03jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\lgk03.jpg
+		staticrelivepoint = 5, 235, 603
+		dynamicrelivepoint = 5, 235, 603
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\lgk03.res
+		chunnelcreater = scp\\lgk03_cs.res
+		boxcreater = scp\\lgk03_box.res
+		backgroundmusic = 113
+		mapsizetile = 251,380
+		OriginalMapID = 113
+		landfallpoint = 262, 528
+	}
+
+	Object 天尊洞府:map = 102
+	{
+		applyserver = 4
+		open = 1
+		mapid = 125
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 天尊洞府
+		mapfile = tzdf.map
+		maifile = lgk.mai
+		minimapfile = tzdfjpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\tzdf.jpg
+		staticrelivepoint = 15, 187, 493
+		dynamicrelivepoint = 15, 187, 493
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\tzdf.res
+		chunnelcreater = scp\\tzdf_cs.res
+		boxcreater = scp\\tzdf_box.res
+		backgroundmusic = 125
+		mapsizetile = 251,380
+		OriginalMapID = 125
+		landfallpoint = 365, 248
+	}
+
+	Object 监牢:map = 103
+	{
+		applyserver = 4
+		open = 1
+		mapid = 206
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 监牢
+		mapfile = bjsd.map
+		maifile = gd.mai
+		minimapfile = bjsdjpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\jl.jpg
+		staticrelivepoint = 206, 80, 132
+		dynamicrelivepoint = 206, 80, 132
+		redstaticrelivepoint = 206, 80, 132
+		reddynamicrelivepoint = 206, 80, 132
+		monstercreater = 
+		chunnelcreater = 
+		boxcreater = 
+		backgroundmusic = 206
+		mapsizetile = 101,155
+		OriginalMapID = 206
+		landfallpoint = 70, 130
+	}
+
+	Object 轩辕台入口:map = 104
+	{
+		applyserver = 1
+		open = 1
+		mapid = 207
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 轩辕台入口
+		mapfile = xyt04.map
+		maifile = xyt04.mai
+		minimapfile = xyt04jpg
+		worldmapfile = 
+		staticrelivepoint = 3, 525, 240
+		dynamicrelivepoint = 3, 525, 240
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = 
+		chunnelcreater = scp\\xyt04_cs.res
+		boxcreater = 
+		backgroundmusic = 207
+		mapsizetile = 101,155
+		OriginalMapID = 207
+		landfallpoint = 72, 128
+	}
+
+	Object 轩辕台一层:map = 105
+	{
+		applyserver = 1
+		open = 0
+		mapid = 118
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 轩辕台一层
+		mapfile = xyt01.map
+		maifile = xyt01.mai
+		minimapfile = xyt01jpg
+		worldmapfile = 
+		staticrelivepoint = 3, 88, 632
+		dynamicrelivepoint = 3, 88, 632
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\xyt01.res
+		chunnelcreater = scp\\xyt01_cs.res
+		boxcreater = scp\\xyt01_box.res
+		backgroundmusic = 118
+		mapsizetile = 151,230
+		OriginalMapID = 118
+		landfallpoint = 222, 117
+	}
+
+	Object 悔过宫 = 106
+	{
+		applyserver = 4
+		open = 1
+		mapid = 208
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 悔过宫
+		mapfile = ywd01.map
+		maifile = ywd01.mai
+		minimapfile = ywd01jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\hgg.jpg
+		staticrelivepoint = 208, 180, 190
+		dynamicrelivepoint = 208, 180, 190
+		redstaticrelivepoint = 208, 180, 190
+		reddynamicrelivepoint = 208, 180, 190
+		monstercreater = 0
+		chunnelcreater = 0
+		boxcreater = 
+		backgroundmusic = 208
+		mapsizetile = 151,230
+		OriginalMapID = 208
+		landfallpoint = 286, 205
+	}
+
+	Object 小副本02:map = 107
+	{
+		applyserver = 4
+		open = 0
+		mapid = 209
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 诡墓
+		mapfile = fb001.map
+		maifile = cgs01.mai
+		minimapfile = fb001jpg
+		worldmapfile = 0
+		staticrelivepoint = 14, 332, 231
+		dynamicrelivepoint = 14, 332, 231
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\fb002.res
+		chunnelcreater = scp\\fb002_cs.res
+		boxcreater = 
+		backgroundmusic = 209
+		mapsizetile = 201,305
+		OriginalMapID = 209
+		landfallpoint = 271, 52
+	}
+
+	Object 百果城战:map = 108
+	{
+		applyserver = 4
+		open = 0
+		mapid = 211
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 百果城战
+		mapfile = bgcz.map
+		maifile = 24.mai
+		minimapfile = bgczjpg
+		worldmapfile = WorldMap\RegionMap\Ground\bgcz.jpg
+		staticrelivepoint = 211, 239, 179
+		dynamicrelivepoint = 211, 239, 179
+		redstaticrelivepoint = 211, 522, 305
+		reddynamicrelivepoint = 211, 522, 305
+		monstercreater = 
+		chunnelcreater = 
+		boxcreater = scp\\bgcz_box.res
+		backgroundmusic = 211
+		mapsizetile = 301,455
+		OriginalMapID = 211
+		landfallpoint = 219, 456
+	}
+
+	Object 华夏城战:map = 109
+	{
+		applyserver = 3
+		open = 0
+		mapid = 212
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 华夏城战
+		mapfile = hxcz.map
+		maifile = 24.mai
+		minimapfile = hxczjpg
+		worldmapfile = WorldMap\RegionMap\Ground\hxcz.jpg
+		staticrelivepoint = 212, 299, 372
+		dynamicrelivepoint = 212, 299, 372
+		redstaticrelivepoint = 212, 515, 262
+		reddynamicrelivepoint = 212, 515, 262
+		monstercreater = 
+		chunnelcreater = 
+		boxcreater = scp\\hxcz_box.res
+		backgroundmusic = 212
+		mapsizetile = 301,455
+		OriginalMapID = 212
+		landfallpoint = 239, 452
+	}
+
+	Object 鲛衣城战:map = 110
+	{
+		applyserver = 1
+		open = 0
+		mapid = 213
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 鲛衣城战
+		mapfile = jycz.map
+		maifile = jycz.mai
+		minimapfile = jyczjpg
+		worldmapfile = WorldMap\RegionMap\Ground\jycz.jpg
+		staticrelivepoint = 213, 244, 356
+		dynamicrelivepoint = 213, 244, 356
+		redstaticrelivepoint = 213, 512, 390
+		reddynamicrelivepoint = 213, 512, 390
+		monstercreater = 
+		chunnelcreater = 
+		boxcreater = scp\\jycz_box.res
+		backgroundmusic = 213
+		mapsizetile = 301,455
+		OriginalMapID = 213
+		landfallpoint = 329, 360
+	}
+
+	Object 鲛衣皇宫:map = 112
+	{
+		applyserver = 1
+		open = 1
+		mapid = 214
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 鲛衣皇宫
+		mapfile = jysx.map
+		maifile = 08.mai
+		minimapfile = jysxjpg
+		worldmapfile = WorldMap\RegionMap\Ground\jyhg.jpg
+		staticrelivepoint = 12, 293, 447
+		dynamicrelivepoint = 12, 293, 447
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\jysx.res
+		chunnelcreater = scp\\jysx_cs.res
+		boxcreater = 
+		backgroundmusic = 214
+		mapsizetile = 101,155
+		OriginalMapID = 214
+		landfallpoint = 113, 137
+	}
+
+	Object 禁断之地:map = 113
+	{
+		applyserver = 1
+		open = 0
+		mapid = 215
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 禁断之地
+		mapfile = jdzd.map
+		maifile = jdzd.mai
+		minimapfile = jdzdjpg
+		worldmapfile = 
+		staticrelivepoint = 3, 517, 219
+		dynamicrelivepoint = 3, 517, 219
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = 
+		chunnelcreater = 
+		boxcreater = 
+		backgroundmusic = 215
+		mapsizetile = 51,80
+		OriginalMapID = 215
+		landfallpoint = 67, 18
+	}
+
+	Object 秘密花园:map = 114
+	{
+		applyserver = 1
+		open = 0
+		mapid = 216
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 秘密花园
+		mapfile = mmhy.map
+		maifile = mmhy.mai
+		minimapfile = mmhyjpg
+		worldmapfile = 
+		staticrelivepoint = 3, 517, 219
+		dynamicrelivepoint = 3, 517, 219
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = 
+		chunnelcreater = 
+		boxcreater = 
+		backgroundmusic = 216
+		mapsizetile = 51,80
+		OriginalMapID = 216
+		landfallpoint = 63, 47
+	}
+
+	Object 祈祷室:map = 115
+	{
+		applyserver = 1
+		open = 0
+		mapid = 217
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 祈祷室
+		mapfile = qds.map
+		maifile = qds.mai
+		minimapfile = qdsjpg
+		worldmapfile = 
+		staticrelivepoint = 3, 517, 219
+		dynamicrelivepoint = 3, 517, 219
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = 
+		chunnelcreater = 
+		boxcreater = 
+		backgroundmusic = 217
+		mapsizetile = 51,80
+		OriginalMapID = 217
+		landfallpoint = 63, 50
+	}
+
+	Object 诅咒回廊:map = 116
+	{
+		applyserver = 1
+		open = 0
+		mapid = 218
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 诅咒回廊
+		mapfile = zzhl.map
+		maifile = zzhl.mai
+		minimapfile = zzhljpg
+		worldmapfile = 
+		staticrelivepoint = 3, 517, 219
+		dynamicrelivepoint = 3, 517, 219
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = 
+		chunnelcreater = 
+		boxcreater = 
+		backgroundmusic = 218
+		mapsizetile = 51,80
+		OriginalMapID = 218
+		landfallpoint = 68, 62
+	}
+
+	Object 幻海一层:map = 117
+	{
+		applyserver = 1
+		open = 1
+		mapid = 126
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 幻海一层
+		mapfile = hhdg01.map
+		maifile = 16.mai
+		minimapfile = hhdg01jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\hhdg01.jpg
+		staticrelivepoint = 12, 772, 314
+		dynamicrelivepoint = 12, 772, 314
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\hhdg01.res
+		chunnelcreater = scp\\hhdg01_cs.res
+		boxcreater = 
+		backgroundmusic = 126
+		mapsizetile = 201,305
+		OriginalMapID = 126
+		landfallpoint = 27, 295
+	}
+
+	Object 幻海二层:map = 118
+	{
+		applyserver = 1
+		open = 1
+		mapid = 127
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 幻海二层
+		mapfile = hhdg02.map
+		maifile = 20.mai
+		minimapfile = hhdg02jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\hhdg02.jpg
+		staticrelivepoint = 12, 772, 314
+		dynamicrelivepoint = 12, 772, 314
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\hhdg02.res
+		chunnelcreater = scp\\hhdg02_cs.res
+		boxcreater = 
+		backgroundmusic = 127
+		mapsizetile = 251,380
+		OriginalMapID = 127
+		landfallpoint = 336, 68
+	}
+
+	Object 幻海三层:map = 119
+	{
+		applyserver = 2
+		open = 1
+		mapid = 128
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 幻海三层
+		mapfile = hhdg03.map
+		maifile = 24.mai
+		minimapfile = hhdg03jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\hhdg03.jpg
+		staticrelivepoint = 12, 772, 314
+		dynamicrelivepoint = 12, 772, 314
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\hhdg03.res
+		chunnelcreater = scp\\hhdg03_cs.res
+		boxcreater = 
+		backgroundmusic = 128
+		mapsizetile = 301,455
+		OriginalMapID = 128
+		landfallpoint = 139, 549
+	}
+
+	Object 幻海四层:map = 120
+	{
+		applyserver = 2
+		open = 1
+		mapid = 129
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 幻海四层
+		mapfile = hhdg04.map
+		maifile = 08.mai
+		minimapfile = hhdg04jpg
+		worldmapfile = WorldMap\RegionMap\UnderGround\hhdg04.jpg
+		staticrelivepoint = 12, 772, 314
+		dynamicrelivepoint = 12, 772, 314
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = scp\\hhdg04.res
+		chunnelcreater = scp\\hhdg04_cs.res
+		boxcreater = 
+		backgroundmusic = 129
+		mapsizetile = 101,155
+		OriginalMapID = 129
+		landfallpoint = 135, 35
+	}
+
+	Object 女娲试炼室:map = 121
+	{
+		applyserver = 4
+		open = 0
+		mapid = 219
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 女娲试炼室
+		mapfile = zzhl.map
+		maifile = zzhl.mai
+		minimapfile = zzhljpg
+		worldmapfile = 
+		staticrelivepoint = 9, 245, 485
+		dynamicrelivepoint = 9, 245, 485
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = 
+		chunnelcreater = 
+		boxcreater = 
+		backgroundmusic = 218
+		mapsizetile = 51,80
+		OriginalMapID = 219
+		landfallpoint = 68, 62
+	}
+
+	Object 女娲试炼室2:map = 122
+	{
+		applyserver = 1
+		open = 0
+		mapid = 220
+		usedynamic = 1
+		minimaprate = 20
+		mapname = 女娲试炼室
+		mapfile = zzhl.map
+		maifile = zzhl.mai
+		minimapfile = zzhljpg
+		worldmapfile = 
+		staticrelivepoint = 12, 290, 430
+		dynamicrelivepoint = 12, 290, 430
+		redstaticrelivepoint = 16, 700, 305
+		reddynamicrelivepoint = 16, 700, 305
+		monstercreater = 
+		chunnelcreater = 
+		boxcreater = 
+		backgroundmusic = 218
+		mapsizetile = 51,80
+		OriginalMapID = 220
+		landfallpoint = 68, 62
+	}
+}

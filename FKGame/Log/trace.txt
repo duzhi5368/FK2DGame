@@ -1,0 +1,13 @@
+创建 FKTrace 对象成功。
+进行游戏初始化。
+创建 Trace 对象。
+Start m_TimerAxisHelper.Create
+Finish m_TimerAxisHelper.Create
+Start m_ResMgrHelper.Create
+Finish m_ResMgrHelper.Create
+Start ScriptUpdateManagerHelper.Create
+Finish ScriptUpdateManagerHelper.Create
+Start m_EventServerHelper.Create
+ERROR: CResDecoder::ParseFile() catch error: can't open file["e:\MyImportent\FKMMORPG_20120705无资源\FKMMORPG\FKGame\Data\Scp\Event.scp"]
+pEventServer->Create(pResMgr, pFileName, bEncrypt) fail.
+Error : CGameApp::InitGame() : g_ClientGlobal.Create() failed

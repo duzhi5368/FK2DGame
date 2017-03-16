@@ -1,0 +1,5398 @@
+///////////////////////////////
+// *******  资源脚本  *******
+//
+//  每行最大长度2048字节
+///////////////////////////////
+
+MaxID = 468
+
+Object 商人窗口:generalwindow = 1000
+{
+	rect = 5, 95,306, 450
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 255
+	mask = 1
+	movable = 1
+	caption = 商人
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object pricelbl:Label = 1
+	{
+		rect = 22, 437, 28, 23
+		src = 
+		caption = 单价
+		forecolor = 255, 245, 200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object quliatylbl:Label = 2
+	{
+		rect = 190, 437, 28, 23
+		src = 
+		caption = 数量
+		forecolor = 255, 245, 200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object qualityedt:Edit = 4
+	{
+		rect = 224, 437, 50, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object totalpricelbl:Label = 5
+	{
+		rect = 22, 467, 28, 23
+		src = 
+		caption = 总额
+		forecolor = 255, 245, 200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 购买:Button = 7
+	{
+		rect = 190, 467, 91, 23
+		backcolor = 0, 0, 0
+		disablecolor = 192,192,192
+		alpha = 256
+		mask = 1
+		modal = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\购买.bmp
+		downimg = Npc\购买_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 关闭:Button = 8
+	{
+		rect = 281, 113, 30, 35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 钱的低图:STATICBITMAP = 33
+	{
+		rect = 50, 437, 120, 23
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enabled = 1
+		visible = 1
+		topmost = 0
+		Stretch = 0
+	}
+
+	Object 钱的低图:STATICBITMAP = 34
+	{
+		rect = 50, 467, 120, 23
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enabled = 1
+		visible = 1
+		topmost = 0
+		Stretch = 0
+	}
+
+	Object priceedt1:Edit = 38
+	{
+		rect = 50, 437, 41, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object priceedt2:Edit = 39
+	{
+		rect = 105, 437,19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		拥有 = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object priceedt3:Edit = 40
+	{
+		rect = 138, 437, 19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object totalpricedt1:Edit = 41
+	{
+		rect = 50, 467, 41, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object totalpricedt2:Edit = 42
+	{
+		rect = 105, 467,19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object totalpricedt3:Edit = 43
+	{
+		rect = 138, 467, 19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 全部修理:Button = 280
+	{
+		rect = 83, 500, 91, 23
+		backcolor = 0, 0, 0
+		disablecolor = 0,0,0
+		alpha = 256
+		mask = 1
+		modal = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = npc\全部修理.bmp
+		downimg = npc\全部修理_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 单个修理:Button = 281
+	{
+		rect = 190, 500, 91, 23
+		backcolor = 0, 0, 0
+		disablecolor = 0,0,0
+		alpha = 256
+		mask = 1
+		modal = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = npc\单个修理.bmp
+		downimg = npc\单个修理_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 物品容器控件:control = 282
+	{
+		rect = 25, 158, 256, 270
+		src = npc\GoodsContainerCongrol.bmp
+		moveable = 0
+		alpha = 0
+		visible = 1
+		size = 6,6
+		MeshMargin = 5,5
+		MeshSize = 36,36
+		Border = 1
+		TipLevel = 1
+
+		Object 编辑框:Edit = 283
+		{
+			rect = 25, 158, 256, 270
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 子控件:button = 284
+		{
+			rect = 0,0, 36, 36
+			BGimg = Common\Grid\Grid.bmp
+			acceptable = 1
+			removable = 0
+			mask = 1
+		}
+	}
+}
+
+Object 仓库:generalwindow = 47
+{
+	rect = 5, 95,306, 415
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 255
+	mask = 1
+	movable = 1
+	caption = 仓库
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object 关闭:Button = 48
+	{
+		rect = 281, 113, 30, 35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 钱的低图:STATICBITMAP = 56
+	{
+		rect = 161, 465,120, 17
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enabled = 1
+		visible = 1
+		topmost = 0
+		Stretch = 0
+	}
+
+	Object 金币:Edit = 57
+	{
+		rect = 161, 465, 41, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 银币:Edit = 58
+	{
+		rect = 216, 465,19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 铜币:Edit = 59
+	{
+		rect = 249, 465,19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 存钱:Button = 60
+	{
+		rect = 25,463, 84, 23
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\存.bmp
+		downimg = Npc\存_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 取钱:Button = 61
+	{
+		rect = 92,463, 84, 23
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\取.bmp
+		downimg = Npc\取_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 仓库密码:Button = 62
+	{
+		rect = 25,515, 91, 23
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 0
+		movable = 0
+		visible = 0
+		disableforecolor = 192,192,192
+		upimg = Npc\仓库密码.bmp
+		downimg = Npc\仓库密码_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 仓库升级:Button = 63
+	{
+		rect = 25,435, 91, 23
+		backcolor = 0, 0, 0
+		disableforecolor = 192,192,192
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\仓库升级.bmp
+		downimg = Npc\仓库升级_d.bmp
+		hoverimg = 
+		disableimg = Npc\仓库升级_b.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 上一页:Button = 432
+	{
+		rect = 160,435, 91, 23
+		backcolor = 0, 0, 0
+		disableforecolor = 192,192,192
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\上一页.bmp
+		downimg = Npc\上一页_d.bmp
+		hoverimg = Npc\上一页_l.bmp
+		disableimg = Npc\上一页_b.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 下一页:Button = 433
+	{
+		rect = 220,435, 91, 23
+		backcolor = 0, 0, 0
+		disableforecolor = 192,192,192
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\下一页.bmp
+		downimg = Npc\下一页_d.bmp
+		hoverimg = Npc\下一页_l.bmp
+		disableimg = Npc\下一页_b.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 物品容器控件:control = 441
+	{
+		rect = 25, 158, 256, 270
+		src = npc\GoodsContainerCongrol.bmp
+		moveable = 0
+		alpha = 0
+		visible = 1
+		size = 6,12
+		MeshMargin = 5,5
+		MeshSize = 36,36
+		Border = 1
+		TipLevel = 0
+
+		Object 编辑框:Edit = 442
+		{
+			rect = 25, 158, 256, 270
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 子控件:button = 443
+		{
+			rect = 0,0, 36, 36
+			BGimg = Common\Grid\Grid.bmp
+			acceptable = 1
+			removable = 0
+			mask = 1
+		}
+	}
+
+	Object 物品容器控件:control = 444
+	{
+		rect = 25, 435, 256, 50
+		src = npc\GoodsContainerCongrol.bmp
+		moveable = 0
+		alpha = 0
+		visible = 1
+		size = 6,1
+		MeshMargin = 5,5
+		MeshSize = 36,36
+		Border = 0
+		TipLevel = 0
+
+		Object 编辑框:Edit = 445
+		{
+			rect = 25, 435, 256, 60
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 子控件:button = 446
+		{
+			rect = 0,0, 36, 36
+			BGimg = Common\Grid\Grid.bmp
+			acceptable = 1
+			removable = 0
+			mask = 1
+		}
+	}
+
+	Object 页数提示:Label = 447
+	{
+		rect = 120, 406, 88, 23
+		src = 
+		caption = 第1页(1/1)
+		forecolor = 255, 245, 200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+}
+
+Object 金钱窗口:generalwindow = 70
+{
+	rect = 0, 0, 212, 161
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 200
+	mask = 1
+	movable = 1
+	caption = 存入金钱
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object 金钱提示:Label = 71
+	{
+		rect = 40, 50, 174, 18
+		src = 请输入金钱
+		caption = 请输入要存入的金钱数量
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object MoneyQalityLbl:Label = 72
+	{
+		rect = 40, 80, 48, 17
+		src = 
+		caption = 数量
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 确定:Button = 74
+	{
+		rect = 40, 110, 91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Friend\Buttons\确定.bmp
+		downimg = Friend\Buttons\确定_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 取消:Button = 75
+	{
+		rect = 132, 110, 91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Friend\Buttons\取消.bmp
+		downimg = Friend\Buttons\取消_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 关闭:Button = 78
+	{
+		rect = 245,18, 212, 35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 钱的低图:STATICBITMAP = 79
+	{
+		rect = 92, 80, 120, 17
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enabled = 1
+		visible = 1
+		topmost = 0
+		Stretch = 0
+	}
+
+	Object MoneyQalEdt1:Edit = 80
+	{
+		rect = 92, 80, 41, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object MoneyQalEdt2:Edit = 81
+	{
+		rect = 147, 80, 19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 2
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object MoneyQalEdt3:Edit = 82
+	{
+		rect = 180, 80, 19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 2
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+}
+
+Object 包裹:generalwindow = 83
+{
+	rect = 0, 0, 212, 161
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 200
+	mask = 1
+	movable = 1
+	caption = 包裹
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object 关闭:Button = 85
+	{
+		rect = 225,18, 212, 35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 物品容器控件:control = 86
+	{
+		rect = 35,35, 212, 90
+		moveable = 0
+		alpha = 0
+		visible = 1
+		size = 4,4
+		MeshMargin = 8,5
+		MeshSize = 36,36
+		Border = 0
+		SpaceNum = 0
+		TipLevel = 0
+		LeftTop = 0,0
+
+		Object 编辑框:Edit = 87
+		{
+			rect = 35, 35, 212, 50
+			src = common\edit\edit.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0, 0, 3, 3, 3, 0, 32, 2, 35, 0, 3, 3, 0, 3, 2, 6, 36, 3, 2, 6, 0, 9, 3, 3, 3, 10, 32, 2, 35, 9, 3, 3, 5, 4, 4, 4, 2, 2, 34, 8
+		}
+
+		Object 子控件:button = 88
+		{
+			rect = 0,0, 36, 36
+			BGimg = Common\Grid\Grid.bmp
+			acceptable = 1
+			removable = 0
+			mask = 1
+		}
+	}
+}
+
+Object 交易窗口:generalwindow = 89
+{
+	rect = 318, 30, 275, 455
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 200
+	mask = 1
+	movable = 1
+	caption = 交易
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object 对方名字:Label = 90
+	{
+		rect = 345, 195, 60, 17
+		src = 
+		caption = 您正在与
+		forecolor = 255, 245, 200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 对方名字Edt:Edit = 91
+	{
+		rect = 405, 195, 120, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 16
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 交易:Label = 92
+	{
+		rect = 535, 195, 40, 17
+		src = 
+		caption = 交易
+		forecolor = 255, 245, 200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 对方金钱:Label = 93
+	{
+		rect = 345, 245, 60, 17
+		src = 
+		caption = 对方金钱
+		forecolor = 255, 245, 200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object StaticBitmap:StaticBitmap = 94
+	{
+		rect = 405, 245, 120, 17
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		Stretch = 1
+	}
+
+	Object 自己金钱:Label = 95
+	{
+		rect = 345,400,60,17
+		src = 
+		caption = 自己金钱
+		forecolor = 255, 245, 200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object StaticBitmap:StaticBitmap = 96
+	{
+		rect = 405, 400, 120, 17
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		Stretch = 1
+	}
+
+	Object 锁定:Button = 99
+	{
+		rect = 355,430,91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\锁定.bmp
+		downimg = Npc\锁定_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 192,192,192
+	}
+
+	Object 交易:Button = 100
+	{
+		rect = 464,430,91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\交易.bmp
+		downimg = Npc\交易_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 192,192,192
+	}
+
+	Object 对方等级:Label = 108
+	{
+		rect = 345, 220, 60, 17
+		src = 
+		caption = 对方等级
+		forecolor = 255, 245, 200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 对方等级Edt:Edit = 109
+	{
+		rect = 405, 220,40, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 关闭:Button = 118
+	{
+		rect = 564, 48, 20,35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object PeerMoneyEdt1:Edit = 126
+	{
+		rect = 405, 245, 41, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 1
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object PeerMoneyEdt2:Edit = 128
+	{
+		rect = 460, 245, 19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 1
+		maxlen = 2
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object PeerMoneyEdt3:Edit = 129
+	{
+		rect = 493, 245, 19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 1
+		maxlen = 2
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object SelfMoneyEdt1:Edit = 131
+	{
+		rect = 405, 400, 41, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object SelfMoneyEdt2:Edit = 132
+	{
+		rect = 460, 400, 19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 2
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object SelfMoneyEdt3:Edit = 133
+	{
+		rect = 493,400, 19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 2
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 自己容器控件:control = 134
+	{
+		rect = 345,290, 220, 97
+		moveable = 0
+		alpha = 0
+		visible = 1
+		size = 5,2
+		MeshMargin = 5,5
+		MeshSize = 36,36
+		Border = 1
+		SpaceNum = 0
+		TipLevel = 0
+
+		Object 编辑框:Edit = 135
+		{
+			rect = 345,290, 220, 97
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 子控件:button = 136
+		{
+			rect = 0,0, 36, 36
+			BGimg = Common\Grid\Grid.bmp
+			acceptable = 1
+			removable = 0
+			mask = 1
+		}
+
+		Object 锁定Label:window = 141
+		{
+			rect = 345,290, 220, 97
+			src = npc\LockBmp.bmp
+			forecolor = 255, 245, 200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 0
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 2
+		}
+	}
+
+	Object 对方容器控件:control = 137
+	{
+		rect = 345, 88, 220, 97
+		moveable = 0
+		alpha = 0
+		visible = 1
+		size = 5,2
+		MeshMargin = 5,5
+		MeshSize = 36,36
+		Border = 1
+		SpaceNum = 0
+		TipLevel = 0
+
+		Object 编辑框:Edit = 138
+		{
+			rect = 345, 88, 220, 97
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 子控件:button = 139
+		{
+			rect = 0,0, 36, 36
+			BGimg = Common\Grid\Grid.bmp
+			acceptable = 1
+			removable = 0
+			mask = 1
+		}
+
+		Object 锁定Label:window = 140
+		{
+			rect = 345, 88, 220, 97
+			src = npc\LockBmp.bmp
+			forecolor = 255, 245, 200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 0
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 2
+		}
+	}
+}
+
+Object 卖方窗口:generalwindow = 142
+{
+	rect = 239, 94, 310, 410
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 200
+	mask = 1
+	movable = 1
+	caption = 柜台
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object StallNameLbl:Label = 143
+	{
+		rect = 258, 146, 31, 20
+		src = 
+		caption = 摊名
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object StallNameEdt:Edit = 144
+	{
+		rect = 292, 148, 126, 16
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 杂货摊位
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 0
+		maxlen = 20
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 修改摊名:Button = 145
+	{
+		rect = 425, 146, 91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\修改摊名.bmp
+		downimg = Npc\修改摊名_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 出售:Button = 146
+	{
+		rect = 258, 176,62, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\出售.bmp
+		downimg = Npc\出售_d.bmp
+		hoverimg = 
+		disableimg = Npc\出售_d.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 求购:Button = 147
+	{
+		rect = 319, 176, 62, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\求购.bmp
+		downimg = Npc\求购_d.bmp
+		hoverimg = 
+		disableimg = Npc\求购_d.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 技能:Button = 148
+	{
+		rect = 380, 176,62, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\技能.bmp
+		downimg = Npc\技能_d.bmp
+		hoverimg = 
+		disableimg = Npc\技能_d.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 192,192,192
+	}
+
+	Object 摆摊:Button = 150
+	{
+		rect = 403, 468, 91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\摆摊.bmp
+		downimg = Npc\收摊.bmp
+		hoverimg = Npc\摆摊_d.bmp
+		disableimg = Npc\收摊_d.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 192,192,192
+	}
+
+	Object 关闭:Button = 153
+	{
+		rect = 519,110, 20,35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 快速摆摊:Button = 154
+	{
+		rect = 282, 468, 91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\快速摆摊.bmp
+		downimg = Npc\快速摆摊_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 留言:Button = 290
+	{
+		rect = 470, 174,47, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\留言.bmp
+		downimg = Npc\留言_d.bmp
+		hoverimg = Npc\留言.bmp
+		disableimg = Npc\留言.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 192,192,192
+	}
+
+	Object 求购控件:window = 178
+	{
+		rect = 258, 194, 260, 265
+		moveable = 0
+		alpha = 0
+		visible = 1
+
+		Object 编辑框:Edit = 179
+		{
+			rect = 258, 194, 260, 265
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 编辑框:Edit = 181
+		{
+			rect = 258, 212, 260, 20
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 提示信息:Label = 183
+		{
+			rect = 268, 212, 260, 20
+			src = 
+			caption = 物品         数量    单价
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 10
+		}
+
+		Object 列表框:ListBox = 184
+		{
+			rect = 272, 234, 243, 185
+			moveable = 0
+			alpha = 0
+			visible = 1
+			forecolor = 255,245,200
+			Margin = 10
+			downforecolor = 255,255,255
+		}
+
+		Object 添加:Button = 189
+		{
+			rect = 287,426, 84, 23
+			src = 
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			upimg = Npc\添加.bmp
+			downimg = Npc\添加_d.bmp
+			hoverimg = 
+			disableimg = 
+			downforecolor = 205,195,150
+			hoverforecolor = 255,255,240
+			disableforecolor = 0, 0, 0
+		}
+
+		Object 删除:Button = 190
+		{
+			rect = 416,426, 84, 23
+			src = 
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			upimg = Npc\删除2.bmp
+			downimg = Npc\删除2_d.bmp
+			hoverimg = 
+			disableimg = 
+			downforecolor = 205,195,150
+			hoverforecolor = 255,255,240
+			disableforecolor = 0, 0, 0
+		}
+
+		Object 编辑框:Edit = 191
+		{
+			rect = 258, 194, 260, 20
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 提示信息:Label = 192
+		{
+			rect = 258, 194, 260, 20
+			src = 
+			caption = 求购物品
+			forecolor = 0,255,0
+			backcolor = 0, 0, 0
+			align = 1
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 2
+		}
+	}
+
+	Object 物品容器控件:control = 185
+	{
+		rect = 258, 194, 260, 265
+		src = npc\GoodsContainerCongrol.bmp
+		moveable = 0
+		alpha = 0
+		visible = 1
+		size = 6,6
+		MeshMargin = 5,5
+		MeshSize = 36,36
+		Border = 1
+		TipLevel = 2
+
+		Object 编辑框:Edit = 186
+		{
+			rect = 258, 194, 260, 265
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 子控件:button = 187
+		{
+			rect = 0,0, 36, 36
+			BGimg = Common\Grid\Grid.bmp
+			acceptable = 1
+			removable = 0
+			mask = 1
+		}
+	}
+
+	Object 技能控件 = 274
+	{
+	}
+}
+
+Object 设置价格窗口:generalwindow = 158
+{
+	rect = 235, 66, 237,145
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 200
+	mask = 1
+	movable = 1
+	caption = 设置价格
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object 物品:Label = 159
+	{
+		rect = 267, 120, 53, 16
+		src = 
+		caption = 物品
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 确定:Button = 161
+	{
+		rect = 266,165, 91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Friend\Buttons\确定.bmp
+		downimg = Friend\Buttons\确定_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 取消:Button = 162
+	{
+		rect = 363, 165, 91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Friend\Buttons\取消.bmp
+		downimg = Friend\Buttons\取消_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 名字:Label = 163
+	{
+		rect = 320, 120,120, 16
+		caption = 物品名
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 单价Lbl:Label = 164
+	{
+		rect = 267, 140, 53, 16
+		src = 
+		caption = 单价
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 关闭:Button = 200
+	{
+		rect = 482, 81, 20,35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 钱的低图:STATICBITMAP = 201
+	{
+		rect = 320,140,120, 17
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enabled = 1
+		visible = 1
+		topmost = 0
+		Stretch = 0
+	}
+
+	Object 金币:Edit = 202
+	{
+		rect = 320,140,41, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 银币:Edit = 203
+	{
+		rect = 375,140, 19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 2
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 铜币:Edit = 204
+	{
+		rect = 408,140, 19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 2
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+}
+
+Object 添加物品窗口:generalwindow = 205
+{
+	rect = 313, 169, 318, 234
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 200
+	mask = 1
+	movable = 1
+	caption = 求购物品
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object 物品类型Lbl:Label = 206
+	{
+		rect = 350, 224, 75, 17
+		src = 
+		caption = 物品类型
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 物品Lbl:Label = 207
+	{
+		rect = 480, 224, 75, 17
+		src = 
+		caption = 物品
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 编辑框:Edit = 210
+	{
+		rect = 448, 275,36,36
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 1
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 0
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 数量Lbl:Label = 211
+	{
+		rect = 350, 322, 41, 17
+		src = 
+		caption = 数量
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 数量Edt:Edit = 212
+	{
+		rect = 385, 322, 43, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 单价Lbl:Label = 213
+	{
+		rect = 431, 322, 45, 14
+		src = 
+		caption = 单价
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 确定:Button = 215
+	{
+		rect = 350, 355, 91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Friend\Buttons\确定.bmp
+		downimg = Friend\Buttons\确定_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 取消:Button = 216
+	{
+		rect = 492, 355, 91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Friend\Buttons\取消.bmp
+		downimg = Friend\Buttons\取消_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 钱的低图:STATICBITMAP = 217
+	{
+		rect = 463, 323, 120, 17
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enabled = 1
+		visible = 1
+		topmost = 0
+		Stretch = 0
+	}
+
+	Object 关闭:Button = 218
+	{
+		rect = 600, 188, 20, 35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 金币:Edit = 219
+	{
+		rect = 463, 323, 41, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 银币:Edit = 220
+	{
+		rect = 518, 323,19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 2
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 铜币:Edit = 221
+	{
+		rect = 551, 323,19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 2
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 物品图片:STATICBITMAP = 222
+	{
+		rect = 450, 277,32,32
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enabled = 1
+		visible = 1
+		topmost = 0
+		Stretch = 0
+	}
+
+	Object ComboBox1:window = 224
+	{
+		rect = 350, 247, 103,100
+		moveable = 0
+		alpha = 0
+		visible = 1
+
+		Object 编辑框:Edit = 225
+		{
+			rect = 416,260, 64,17
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 1
+			digitonly = 0
+			maxlen = 32
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 按钮:Button = 226
+		{
+			rect = 484,260, 24, 17
+			src = 
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			upimg = Common\Buttons\down_u.bmp
+			downimg = Common\Buttons\down_d.bmp
+			hoverimg = Common\Buttons\down_l.bmp
+			disableimg = 
+			downforecolor = 205,195,150
+			hoverforecolor = 255,255,240
+			disableforecolor = 0, 0, 0
+		}
+
+		Object 编辑框:Edit = 227
+		{
+			rect = 416,276, 84, 10
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 列表框:ListBox = 228
+		{
+			rect = 418,278, 80,10
+			moveable = 0
+			alpha = 0
+			visible = 1
+			forecolor = 255,245,200
+			Margin = 10
+			downforecolor = 255,255,255
+		}
+	}
+
+	Object ComboBox1:window = 229
+	{
+		rect = 480, 247, 103, 100
+		moveable = 0
+		alpha = 0
+		visible = 1
+
+		Object 编辑框:Edit = 230
+		{
+			rect = 416,260, 64,17
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 1
+			digitonly = 0
+			maxlen = 32
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 按钮:Button = 231
+		{
+			rect = 484,260, 24, 16
+			src = 
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			upimg = Common\Buttons\down_u.bmp
+			downimg = Common\Buttons\down_d.bmp
+			hoverimg = Common\Buttons\down_l.bmp
+			disableimg = 
+			downforecolor = 205,195,150
+			hoverforecolor = 255,255,240
+			disableforecolor = 0, 0, 0
+		}
+
+		Object 编辑框:Edit = 232
+		{
+			rect = 416,276, 84, 83
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 0
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 1
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 列表框:ListBox = 233
+		{
+			rect = 418,278, 80,79
+			moveable = 0
+			alpha = 0
+			visible = 0
+			forecolor = 255,245,200
+			Margin = 10
+			downforecolor = 255,255,255
+		}
+	}
+}
+
+Object 买方窗口:generalwindow = 234
+{
+	rect = 239, 94, 310, 390
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 200
+	mask = 1
+	movable = 1
+	caption = 柜台
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object StallNameLbl:Label = 235
+	{
+		rect = 258, 146, 31, 20
+		src = 
+		caption = 摊名
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object StallNameEdt:Edit = 236
+	{
+		rect = 292, 148, 86, 16
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 32
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object StallMasterNameLbl:Label = 237
+	{
+		rect = 390, 146, 31, 20
+		src = 
+		caption = 摊主
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object StallMasterNameEdt:Edit = 238
+	{
+		rect = 430, 146, 90, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 32
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 出售:Button = 239
+	{
+		rect = 258, 176,62, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\出售.bmp
+		downimg = Npc\出售_d.bmp
+		hoverimg = 
+		disableimg = Npc\出售.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 求购:Button = 240
+	{
+		rect = 319, 176, 62, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\求购.bmp
+		downimg = Npc\求购_d.bmp
+		hoverimg = 
+		disableimg = Npc\求购.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 技能:Button = 241
+	{
+		rect = 380, 176,62, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\技能.bmp
+		downimg = Npc\技能_d.bmp
+		hoverimg = 
+		disableimg = Npc\技能.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 192,192,192
+	}
+
+	Object 关闭:Button = 242
+	{
+		rect = 519,110, 20,35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 留言:Button = 291
+	{
+		rect = 470, 174,47, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\留言.bmp
+		downimg = Npc\留言_d.bmp
+		hoverimg = Npc\留言.bmp
+		disableimg = Npc\留言.bmp
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 192,192,192
+	}
+
+	Object 求购控件:window = 243
+	{
+		rect = 258, 194, 260, 265
+		moveable = 0
+		alpha = 0
+		visible = 1
+
+		Object 编辑框:Edit = 244
+		{
+			rect = 258, 194, 260, 265
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 编辑框:Edit = 245
+		{
+			rect = 258, 212, 260, 20
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 提示信息:Label = 246
+		{
+			rect = 268, 212, 260, 20
+			src = 
+			caption = 物品         数量    单价
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 10
+		}
+
+		Object 列表框:ListBox = 247
+		{
+			rect = 272, 234, 243, 185
+			moveable = 0
+			alpha = 0
+			visible = 1
+			forecolor = 255,245,200
+			Margin = 10
+			downforecolor = 255,255,255
+		}
+
+		Object 添加:Button = 248
+		{
+			rect = 287,426, 84, 23
+			src = 
+			caption = 添加
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			upimg = Common\Buttons\Button1_u.bmp
+			downimg = Common\Buttons\Button1_d.bmp
+			hoverimg = 
+			disableimg = 
+			downforecolor = 205,195,150
+			hoverforecolor = 255,255,240
+			disableforecolor = 0, 0, 0
+		}
+
+		Object 删除:Button = 249
+		{
+			rect = 416,426, 84, 23
+			src = 
+			caption = 删除
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			upimg = Common\Buttons\Button1_u.bmp
+			downimg = Common\Buttons\Button1_d.bmp
+			hoverimg = 
+			disableimg = 
+			downforecolor = 205,195,150
+			hoverforecolor = 255,255,240
+			disableforecolor = 0, 0, 0
+		}
+
+		Object 编辑框:Edit = 250
+		{
+			rect = 258, 194, 260, 20
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 提示信息:Label = 251
+		{
+			rect = 258, 194, 260, 20
+			src = 
+			caption = *******卖物品直接放入下面列表框即可*******
+			forecolor = 0,255,0
+			backcolor = 0, 0, 0
+			align = 1
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 2
+		}
+	}
+
+	Object 物品容器控件:control = 252
+	{
+		rect = 258, 194, 260, 265
+		src = npc\GoodsContainerCongrol.bmp
+		moveable = 0
+		alpha = 0
+		visible = 1
+		size = 6,6
+		MeshMargin = 5,5
+		MeshSize = 36,36
+		Border = 1
+		TipLevel = 3
+
+		Object 编辑框:Edit = 253
+		{
+			rect = 258, 194, 260, 265
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 子控件:button = 254
+		{
+			rect = 0,0, 36, 36
+			BGimg = Common\Grid\Grid.bmp
+			acceptable = 1
+			removable = 0
+			mask = 1
+		}
+	}
+}
+
+Object 购买确认窗口:generalwindow = 256
+{
+	rect = 239, 94, 220, 220
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 200
+	mask = 1
+	movable = 1
+	caption = 购买
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object 确认购买Lbl:Label = 257
+	{
+		rect = 320, 146, 120, 20
+		src = 
+		caption = 您确认要购买吗?
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 物品名Lbl:Label = 258
+	{
+		rect = 268,170, 45, 17
+		src = 
+		caption = 物品名
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 单价Lbl:Label = 259
+	{
+		rect = 268,214, 31, 20
+		src = 
+		caption = 单价
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 物品名:Edit = 260
+	{
+		rect = 320,170,80, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 32
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 关闭:Button = 264
+	{
+		rect = 486, 112, 20, 35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 钱的低图:STATICBITMAP = 265
+	{
+		rect = 320,214,120,17
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enabled = 1
+		visible = 1
+		topmost = 0
+		Stretch = 0
+	}
+
+	Object 确定:Button = 266
+	{
+		rect = 268,260, 91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Friend\Buttons\确定.bmp
+		downimg = Friend\Buttons\确定_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 取消:Button = 267
+	{
+		rect = 370, 260, 91, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Friend\Buttons\取消.bmp
+		downimg = Friend\Buttons\取消_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 数量Lbl:Label = 268
+	{
+		rect = 268,192, 31, 20
+		src = 
+		caption = 数量
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 数量Edt:Edit = 269
+	{
+		rect = 320,192, 31, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 单价Edt1:Edit = 270
+	{
+		rect = 320,214,41,17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 单价Edt2:Edit = 271
+	{
+		rect = 375,214,19,17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 单价Edt3:Edit = 272
+	{
+		rect = 408,214,19,17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 总价Lbl:Label = 285
+	{
+		rect = 268,236, 31, 20
+		src = 
+		caption = 总价
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 钱的低图:STATICBITMAP = 286
+	{
+		rect = 320,236,120,17
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enabled = 1
+		visible = 1
+		topmost = 0
+		Stretch = 0
+	}
+
+	Object 单价Edt1:Edit = 287
+	{
+		rect = 320,236,41,17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 6
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 单价Edt2:Edit = 288
+	{
+		rect = 375,236,19,17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 单价Edt3:Edit = 289
+	{
+		rect = 408,236,19,17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 4
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+}
+
+Object 留言窗口:generalwindow = 292
+{
+	rect = 239, 94, 240, 330
+	src = Common\Windows\GeneralWnd6.bmp
+	visible = 1
+	modal = 0
+	alpha = 200
+	mask = 1
+	movable = 0
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,60,36,60,10,16,12,76,0,70,36,2,36,5,18,139,36,5,18,0,54,60,19,60,63,16,7,76,54,70,19,8,37,16,16,7,22,132,41,65,11,11,8
+
+	Object 边框:Edit = 294
+	{
+		rect = 249, 124, 220, 230
+		src = Common\Windows\GeneralWnd8.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 32
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+	}
+
+	Object MsgBox:chat = 295
+	{
+		type = chat
+		rect = 251, 126, 218, 226
+		margin = 2
+		linespace = 5
+		autoscroll = 1
+		maxlines = 1000
+		alpha = 0
+		autowrap = 1
+		visible = 1
+	}
+
+	Object 发言:Edit = 296
+	{
+		rect = 249, 358, 160,20
+		src = Common\Windows\GeneralWnd8.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 0
+		maxlen = 100
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+	}
+
+	Object 图标:Button = 297
+	{
+		rect = 410, 358, 25,20
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Face_u.bmp
+		downimg = Common\Buttons\Face_d.bmp
+		hoverimg = Common\Buttons\Face_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 颜色:Button = 298
+	{
+		rect = 437, 358, 30,20
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Color_u.bmp
+		downimg = Common\Buttons\Color_d.bmp
+		hoverimg = Common\Buttons\Color_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 留言:Button = 299
+	{
+		rect = 269, 380, 84, 25
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\留言_2.bmp
+		downimg = Npc\留言_2_d.bmp
+		hoverimg = Npc\留言_2.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 关闭:Button = 300
+	{
+		rect = 364, 380, 84, 25
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\关闭.bmp
+		downimg = Npc\关闭_d.bmp
+		hoverimg = Npc\关闭.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+}
+
+Object 密码输入窗口:generalwindow = 318
+{
+	rect = 239, 94, 240, 150
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 200
+	mask = 1
+	movable = 1
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+	caption = 密码验证
+
+	Object 输入密码提示:Label = 319
+	{
+		rect = 259, 154, 70, 20
+		src = 
+		caption = 请输入密码
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 确定:Button = 321
+	{
+		rect = 259,190,93, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Friend\Buttons\确定.bmp
+		downimg = Friend\Buttons\确定_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 取消:Button = 322
+	{
+		rect = 370, 190, 93, 23
+		src = 
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Friend\Buttons\取消.bmp
+		downimg = Friend\Buttons\取消_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 关闭:Button = 323
+	{
+		rect = 485, 112, 20, 35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 密码:Edit = 324
+	{
+		rect = 360, 154, 100, 20
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 1
+		readonly = 0
+		digitonly = 0
+		maxlen = 32
+		margin = 2
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+}
+
+Object 寄售窗口:generalwindow = 325
+{
+	rect = 5, 95,600, 490
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 255
+	mask = 1
+	movable = 1
+	caption = 寄售
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object 关闭:Button = 327
+	{
+		rect = 575, 113, 30, 35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 察看:Button = 328
+	{
+		rect = 20,540,69,25
+		src = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\查看.bmp
+		downimg = Npc\查看_d.bmp
+		hoverimg = Npc\查看_l.bmp
+		disableimg = Npc\查看_b.bmp
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 寄售:Button = 329
+	{
+		rect = 94,540,69,25
+		src = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\寄售.bmp
+		downimg = Npc\寄售_d.bmp
+		hoverimg = Npc\寄售_l.bmp
+		disableimg = Npc\寄售_b.bmp
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 等级:Label = 336
+	{
+		rect = 170,545,30,20
+		src = 
+		caption = 等级
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object -:Label = 337
+	{
+		rect = 231,545,40,20
+		src = 
+		caption = -
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 名字:Label = 338
+	{
+		rect = 280,545,30,20
+		src = 
+		caption = 名字
+		forecolor = 255,245,200
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+
+	Object 等级范围1:Edit = 340
+	{
+		rect = 200,545,30,17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 3
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 等级范围2:Edit = 341
+	{
+		rect = 240,545,30,17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 1
+		maxlen = 3
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 搜索:Button = 342
+	{
+		rect = 415, 540, 69, 25
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\搜索.bmp
+		downimg = Npc\搜索_d.bmp
+		hoverimg = Npc\搜索_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 购买:Button = 343
+	{
+		rect = 489, 540, 69, 25
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\购买_2.bmp
+		downimg = Npc\购买_2_d.bmp
+		hoverimg = Npc\购买_2_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 名字:Edit = 351
+	{
+		rect = 310,545,90,17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 0
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 0
+		digitonly = 0
+		maxlen = 32
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 过滤器控件:control = 352
+	{
+		rect = 20, 159,143,380
+		movable = 0
+		alpha = 0
+
+		Object 编辑框:Edit = 353
+		{
+			rect = 20, 159,143,380
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 1
+			digitonly = 0
+			maxlen = 32
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 列表框:ListBox = 379
+		{
+			rect = 24, 161,137,376
+			moveable = 0
+			alpha = 0
+			visible = 1
+			forecolor = 255,245,200
+			Margin = 10
+			downforecolor = 255,255,255
+		}
+	}
+
+	Object 显示控件:control = 365
+	{
+		rect = 170, 159,405,380
+		movable = 0
+		alpha = 0
+
+		Object 编辑框:Edit = 372
+		{
+			rect = 170, 159,405,380
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 1
+			digitonly = 0
+			maxlen = 32
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 列表框:ListBox = 383
+		{
+			rect = 172, 161,401,376
+			moveable = 0
+			alpha = 0
+			visible = 1
+			forecolor = 255,245,200
+			Margin = 10
+			downforecolor = 255,255,255
+		}
+
+		Object 提示:Label = 384
+		{
+			rect = 180, 165,375,20
+			src = 
+			caption = 名称              出售者         等级    单价
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 2
+		}
+
+		Object 等级排序:Button = 385
+		{
+			rect = 405, 167,20,20
+			src = 
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			upimg = Npc\u.bmp
+			downimg = Npc\u.bmp
+			hoverimg = Npc\u.bmp
+			disableimg = 
+			downforecolor = 0, 0, 0
+			hoverforecolor = 0, 0, 0
+			disableforecolor = 0, 0, 0
+		}
+
+		Object 价格排序:Button = 386
+		{
+			rect = 453, 167,20,20
+			src = 
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			upimg = Npc\u.bmp
+			downimg = Npc\u.bmp
+			hoverimg = Npc\u.bmp
+			disableimg = 
+			downforecolor = 0, 0, 0
+			hoverforecolor = 0, 0, 0
+			disableforecolor = 0, 0, 0
+		}
+
+		Object 上一页:Button = 387
+		{
+			rect = 505, 513,20,20
+			src = 
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			upimg = Npc\u.bmp
+			downimg = Npc\u_d.bmp
+			hoverimg = Npc\u.bmp
+			disableimg = 
+			downforecolor = 0, 0, 0
+			hoverforecolor = 0, 0, 0
+			disableforecolor = 0, 0, 0
+		}
+
+		Object 下一页:Button = 388
+		{
+			rect = 530, 511,20,20
+			src = 
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			upimg = Npc\d.bmp
+			downimg = Npc\d_d.bmp
+			hoverimg = Npc\d.bmp
+			disableimg = 
+			downforecolor = 0, 0, 0
+			hoverforecolor = 0, 0, 0
+			disableforecolor = 0, 0, 0
+		}
+
+		Object 页数:Label = 389
+		{
+			rect = 470, 513,30,20
+			src = 
+			caption = 0/0
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 2
+		}
+	}
+
+	Object 寄售物品控件:control = 370
+	{
+		rect = 20, 159,143,360
+		movable = 0
+		alpha = 0
+
+		Object 编辑框:Edit = 390
+		{
+			rect = 20, 159,143,360
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 1
+			digitonly = 0
+			maxlen = 32
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 寄售物品:Label = 391
+		{
+			rect = 66,195 ,60,20
+			src = 
+			caption = 寄售物品
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 2
+		}
+
+		Object 寄售价格:Label = 392
+		{
+			rect = 66,285 ,60,20
+			src = 
+			caption = 寄售单价
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 2
+		}
+
+		Object 手续费:Label = 393
+		{
+			rect = 66,355 ,60,20
+			src = 
+			caption = 手续费
+			forecolor = 255,245,200
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 2
+		}
+
+		Object 物品显示:STATICBITMAP = 394
+		{
+			rect = 73,219 ,36,36
+			src = Common\Grid\Grid.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			margin = 2
+		}
+
+		Object 物品图片:STATICBITMAP = 395
+		{
+			rect = 75,222 ,32,32
+			caption = staticBitmap
+			forecolor = 0, 0, 0
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enabled = 1
+			visible = 1
+			topmost = 0
+			Stretch = 0
+		}
+
+		Object 寄售价格图:STATICBITMAP = 396
+		{
+			rect = 31,305, 120, 17
+			src = Common\Money\Money.bmp
+			caption = staticBitmap
+			forecolor = 0, 0, 0
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enabled = 1
+			visible = 1
+			topmost = 0
+			Stretch = 0
+		}
+
+		Object 手续费图:STATICBITMAP = 397
+		{
+			rect = 31,375, 120, 17
+			src = Common\Money\Money.bmp
+			caption = staticBitmap
+			forecolor = 0, 0, 0
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enabled = 1
+			visible = 1
+			topmost = 0
+			Stretch = 0
+		}
+
+		Object 价格1:Edit = 403
+		{
+			rect = 31,305, 41, 17
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 1
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 价格2:Edit = 404
+		{
+			rect = 86,305,19, 17
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 1
+			maxlen = 2
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 价格3:Edit = 405
+		{
+			rect = 119,305,19, 17
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 1
+			maxlen = 2
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 价格1:Edit = 406
+		{
+			rect = 31,375, 41, 17
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 1
+			digitonly = 1
+			maxlen = 32
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 价格2:Edit = 407
+		{
+			rect = 86,375, 19, 17
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 1
+			digitonly = 1
+			maxlen = 32
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 价格3:Edit = 408
+		{
+			rect = 119,375,19, 17
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 0
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 1
+			digitonly = 1
+			maxlen = 32
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 开始寄售:Button = 409
+		{
+			rect = 46, 449,91,25
+			src = 
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			upimg = Npc\开始寄售.bmp
+			downimg = Npc\开始寄售_d.bmp
+			hoverimg = Npc\开始寄售_l.bmp
+			disableimg = 
+			downforecolor = 0, 0, 0
+			hoverforecolor = 0, 0, 0
+			disableforecolor = 0, 0, 0
+		}
+	}
+
+	Object 取消拍卖:Button = 411
+	{
+		rect = 465, 540, 91, 25
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\取消寄售.bmp
+		downimg = Npc\取消寄售_d.bmp
+		hoverimg = Npc\取消寄售_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 排序提示:Label = 468
+	{
+		rect = 360,138,250,18
+		src = 
+		caption = 排序只对当前页面有效
+		forecolor = 30,245,30
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		margin = 2
+	}
+}
+
+Object 寄存窗口:generalwindow = 412
+{
+	rect = 5, 95,306, 380
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 255
+	mask = 1
+	movable = 1
+	caption = 寄存处
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object 关闭:Button = 413
+	{
+		rect = 281, 113, 30, 35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 钱的低图:STATICBITMAP = 424
+	{
+		rect = 25, 435,120, 17
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enabled = 1
+		visible = 1
+		topmost = 0
+		Stretch = 0
+	}
+
+	Object 金币:Edit = 425
+	{
+		rect = 25, 435, 41, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 银币:Edit = 426
+	{
+		rect = 80, 435,19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 铜币:Edit = 427
+	{
+		rect = 113, 435,19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 取钱:Button = 428
+	{
+		rect = 212,432, 84, 23
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\取.bmp
+		downimg = Npc\取_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 物品容器控件:control = 429
+	{
+		rect = 25, 158, 256,270
+		src = npc\GoodsContainerCongrol.bmp
+		moveable = 0
+		alpha = 0
+		visible = 1
+		size = 6,6
+		MeshMargin = 5,5
+		MeshSize = 36,36
+		Border = 1
+		TipLevel = 0
+
+		Object 编辑框:Edit = 430
+		{
+			rect = 25, 158, 256, 270
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 子控件:button = 431
+		{
+			rect = 0,0, 36, 36
+			BGimg = Common\Grid\Grid.bmp
+			acceptable = 1
+			removable = 0
+			mask = 1
+		}
+	}
+}
+
+Object 氏族仓库:generalwindow = 448
+{
+	rect = 5, 95,306, 395
+	src = Common\Windows\GeneralWnd1.bmp
+	visible = 1
+	modal = 0
+	alpha = 255
+	mask = 1
+	movable = 1
+	caption = 仓库
+	forecolor = 255,245,200
+	topmost = 1
+	borderalpha = 256
+	paramlist = 0,0,184,76,184,28,15,13,199,0,78,76,7,76,4,16,254,76,4,16,0,92,184,10,184,93,15,7,199,92,78,10,16,71,16,16,11,41,243,52,43,13,59,14
+
+	Object 关闭:Button = 449
+	{
+		rect = 281, 113, 30, 35
+		src = 
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Common\Buttons\Close_u.bmp
+		downimg = Common\Buttons\Close_d.bmp
+		hoverimg = Common\Buttons\Close_l.bmp
+		disableimg = 
+		downforecolor = 0, 0, 0
+		hoverforecolor = 0, 0, 0
+		disableforecolor = 0, 0, 0
+	}
+
+	Object 钱的低图:STATICBITMAP = 450
+	{
+		rect = 161, 445,120, 17
+		src = Common\Money\Money.bmp
+		caption = staticBitmap
+		forecolor = 0, 0, 0
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enabled = 1
+		visible = 1
+		topmost = 0
+		Stretch = 0
+	}
+
+	Object 金币:Edit = 451
+	{
+		rect = 161, 445, 41, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 银币:Edit = 452
+	{
+		rect = 216, 445,19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 铜币:Edit = 453
+	{
+		rect = 249, 445,19, 17
+		src = Common\Windows\GeneralWnd7.bmp
+		caption = 
+		forecolor = 255, 255, 255
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		multiline = 0
+		autowrap = 0
+		password = 0
+		readonly = 1
+		digitonly = 0
+		maxlen = 12
+		margin = 2
+		passwordchar = 
+		paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+	}
+
+	Object 存钱:Button = 454
+	{
+		rect = 25,443, 84, 23
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\存.bmp
+		downimg = Npc\存_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 取钱:Button = 455
+	{
+		rect = 92,443, 84, 23
+		backcolor = 0, 0, 0
+		align = 0
+		alpha = 256
+		mask = 1
+		modal = 0
+		enable = 1
+		movable = 0
+		visible = 1
+		topmost = 0
+		upimg = Npc\取.bmp
+		downimg = Npc\取_d.bmp
+		hoverimg = 
+		disableimg = 
+		downforecolor = 205,195,150
+		hoverforecolor = 255,255,240
+		forecolor = 255,245,200
+	}
+
+	Object 物品容器控件:control = 460
+	{
+		rect = 25, 158, 256, 270
+		src = npc\GoodsContainerCongrol.bmp
+		moveable = 0
+		alpha = 0
+		visible = 1
+		size = 6,6
+		MeshMargin = 5,5
+		MeshSize = 36,36
+		Border = 1
+		TipLevel = 0
+
+		Object 编辑框:Edit = 461
+		{
+			rect = 25, 158, 256, 270
+			src = Common\Windows\GeneralWnd8.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,42,17,42,0,13,4,55,0,21,17,0,17,3,12,73,17,3,12,0,29,42,12,42,37,13,4,55,29,21,12,43,17,12,12,3,4,70,33
+		}
+
+		Object 子控件:button = 462
+		{
+			rect = 0,0, 36, 36
+			BGimg = Common\Grid\Grid.bmp
+			acceptable = 1
+			removable = 0
+			mask = 1
+		}
+	}
+
+	Object 物品容器控件:control = 463
+	{
+		rect = 25, 435, 256, 50
+		src = npc\GoodsContainerCongrol.bmp
+		moveable = 0
+		alpha = 0
+		visible = 1
+		size = 6,1
+		MeshMargin = 5,5
+		MeshSize = 36,36
+		Border = 0
+		TipLevel = 0
+
+		Object 编辑框:Edit = 464
+		{
+			rect = 25, 435, 256, 60
+			src = Common\Windows\GeneralWnd7.bmp
+			caption = 
+			forecolor = 255, 255, 255
+			backcolor = 0, 0, 0
+			align = 0
+			alpha = 256
+			mask = 1
+			modal = 0
+			enable = 1
+			movable = 0
+			visible = 1
+			topmost = 0
+			multiline = 0
+			autowrap = 0
+			password = 0
+			readonly = 0
+			digitonly = 0
+			maxlen = 4
+			margin = 2
+			passwordchar = 
+			paramlist = 0,0,35,8,35,0,33,2,68,0,13,8,0,8,2,6,79,8,2,6,0,14,35,3,35,15,32,2,67,14,14,3,6,8,6,6,2,2,77,13
+		}
+
+		Object 子控件:button = 465
+		{
+			rect = 0,0, 36, 36
+			BGimg = Common\Grid\Grid.bmp
+			acceptable = 1
+			removable = 0
+			mask = 1
+		}
+	}
+}

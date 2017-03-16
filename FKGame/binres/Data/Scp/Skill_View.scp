@@ -1,0 +1,5138 @@
+///////////////////////////////
+// *******  资源脚本  *******
+//
+//  每行最大长度2048字节
+///////////////////////////////
+
+MaxID = 815              
+
+Object 技能动画 = 1
+{
+
+	Object 普通攻击 = 2
+	{
+
+		Object 1 = 3
+		{
+			Base_ActIDAttack = 11
+		}
+	}
+
+	Object 战士技能开始－寒光斩 = 4
+	{
+
+		Object 1级 = 5
+		{
+			Base_ActIDAttack = 11,14
+			Ex_MagicIDRun = 168
+		}
+	}
+
+	Object 战士技能－破碎诀 = 6
+	{
+
+		Object 1级 = 7
+		{
+			Base_ActIDAttack = 11,14
+			Ex_MagicIDRun = 169
+		}
+	}
+
+	Object 战士技能－地裂斩 = 8
+	{
+
+		Object 1级 = 9
+		{
+			Base_ActIDAttack = 11,14
+			Ex_MagicIDRun = 510
+			Base_SoundIDAttack = 1203
+		}
+	}
+
+	Object 战士技能－虎啸龙吟 = 10
+	{
+
+		Object 1级 = 11
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 8
+			Ex_MagicIDRun = 47
+			Base_SoundIDAttack = 1202
+		}
+	}
+
+	Object 战士技能－羞辱 = 12
+	{
+
+		Object 1级 = 13
+		{
+			Base_ActIDAttack = 11,14
+			Base_MagicIDAttack = 47
+			Base_SoundIDAttack = 1205
+		}
+	}
+
+	Object 战士技能－狂扫八方 = 14
+	{
+
+		Object 1级 = 15
+		{
+			Base_ActIDAttack = 12,15
+			Ex_MagicIDRun = 172
+		}
+	}
+
+	Object 战士技能－疾风斩 = 16
+	{
+
+		Object 1级 = 17
+		{
+			Base_ActIDAttack = 11,14
+			Base_SoundIDAttack = 1207
+		}
+	}
+
+	Object 战士技能－奔雷 = 18
+	{
+
+		Object 1级 = 19
+		{
+			Base_ActIDAttack = 12,15
+			Ex_MagicIDRun = 77
+			Ex_MagicIDExplode = 267
+		}
+	}
+
+	Object 战士技能－决灭斩 = 20
+	{
+
+		Object 1级 = 21
+		{
+			Base_ActIDAttack = 12,15
+			Base_MagicIDAttack = 309
+			Ex_MagicIDRun = 524
+		}
+	}
+
+	Object 战士技能－惊天一击 = 22
+	{
+
+		Object 1级 = 23
+		{
+			Base_ActIDAttack = 11,14
+			Ex_MagicIDRun = 173
+			Ex_MagicIDExplode = 53
+		}
+	}
+
+	Object 战士技能－战意滔天 = 24
+	{
+
+		Object 1级 = 25
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 8
+			Base_MagicIDAttack = 521
+			Ex_MagicIDExplode = 48
+			Base_SoundIDAttack = 1211
+		}
+	}
+
+	Object 战士技能－盾壁如山 = 26
+	{
+
+		Object 1级 = 27
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 8
+			Base_MagicIDAttack = 46
+		}
+	}
+
+	Object 战士技能－叫阵 = 28
+	{
+
+		Object 1级 = 29
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 8
+			Base_MagicIDAttack = 47
+			Base_SoundIDAttack = 1213
+		}
+	}
+
+	Object 战士技能－金钟御体 = 30
+	{
+
+		Object 1级 = 31
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 8
+			Base_MagicIDAttack = 309
+			Ex_MagicIDExplode = 87
+		}
+	}
+
+	Object 战士技能－劫杀 = 32
+	{
+
+		Object 1级 = 33
+		{
+			Base_ActIDAttack = 11,14
+			Ex_MagicIDRun = 525
+			Ex_bRunMagicRealTime = 1
+			Base_SoundIDAttack = 1216
+		}
+	}
+
+	Object 战士技能－逆血搏杀 = 34
+	{
+
+		Object 1级 = 35
+		{
+			Base_ActIDAttack = 12,15
+			Ex_MagicIDRun = 526
+			Ex_bRunMagicRealTime = 1
+		}
+	}
+
+	Object 战士技能－战士切换 = 36
+	{
+
+		Object 1级 = 37
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 8
+			Base_MagicIDAttack = 48
+			Base_SoundIDAttack = 1217
+		}
+	}
+
+	Object 法师技能开始－疾火珠 = 38
+	{
+
+		Object 1级 = 39
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 120
+			Ex_MagicIDRun = 4
+			Ex_MagicIDExplode = 51
+		}
+	}
+
+	Object 法师技能－流光护体 = 40
+	{
+
+		Object 1级 = 41
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 116
+			Base_MagicIDAttack = 42
+		}
+	}
+
+	Object 法师技能－寒冰箭 = 42
+	{
+
+		Object 1级 = 43
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 70
+			Ex_MagicIDExplode = 52
+			Ex_FlyTileTime = 60
+		}
+	}
+
+	Object 法师技能－炽火随身 = 44
+	{
+
+		Object 1级 = 45
+		{
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 120
+			Ex_MagicIDExplode = 92
+		}
+	}
+
+	Object 法师技能－化影移形 = 46
+	{
+
+		Object 1级 = 47
+		{
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 22
+			Base_SoundIDAttack = 1308
+		}
+	}
+
+	Object 法师技能－冰瀑连环 = 48
+	{
+
+		Object 1级 = 49
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 111
+			Base_MagicIDAttack = 311
+			Ex_MagicIDRun = 71
+			Ex_Delay = 250
+			Ex_Time = 5
+			Base_SoundIDPreAttack = 1310
+			Base_bSoundLoopPreAttack = 1
+			Base_SoundIDAttack = 1309
+		}
+	}
+
+	Object 法师技能－归元 = 50
+	{
+
+		Object 1级 = 51
+		{
+			Base_ActIDAttack = 9
+			Base_SoundIDAttack = 1311
+		}
+	}
+
+	Object 法师技能－炙炎破 = 52
+	{
+
+		Object 1级 = 53
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 511
+			Ex_MagicIDRun = 69
+			Ex_MagicIDExplode = 92
+		}
+	}
+
+	Object 法师技能－灵符御敌 = 54
+	{
+
+		Object 1级 = 55
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 7
+			Base_MagicIDPreAttack = 116
+			Base_MagicIDBeHit = 116
+			Base_SoundIDAttack = 1314
+		}
+	}
+
+	Object 法师技能－悬冰冻 = 56
+	{
+
+		Object 1级 = 57
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 111
+			Base_SoundIDPreAttack = 1317
+			Base_SoundIDAttack = 1316
+		}
+	}
+
+	Object 法师技能－雷霆之怒 = 58
+	{
+
+		Object 1级 = 59
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDAttack = 311
+			Base_SoundIDAttack = 1318
+		}
+	}
+
+	Object 法师技能－火舞红尘 = 60
+	{
+
+		Object 1级 = 61
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 7
+			Ex_MagicIDRun = 7
+		}
+	}
+
+	Object 法师技能－暴雪寒流 = 62
+	{
+
+		Object 1级 = 63
+		{
+			Base_ActIDAttack = 7
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 118
+			Ex_MagicIDRun = 71
+			Ex_Width = 6
+			Ex_Delay = 100
+			Base_SoundIDAttack = 1321
+			Base_bSoundLoopeAttack = 1
+		}
+	}
+
+	Object 法师技能－玄冰破 = 64
+	{
+
+		Object 1级 = 65
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 3
+			Ex_MagicIDExplode = 195
+		}
+	}
+
+	Object 法师技能－地火焦熔 = 66
+	{
+
+		Object 1级 = 67
+		{
+			Base_ActIDAttack = 10
+			Base_MagicIDAttack = 511
+			Ex_MagicIDRun = 68
+			Ex_nLoopTime = 10000
+		}
+	}
+
+	Object 法师技能－雾隐迷踪 = 68
+	{
+
+		Object 1级 = 69
+		{
+			Base_ActIDAttack = 9
+			Base_SoundIDAttack = 1325
+		}
+	}
+
+	Object 法师技能－法师切换 = 70
+	{
+
+		Object 1级 = 71
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 7
+			Base_MagicIDAttack = 41
+			Base_SoundIDAttack = 1328
+		}
+	}
+
+	Object 牧师技能开始－紫电 = 72
+	{
+
+		Object 1级 = 73
+		{
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 77
+			Ex_MagicIDExplode = 50
+		}
+	}
+
+	Object 牧师技能－玉泉 = 74
+	{
+
+		Object 1级 = 75
+		{
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 119
+			Ex_MagicIDExplode = 45
+		}
+	}
+
+	Object 牧师技能－真元 = 76
+	{
+
+		Object 1级 = 77
+		{
+			Base_ActIDAttack = 10
+			Base_MagicIDAttack = 113
+			Ex_MagicIDExplode = 6
+		}
+	}
+
+	Object 牧师技能－荆棘丛生 = 78
+	{
+
+		Object 1级 = 79
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDExplode = 36
+		}
+	}
+
+	Object 牧师技能－甘露 = 80
+	{
+
+		Object 1级 = 81
+		{
+			Base_ActIDAttack = 10
+			Ex_MagicIDRun = 154
+			Base_SoundIDAttack = 1405
+		}
+	}
+
+	Object 牧师技能－灵光禁魔 = 82
+	{
+
+		Object 1级 = 83
+		{
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 44
+			Ex_MagicIDExplode = 223
+		}
+	}
+
+	Object 牧师技能－还魂术 = 84
+	{
+
+		Object 1级 = 85
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 116
+			Ex_MagicIDExplode = 212
+			Base_SoundIDPreAttack = 1408
+			Base_bSoundLoopPreAttack = 1
+		}
+	}
+
+	Object 牧师技能－妙手回春 = 86
+	{
+
+		Object 1级 = 87
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 116
+			Base_MagicIDAttack = 116
+			Ex_MagicIDExplode = 43
+			Base_SoundIDPreAttack = 1410
+		}
+	}
+
+	Object 牧师技能－鼎力回天 = 88
+	{
+
+		Object 1级 = 89
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 119
+			Ex_MagicIDExplode = 210
+		}
+	}
+
+	Object 牧师技能－斗气 = 90
+	{
+
+		Object 1级 = 91
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Base_MagicIDAttack = 47
+			Ex_MagicIDExplode = 159
+			Base_SoundIDPreAttack = 1414
+			Base_SoundIDAttack = 1413
+		}
+	}
+
+	Object 牧师技能－祥光普照 = 92
+	{
+
+		Object 1级 = 93
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDPreAttack = 116
+			Base_MagicIDAttack = 312
+			Ex_MagicIDRun = 73
+			Ex_nCanCtrl = 1
+			Ex_nLoopTime = 6000
+			Base_SoundIDAttack = 1415
+		}
+	}
+
+	Object 牧师技能－厉凿 = 94
+	{
+
+		Object 1级 = 95
+		{
+			Base_ActIDAttack = 11
+			Ex_MagicIDRun = 205
+			Ex_bRunMagicRealTime = 1
+			Base_SoundIDAttack = 1417
+		}
+	}
+
+	Object 牧师技能－幻爪无形 = 96
+	{
+
+		Object 1级 = 97
+		{
+			Base_ActIDAttack = 12
+			Ex_MagicIDRun = 206
+			Ex_bRunMagicRealTime = 1
+			Base_SoundIDAttack = 1418
+		}
+	}
+
+	Object 牧师技能－旋龙索 = 98
+	{
+
+		Object 1级 = 99
+		{
+			Base_ActIDAttack = 13
+			Ex_MagicIDRun = 208
+			Base_SoundIDAttack = 1419
+		}
+	}
+
+	Object 牧师技能－挑衅 = 100
+	{
+
+		Object 1级 = 101
+		{
+			Base_ActIDAttack = 8
+			Base_MagicIDAttack = 47
+			Base_SoundIDAttack = 1420
+		}
+	}
+
+	Object 牧师技能－合掌断魂 = 102
+	{
+
+		Object 1级 = 103
+		{
+			Base_ActIDAttack = 12
+			Base_MagicIDAttack = 312
+			Ex_MagicIDRun = 207
+			Ex_bRunMagicRealTime = 1
+			Base_SoundIDAttack = 1421
+		}
+	}
+
+	Object 牧师技能－牧师切换 = 104
+	{
+
+		Object 1级 = 105
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 7
+			Base_MagicIDAttack = 9
+			Base_SoundIDAttack = 1422
+		}
+	}
+
+	Object 暗巫技能开始－魔兽奉召 = 106
+	{
+
+		Object 1级 = 107
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 115
+			Ex_MagicIDRun = 164
+			Base_SoundIDPreAttack = 1505
+			Base_bSoundLoopPreAttack = 1
+		}
+	}
+
+	Object 暗巫技能－暗影 = 108
+	{
+
+		Object 1级 = 109
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 121
+			Ex_MagicIDRun = 74
+			Ex_MagicIDExplode = 94
+			Base_SoundIDPreAttack = 1502
+		}
+	}
+
+	Object 暗巫技能－冥念蚀魂 = 110
+	{
+
+		Object 1级 = 111
+		{
+			Base_ActIDAttack = 9
+			Ex_MagicIDExplode = 91
+			Base_SoundIDAttack = 1503
+		}
+	}
+
+	Object 暗巫技能－化血 = 112
+	{
+
+		Object 1级 = 113
+		{
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 112
+			Base_MagicIDAttack = 143
+			Base_SoundIDAttack = 1509
+		}
+	}
+
+	Object 暗巫技能－肝胆俱裂 = 114
+	{
+
+		Object 1级 = 115
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 112
+			Base_SoundIDPreAttack = 1508
+			Base_SoundIDAttack = 1507
+		}
+	}
+
+	Object 暗巫技能－举步维艰 = 116
+	{
+
+		Object 1级 = 117
+		{
+			Base_ActIDAttack = 10
+			Base_SoundIDAttack = 1506
+		}
+	}
+
+	Object 暗巫技能－魅影相随 = 118
+	{
+
+		Object 1级 = 119
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 115
+			Ex_MagicIDRun = 164
+			Base_SoundIDPreAttack = 1505
+			Base_bSoundLoopPreAttack = 1
+		}
+	}
+
+	Object 暗巫技能－凝魔 = 120
+	{
+
+		Object 1级 = 121
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDExplode = 155
+		}
+	}
+
+	Object 暗巫技能－刑伤 = 122
+	{
+
+		Object 1级 = 123
+		{
+			Base_ActIDAttack = 7
+			Base_SoundIDAttack = 1524
+		}
+	}
+
+	Object 暗巫技能－偿还 = 124
+	{
+
+		Object 1级 = 125
+		{
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 211
+			Base_SoundIDAttack = 1525
+		}
+	}
+
+	Object 暗巫技能－暴烈狂魔 = 126
+	{
+
+		Object 1级 = 127
+		{
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 221
+			Base_SoundIDAttack = 1526
+		}
+	}
+
+	Object 暗巫技能－化功巫毒 = 128
+	{
+
+		Object 1级 = 129
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 119
+			Ex_MagicIDExplode = 95
+		}
+	}
+
+	Object 暗巫技能－蚀皮腐骨 = 130
+	{
+
+		Object 1级 = 131
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 121
+			Ex_MagicIDExplode = 218
+			Base_SoundIDAttack = 1510
+		}
+	}
+
+	Object 暗巫技能－索命毒雾 = 132
+	{
+
+		Object 1级 = 133
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 7
+			Base_MagicIDAttack = 119
+			Ex_MagicIDExplode = 187
+		}
+	}
+
+	Object 暗巫技能－催魂摄魄 = 134
+	{
+
+		Object 1级 = 135
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 507
+			Base_SoundIDPreAttack = 1513
+			Base_SoundIDAttack = 1512
+		}
+	}
+
+	Object 暗巫技能－缚龙魔阵 = 136
+	{
+
+		Object 1级 = 137
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 7
+			Base_MagicIDPreAttack = 507
+			Base_MagicIDAttack = 310
+			Ex_MagicIDExplode = 314
+			Base_SoundIDPreAttack = 1517
+		}
+	}
+
+	Object 暗巫技能－暗巫切换 = 138
+	{
+
+		Object 1级 = 139
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 7
+			Base_MagicIDAttack = 32
+			Base_SoundIDAttack = 1527
+		}
+	}
+
+	Object 被动技能1 = 140
+	{
+
+		Object 1级 = 141
+		{
+			Base_ActIDAttack = 11
+		}
+	}
+
+	Object 被动技能2 = 142
+	{
+
+		Object 1级 = 143
+		{
+			Base_ActIDAttack = 11
+		}
+	}
+
+	Object 被动技能3 = 144
+	{
+
+		Object 1级 = 145
+		{
+			Base_ActIDAttack = 11
+		}
+	}
+
+	Object 被动技能4 = 146
+	{
+
+		Object 1级 = 147
+		{
+			Base_ActIDAttack = 11
+		}
+	}
+
+	Object 被动技能5 = 148
+	{
+
+		Object 1级 = 149
+		{
+			Base_ActIDAttack = 11
+		}
+	}
+
+	Object 召唤兽普通攻击 = 150
+	{
+
+		Object 1级 = 151
+		{
+			Base_ActIDAttack = 19
+		}
+	}
+
+	Object 召唤兽法术攻击 = 152
+	{
+
+		Object 1级 = 153
+		{
+			Base_ActIDAttack = 19
+			Ex_MagicIDRun = 77
+			Ex_MagicIDExplode = 50
+			Base_SoundIDAttack = 1045
+		}
+	}
+
+	Object 单体技能（普通技能） = 154
+	{
+
+		Object 1怪物普通攻击 = 155
+		{
+			Base_ActIDAttack = 11
+		}
+
+		Object 2怪物打断攻击 = 156
+		{
+			Base_ActIDAttack = 11
+		}
+
+		Object 3单体加BUFF = 157
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 47
+			Base_SoundIDAttack = 1202
+		}
+
+		Object 4单体加法攻/防 = 158
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 116
+			Base_MagicIDAttack = 42
+		}
+
+		Object 5单体加DEBUFF = 159
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+		}
+
+		Object 6狂暴 = 160
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 47
+			Ex_MagicIDExplode = 48
+			Base_SoundIDAttack = 1211
+		}
+
+		Object 7单体治疗持续回血 = 161
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 119
+			Ex_MagicIDExplode = 45
+		}
+
+		Object 8单体治疗瞬间回血 = 162
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 116
+			Base_MagicIDAttack = 116
+			Ex_MagicIDExplode = 43
+			Base_SoundIDPreAttack = 1410
+		}
+
+		Object 9清除单体不良状态 = 163
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 154
+			Base_SoundIDAttack = 1405
+		}
+
+		Object 10单体禁魔 = 164
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 44
+			Ex_MagicIDExplode = 223
+		}
+
+		Object 11吸HP = 165
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+			Ex_MagicIDExplode = 143
+			Base_SoundIDAttack = 1509
+		}
+
+		Object 12吸MP = 166
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+			Ex_MagicIDExplode = 156
+			Base_SoundIDAttack = 1509
+		}
+
+		Object 13混乱 = 167
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 112
+			Base_SoundIDPreAttack = 1508
+			Base_SoundIDAttack = 1507
+		}
+
+		Object 14定身不攻击且不受伤害 = 168
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 112
+			Base_MagicIDAttack = 112
+			Base_SoundIDPreAttack = 1513
+			Base_SoundIDAttack = 1512
+		}
+
+		Object 15定身 = 169
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 112
+			Base_SoundIDAttack = 1517
+		}
+
+		Object 16飞行小火球（不飞行） = 170
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 120
+			Ex_MagicIDExplode = 51
+		}
+
+		Object 17飞行大火球 = 171
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 120
+			Ex_MagicIDExplode = 51
+		}
+
+		Object 18小型冰弹 = 172
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDExplode = 52
+		}
+
+		Object 19飞行冰箭 = 173
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDExplode = 52
+		}
+
+		Object 20小型电球 = 174
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDExplode = 50
+			Base_SoundIDAttack = 1401
+		}
+
+		Object 21飞行电球 = 175
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDExplode = 50
+			Base_SoundIDAttack = 1401
+		}
+
+		Object 22飞行暗球 = 176
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 121
+			Ex_MagicIDExplode = 94
+			Base_SoundIDPreAttack = 1502
+		}
+
+		Object 23强力飞行暗球 = 177
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 121
+			Ex_MagicIDExplode = 94
+			Base_SoundIDPreAttack = 1502
+		}
+
+		Object 24火舞红尘 = 178
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 7
+		}
+
+		Object 25冰环 = 179
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 236
+		}
+
+		Object 26电阵 = 180
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 252
+		}
+
+		Object 27冰锥 = 181
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 111
+			Ex_MagicIDExplode = 237
+			Base_SoundIDAttack = 1323
+		}
+
+		Object 28大BOSS自杀 = 182
+		{
+			Base_ActIDAttack = 3
+			Ex_MagicIDRun = 301
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 39暗BOSS自杀 = 183
+		{
+			Base_ActIDAttack = 3
+			Ex_MagicIDRun = 306
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 40鱼BOSS攻击（无光效） = 184
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 22
+			Base_ActIDAttackUseType = 1
+		}
+	}
+
+	Object 单体技能（飞行系） = 185
+	{
+
+		Object 1飞行小火球 = 186
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 120
+			Ex_MagicIDRun = 69
+			Ex_MagicIDExplode = 51
+		}
+
+		Object 2飞行大火球 = 187
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 120
+			Ex_MagicIDRun = 4
+			Ex_MagicIDExplode = 51
+		}
+
+		Object 3小型冰弹 = 188
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 3
+			Ex_MagicIDExplode = 52
+		}
+
+		Object 4飞行冰箭 = 189
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 70
+			Ex_MagicIDExplode = 52
+		}
+
+		Object 5小型电球 = 190
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 241
+			Ex_MagicIDExplode = 50
+		}
+
+		Object 6飞行电球 = 191
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 77
+			Ex_MagicIDExplode = 50
+		}
+
+		Object 7飞行暗球 = 192
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 121
+			Ex_MagicIDRun = 74
+			Ex_MagicIDExplode = 94
+			Base_SoundIDPreAttack = 1502
+		}
+
+		Object 8强力飞行暗球 = 193
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 112
+			Ex_MagicIDRun = 265
+			Ex_MagicIDExplode = 94
+			Base_SoundIDPreAttack = 1502
+		}
+
+		Object 9远程飞镖 = 194
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 101
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 10飞镖_冰 = 195
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 101
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 11飞镖_电 = 196
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 102
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 12飞镖_毒 = 197
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 103
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 13飞镖_火 = 198
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 104
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 14远程箭 = 199
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 500
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 15箭_带冰 = 200
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 105
+			Ex_MagicIDExplode = 502
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 16箭_带电 = 201
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 106
+			Ex_MagicIDExplode = 93
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 17箭_带毒 = 202
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 107
+			Ex_MagicIDExplode = 156
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 18箭_带火 = 203
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 108
+			Ex_MagicIDExplode = 51
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 19飞行毒球 = 204
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 119
+			Ex_MagicIDRun = 75
+			Ex_MagicIDExplode = 95
+			Base_SoundIDAttack = 1503
+		}
+
+		Object 20高级飞行毒球 = 205
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 119
+			Ex_MagicIDRun = 66
+			Ex_MagicIDExplode = 95
+			Base_SoundIDAttack = 1503
+		}
+
+		Object 21远程扔石头 = 206
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 85
+			Base_SoundIDAttack = 1208
+		}
+
+		Object 22飞行石头带火 = 207
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 82
+			Ex_MagicIDExplode = 51
+			Base_SoundIDAttack = 1208
+		}
+
+		Object 23飞行石头带毒 = 208
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 83
+			Ex_MagicIDExplode = 95
+			Base_SoundIDAttack = 1208
+		}
+
+		Object 24飞行石头带冰 = 209
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 84
+			Ex_MagicIDExplode = 52
+			Base_SoundIDAttack = 1208
+		}
+
+		Object 25飞行熔岩块 = 210
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 86
+			Ex_MagicIDExplode = 51
+			Base_SoundIDAttack = 1208
+		}
+
+		Object 26喷网 = 211
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 295
+		}
+
+		Object 27大型喷网 = 212
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 294
+		}
+
+		Object 28毒雾（无） = 213
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+		}
+
+		Object 29喷蛇毒（无） = 214
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+		}
+
+		Object 30长矛 = 215
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 97
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 31长矛_带冰 = 216
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 97
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 32长矛_带电 = 217
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 98
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 33长矛_带毒 = 218
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 99
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 34长矛_带火 = 219
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 100
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 35暗云攻击 = 220
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 112
+			Ex_MagicIDRun = 76
+			Ex_MagicIDExplode = 94
+			Base_SoundIDPreAttack = 1502
+			Base_SoundIDAttack = 1501
+		}
+
+		Object 36闪电箭 = 221
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 109
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 37幽灵气团攻击 = 222
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 112
+			Ex_MagicIDRun = 67
+			Ex_MagicIDExplode = 94
+			Base_SoundIDPreAttack = 1502
+			Base_SoundIDAttack = 1501
+		}
+
+		Object 38无属性箭 = 223
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 501
+			Ex_MagicIDExplode = 503
+			Base_SoundIDAttack = 1519
+		}
+
+		Object 39大BOSS飞行技能 = 224
+		{
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 303
+			Ex_MagicIDExplode = 304
+		}
+
+		Object 40强力飞行暗球 = 225
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 21
+			Ex_MagicIDRun = 265
+			Ex_MagicIDExplode = 94
+			Base_SoundIDPreAttack = 1502
+			Base_ActIDAttackUseType = 1
+		}
+	}
+
+	Object 单体技能（对同个目标的多单元落雷型魔法） = 226
+	{
+
+		Object 1降落小火球（单个） = 227
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 240
+			Ex_Delay = 250
+			Ex_Time = 1
+			Base_SoundIDAttack = 1312
+		}
+
+		Object 2降落大火球（单个） = 228
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 239
+			Ex_Delay = 250
+			Ex_Time = 1
+			Base_SoundIDAttack = 1312
+		}
+
+		Object 3降落小火球（5个） = 229
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 240
+			Ex_Delay = 250
+			Ex_Time = 5
+			Base_SoundIDPreAttack = 1310
+			Base_bSoundLoopPreAttack = 1
+			Base_SoundIDAttack = 1605
+		}
+
+		Object 4降落冰弹（单个） = 230
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 244
+			Ex_Delay = 250
+			Ex_Time = 1
+			Base_SoundIDAttack = 1323
+		}
+
+		Object 5降落冰箭（单个） = 231
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 71
+			Ex_Delay = 250
+			Ex_Time = 1
+			Base_SoundIDAttack = 1323
+		}
+
+		Object 6冰瀑连环（5个） = 232
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 71
+			Ex_Delay = 250
+			Ex_Time = 5
+			Base_SoundIDPreAttack = 1310
+			Base_bSoundLoopPreAttack = 1
+			Base_SoundIDAttack = 1309
+		}
+
+		Object 7小闪电（单个） = 233
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 267
+		}
+
+		Object 8闪电（单个） = 234
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 266
+			Base_SoundIDAttack = 1607
+		}
+
+		Object 9降落小火球（5个，间隔1S） = 235
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 240
+			Ex_Delay = 1000
+			Ex_Time = 5
+			Base_SoundIDPreAttack = 1310
+			Base_bSoundLoopPreAttack = 1
+		}
+
+		Object 10降落冰弹（5个，间隔1S） = 236
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 244
+			Ex_Delay = 1000
+			Ex_Time = 5
+			Base_SoundIDPreAttack = 1310
+			Base_bSoundLoopPreAttack = 1
+		}
+
+		Object 11降落小火球（10个，间隔0。3S） = 237
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 240
+			Ex_Delay = 300
+			Ex_Time = 10
+			Base_SoundIDPreAttack = 1310
+			Base_bSoundLoopPreAttack = 1
+		}
+
+		Object 12降落冰弹（10个，间隔0。3S） = 238
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 244
+			Ex_Delay = 300
+			Ex_Time = 10
+			Base_SoundIDPreAttack = 1310
+			Base_bSoundLoopPreAttack = 1
+		}
+
+		Object 13降落大火球（3个，间隔1S） = 239
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 239
+			Ex_Delay = 1000
+			Ex_Time = 3
+			Base_SoundIDPreAttack = 1310
+			Base_bSoundLoopPreAttack = 1
+		}
+
+		Object 14九天神雷 = 240
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 509
+			Ex_Time = 1
+		}
+	}
+
+	Object 单体技能（以自己为中心8方向单方向技能） = 241
+	{
+
+		Object 1单体重击 = 242
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 168
+		}
+
+		Object 2物理伤害（无光效） = 243
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+		}
+
+		Object 3物理伤害+禁魔 = 244
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 44
+		}
+
+		Object 4物理伤害+减MP = 245
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDExplode = 156
+			Base_SoundIDAttack = 1421
+		}
+
+		Object 5喷墨汁-黑 = 246
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 253
+		}
+
+		Object 6喷墨汁-紫 = 247
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 254
+		}
+
+		Object 7喷蛇毒-黑 = 248
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 255
+		}
+
+		Object 8喷蛇毒-红 = 249
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 256
+		}
+
+		Object 9喷蛇毒-黄 = 250
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 257
+		}
+
+		Object 10喷蛇毒-绿 = 251
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 258
+		}
+
+		Object 11喷蛇毒-紫 = 252
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 259
+		}
+
+		Object 12喷水柱-大 = 253
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 260
+		}
+
+		Object 13喷水柱-小 = 254
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 261
+		}
+
+		Object 14气泡攻击-蓝 = 255
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 262
+		}
+
+		Object 15气泡攻击-绿 = 256
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 263
+		}
+
+		Object 16气泡攻击-紫 = 257
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 264
+		}
+
+		Object 17毒针-紫 = 258
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 279
+		}
+
+		Object 18毒针-黑 = 259
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 289
+		}
+
+		Object 19毒针-红 = 260
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 290
+		}
+
+		Object 20毒针-绿 = 261
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 291
+		}
+
+		Object 21毒针飞行-黑 = 262
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 285
+		}
+
+		Object 22毒针飞行-红 = 263
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 286
+		}
+
+		Object 23毒针飞行-绿 = 264
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 287
+		}
+
+		Object 24毒针飞行-紫 = 265
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 288
+		}
+
+		Object 25毒雾近程攻击-红 = 266
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 280
+		}
+
+		Object 26毒雾近程攻击-黄 = 267
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 281
+		}
+
+		Object 27毒雾近程攻击-绿 = 268
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 282
+		}
+
+		Object 28毒雾近程攻击-紫 = 269
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 283
+		}
+
+		Object 29毒雾近程攻击-黑 = 270
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 292
+		}
+
+		Object 30毒雾远程攻击-黑 = 271
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 284
+		}
+
+		Object 31单体重击（需蓄气） = 272
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 168
+		}
+
+		Object 32单体重击（需蓄气） = 273
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 173
+		}
+
+		Object 33喷吐火系伤害（小） = 274
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 79
+			Base_SoundIDAttack = 1301
+		}
+
+		Object 34喷吐火系伤害 = 275
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 78
+			Base_SoundIDAttack = 1301
+		}
+
+		Object 35喷吐冰系伤害（小） = 276
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 81
+			Base_SoundIDAttack = 1323
+		}
+
+		Object 36喷吐冰系伤害 = 277
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 80
+			Base_SoundIDAttack = 1323
+		}
+
+		Object 37重击200%伤害（耀嘉BOSS专用） = 278
+		{
+			Base_ActIDAttack = 11
+			Ex_MagicIDRun = 173
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 38火爆攻击（耀嘉BOSS专用） = 279
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 227
+			Base_SoundIDAttack = 1206
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 39大火攻（耀嘉BOSS专用） = 280
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 12
+			Ex_MagicIDRun = 228
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 40喷吐火系伤害（耀嘉BOSS专用） = 281
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 12
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 78
+			Base_SoundIDAttack = 1301
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 41地裂斩 = 282
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 510
+			Base_SoundIDAttack = 1203
+		}
+
+		Object 42暗BOSS秒杀技能 = 283
+		{
+			Base_ActIDAttack = 10
+			Ex_MagicIDRun = 308
+			Base_SoundIDAttack = 1210
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 43暗BOSS混乱攻击 = 284
+		{
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 305
+			Base_SoundIDAttack = 1502
+			Base_ActIDAttackUseType = 1
+		}
+	}
+
+	Object 范围技能（一次性的、范围矩形）（普通技能） = 285
+	{
+
+		Object 1群体治疗瞬间回血 = 286
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 116
+			Base_MagicIDAttack = 116
+			Ex_MagicIDExplode = 43
+			Base_SoundIDPreAttack = 1410
+		}
+
+		Object 2群体加BUFF = 287
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Base_MagicIDAttack = 47
+			Ex_MagicIDExplode = 159
+			Base_SoundIDPreAttack = 1414
+			Base_SoundIDAttack = 1413
+		}
+
+		Object 3群体治疗持续回血（玉泉） = 288
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 119
+			Ex_MagicIDExplode = 45
+		}
+
+		Object 4范围毒雾 = 289
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 7
+			Base_MagicIDAttack = 119
+			Ex_MagicIDExplode = 187
+		}
+
+		Object 5冰锥 = 290
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDExplode = 237
+			Base_SoundIDAttack = 1323
+		}
+
+		Object 6龙卷风（小） = 291
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 119
+			Ex_MagicIDExplode = 243
+			Ex_nLoopTime = 3000
+		}
+
+		Object 7龙卷风（大） = 292
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 119
+			Ex_MagicIDExplode = 242
+			Ex_nLoopTime = 3000
+		}
+
+		Object 8群体加DEBUFF = 293
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+		}
+
+		Object 9群体禁魔 = 294
+		{
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 44
+			Ex_MagicIDExplode = 223
+		}
+
+		Object 10闪电（小） = 295
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDExplode = 267
+		}
+
+		Object 11闪电（大） = 296
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDExplode = 266
+			Base_SoundIDAttack = 1607
+		}
+
+		Object 12旋涡（小） = 297
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDExplode = 269
+		}
+
+		Object 13旋涡（大） = 298
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDExplode = 268
+		}
+
+		Object 14冰环 = 299
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 236
+		}
+
+		Object 15火舞红尘 = 300
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 7
+		}
+
+		Object 16群体治疗持续回血（城战NPC专用） = 301
+		{
+			Base_NotAdjustDir = 1
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDPreAttack = 14
+			Base_MagicIDAttack = 116
+			Ex_MagicIDRun = 73
+			Ex_nCanCtrl = 1
+			Base_SoundIDAttack = 1415
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 17黑洞（城战NPC专用） = 302
+		{
+			Base_MagicIDAttack = 112
+			Ex_MagicIDRun = 238
+			Ex_nLoopTime = 2000
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 18电阵（城战NPC专用） = 303
+		{
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 252
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 19范围毒雾（城战NPC专用） = 304
+		{
+			Base_MagicIDAttack = 119
+			Ex_MagicIDExplode = 187
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 20群体减物防法防 = 305
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 121
+			Ex_MagicIDExplode = 218
+			Base_SoundIDAttack = 1510
+		}
+
+		Object 21群体减物攻法攻 = 306
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 119
+			Ex_MagicIDExplode = 187
+		}
+
+		Object 22群体DEBUFF（暗系） = 307
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 112
+		}
+
+		Object 23血沼泽 = 308
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 507
+			Ex_MagicIDExplode = 504
+			Base_SoundIDAttack = 1514
+		}
+
+		Object 24毒沼泽 = 309
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 119
+			Ex_MagicIDExplode = 505
+			Base_SoundIDAttack = 1514
+		}
+
+		Object 25范围火爆 = 310
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 511
+			Ex_MagicIDRun = 506
+		}
+
+		Object 26九天神雷 = 311
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 119
+			Ex_MagicIDRun = 509
+		}
+
+		Object 27BOSS火攻击 = 312
+		{
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 299
+			Base_SoundIDAttack = 1327
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 28BOSS范围火爆 = 313
+		{
+			Base_ActIDAttack = 12
+			Base_MagicIDPreAttack = 511
+			Ex_MagicIDRun = 506
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 29冰环（鱼BOSS用） = 314
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 21
+			Ex_MagicIDRun = 236
+		}
+
+		Object 30九天神雷（鱼BOSS用） = 315
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 21
+			Ex_MagicIDRun = 509
+		}
+
+		Object 31强制无光效无动作 = 316
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 0
+			Base_ActIDAttackUseType = 1
+		}
+	}
+
+	Object 范围技能（一次性的、范围矩形）（飞行系） = 317
+	{
+
+		Object 1远程扔石头 = 318
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 85
+			Ex_MagicIDExplode = 93
+			Base_SoundIDAttack = 1208
+		}
+
+		Object 2飞行石头带火 = 319
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 82
+			Ex_MagicIDExplode = 53
+			Base_SoundIDPreAttack = 1208
+			Base_SoundIDAttack = 1301
+		}
+
+		Object 3飞行石头带毒 = 320
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 83
+			Ex_MagicIDExplode = 95
+			Base_SoundIDPreAttack = 1208
+			Base_SoundIDAttack = 1503
+		}
+
+		Object 4飞行石头带冰 = 321
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 84
+			Ex_MagicIDExplode = 52
+			Base_SoundIDPreAttack = 1208
+			Base_SoundIDAttack = 1323
+		}
+
+		Object 5飞行熔岩块 = 322
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 86
+			Ex_MagicIDExplode = 92
+			Base_SoundIDPreAttack = 1208
+			Base_SoundIDAttack = 1301
+		}
+
+		Object 6火系伤害 = 323
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 120
+			Ex_MagicIDRun = 4
+			Ex_MagicIDExplode = 72
+		}
+
+		Object 7冰系伤害 = 324
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 70
+			Ex_MagicIDExplode = 52
+		}
+
+		Object 8电系伤害 = 325
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 77
+			Ex_MagicIDExplode = 50
+			Base_SoundIDAttack = 1401
+		}
+
+		Object 9暗系伤害 = 326
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 121
+			Ex_MagicIDRun = 265
+			Ex_MagicIDExplode = 94
+			Base_SoundIDPreAttack = 1502
+		}
+	}
+
+	Object 范围技能（一次性的、范围扇形）（以自己为中心8方向扇形技能） = 327
+	{
+
+		Object 1范围物理伤害 = 328
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 173
+		}
+
+		Object 2喷吐火系伤害（小） = 329
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 79
+			Base_SoundIDAttack = 1301
+		}
+
+		Object 3喷吐火系伤害 = 330
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 78
+			Base_SoundIDAttack = 1301
+		}
+
+		Object 4喷吐冰系伤害（小） = 331
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 81
+			Base_SoundIDAttack = 1323
+		}
+
+		Object 5喷吐冰系伤害 = 332
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 80
+			Base_SoundIDAttack = 1323
+		}
+
+		Object 6扇型电阵（小） = 333
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 251
+		}
+
+		Object 7扇型电阵 = 334
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 250
+		}
+
+		Object 8扇形暗影箭雨（小）（无） = 335
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+		}
+
+		Object 9扇形暗影箭雨（无） = 336
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+		}
+
+		Object 10无属性范围伤害（无） = 337
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+		}
+
+		Object 11吸MP = 338
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+			Ex_MagicIDExplode = 156
+			Base_SoundIDAttack = 1509
+		}
+
+		Object 12吸HP = 339
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+			Ex_MagicIDExplode = 143
+			Base_SoundIDAttack = 1509
+		}
+
+		Object 13喷墨汁-黑 = 340
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 253
+		}
+
+		Object 14喷墨汁-紫 = 341
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 254
+		}
+
+		Object 15喷蛇毒-黑 = 342
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 255
+		}
+
+		Object 16喷蛇毒-红 = 343
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 256
+		}
+
+		Object 17喷蛇毒-黄 = 344
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 257
+		}
+
+		Object 18喷蛇毒-绿 = 345
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 258
+		}
+
+		Object 19喷蛇毒-紫 = 346
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 259
+		}
+
+		Object 20喷水柱-大 = 347
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 260
+		}
+
+		Object 21喷水柱-小 = 348
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 261
+		}
+
+		Object 22气泡攻击-蓝 = 349
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 262
+		}
+
+		Object 23气泡攻击-绿 = 350
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 263
+		}
+
+		Object 24气泡攻击-紫 = 351
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 264
+		}
+
+		Object 25范围伤害（红） = 352
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 270
+			Base_SoundIDAttack = 1202
+		}
+
+		Object 26范围伤害（黄） = 353
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 271
+			Base_SoundIDAttack = 1202
+		}
+
+		Object 27范围伤害（蓝） = 354
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 272
+			Base_SoundIDAttack = 1202
+		}
+
+		Object 28范围伤害（紫） = 355
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 273
+			Base_SoundIDAttack = 1202
+		}
+
+		Object 29范围攻击（227） = 356
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 227
+			Base_SoundIDAttack = 1206
+		}
+
+		Object 30范围攻击（228） = 357
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 228
+		}
+
+		Object 31范围攻击（235） = 358
+		{
+			Ex_MagicIDRun = 235
+			Base_SoundIDAttack = 1206
+		}
+	}
+
+	Object 范围技能（一次性的、范围矩形）（以自己为中心8方向圆形技能） = 359
+	{
+
+		Object 1范围物理伤害 = 360
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 172
+		}
+
+		Object 2群体混乱 = 361
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 47
+			Ex_MagicIDExplode = 178
+			Base_SoundIDAttack = 1202
+		}
+
+		Object 3石妖爆炸 = 362
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 7
+		}
+	}
+
+	Object 范围技能（持续性的，范围矩形）（普通技能） = 363
+	{
+
+		Object 1群体治疗持续回血 = 364
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDPreAttack = 14
+			Base_MagicIDAttack = 116
+			Ex_MagicIDRun = 73
+			Ex_nCanCtrl = 1
+			Ex_nLoopTime = 6000
+			Base_SoundIDAttack = 1415
+		}
+
+		Object 2群体禁魔 = 365
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+		}
+
+		Object 3吸MP = 366
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+			Ex_MagicIDExplode = 156
+			Base_SoundIDAttack = 1509
+		}
+
+		Object 4吸HP = 367
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+			Ex_MagicIDExplode = 143
+			Base_SoundIDAttack = 1509
+		}
+
+		Object 5地火焦熔 = 368
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 120
+			Ex_MagicIDRun = 68
+			Ex_nLoopTime = 6000
+		}
+
+		Object 6冰锥 = 369
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 111
+			Ex_MagicIDExplode = 237
+			Ex_nLoopTime = 10000
+			Base_SoundIDAttack = 1323
+		}
+
+		Object 7雷暴（无） = 370
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+		}
+
+		Object 8黑洞 = 371
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+			Ex_MagicIDRun = 238
+			Ex_nLoopTime = 10000
+		}
+
+		Object 9龙卷风（小） = 372
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 119
+			Ex_MagicIDRun = 243
+			Ex_nLoopTime = 10000
+		}
+
+		Object 10龙卷风（大） = 373
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 119
+			Ex_MagicIDRun = 242
+			Ex_nLoopTime = 3000
+		}
+
+		Object 11旋涡（小） = 374
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 269
+		}
+
+		Object 12旋涡（大） = 375
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 268
+		}
+
+		Object 13BOSS火焰攻击 = 376
+		{
+			Base_ActIDAttack = 0
+			Ex_MagicIDRun = 299
+			Ex_nLoopTime = 8000
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 14旋涡（小-鱼BOSS用） = 377
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 21
+			Ex_MagicIDRun = 269
+			Ex_nLoopTime = 8000
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 15旋涡（大-鱼BOSS用） = 378
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 21
+			Ex_MagicIDRun = 268
+			Ex_nLoopTime = 8000
+			Base_ActIDAttackUseType = 1
+		}
+	}
+
+	Object 范围技能（持续性的，范围矩形）（对地面范围的多单元落雷型类型） = 379
+	{
+
+		Object 1范围火系伤害（火雨） = 380
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 120
+			Ex_MagicIDRun = 240
+			Ex_Width = 6
+			Ex_Delay = 120
+			Base_SoundIDAttack = 1606
+			Base_bSoundLoopeAttack = 1
+		}
+
+		Object 2范围冰系伤害（暴风雪） = 381
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 111
+			Ex_MagicIDRun = 244
+			Ex_Width = 6
+			Ex_Delay = 150
+			Base_SoundIDAttack = 1321
+			Base_bSoundLoopeAttack = 1
+		}
+
+		Object 3范围电系伤害（雷暴） = 382
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 118
+			Ex_MagicIDRun = 267
+			Base_SoundIDAttack = 1608
+			Base_bSoundLoopeAttack = 1
+		}
+
+		Object 4范围暗系伤害（暗影箭雨）（无） = 383
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+		}
+
+		Object 5无属性范围伤害（无） = 384
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+		}
+
+		Object 6范围火系伤害（火雨，非引导） = 385
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 240
+			Ex_Width = 6
+			Ex_Delay = 120
+			Ex_nLoopTime = 5000
+			Base_SoundIDAttack = 1606
+			Base_bSoundLoopeAttack = 1
+		}
+
+		Object 7范围冰系伤害（暴风雪，非引导） = 386
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 71
+			Ex_Width = 6
+			Ex_Delay = 100
+			Ex_nLoopTime = 5000
+			Base_SoundIDAttack = 1321
+			Base_bSoundLoopeAttack = 1
+		}
+
+		Object 8范围火系伤害（大火雨）（耀嘉BOSS专用） = 387
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 10
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 511
+			Ex_MagicIDRun = 239
+			Ex_Width = 10
+			Ex_Delay = 150
+			Base_SoundIDAttack = 1606
+			Base_bSoundLoopeAttack = 1
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 9范围火系伤害（火雨）（城战NPC专用） = 388
+		{
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 120
+			Ex_MagicIDRun = 240
+			Ex_Width = 7
+			Ex_Delay = 120
+			Base_SoundIDAttack = 1606
+			Base_bSoundLoopeAttack = 1
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 10范围冰系伤害（暴风雪）（城战NPC专用） = 389
+		{
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 111
+			Ex_MagicIDRun = 244
+			Ex_Width = 7
+			Ex_Delay = 150
+			Base_SoundIDAttack = 1321
+			Base_bSoundLoopeAttack = 1
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 11地面范围持续冰锥 = 390
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 118
+			Ex_MagicIDRun = 237
+			Ex_Width = 7
+			Ex_Delay = 250
+			Ex_nLoopTime = 10000
+			Base_SoundIDAttack = 1321
+			Base_bSoundLoopeAttack = 1
+		}
+
+		Object 12大范围冰系伤害（暴风雪） = 391
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 111
+			Ex_MagicIDRun = 244
+			Ex_Width = 10
+			Ex_Delay = 40
+			Base_SoundIDAttack = 1321
+			Base_bSoundLoopeAttack = 1
+		}
+
+		Object 13地面范围持续尖刺 = 392
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 507
+			Ex_MagicIDRun = 508
+			Ex_Width = 7
+			Ex_Delay = 250
+			Ex_nLoopTime = 10000
+			Base_bSoundLoopeAttack = 1
+		}
+
+		Object 14大范围冰锥 = 393
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 118
+			Ex_MagicIDRun = 237
+			Ex_Width = 10
+			Ex_Delay = 250
+			Ex_nLoopTime = 8000
+			Base_SoundIDAttack = 1321
+			Base_bSoundLoopeAttack = 1
+		}
+
+		Object 15范围火系伤害（大火雨）（大BOSS专用） = 394
+		{
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 511
+			Ex_MagicIDRun = 239
+			Ex_Width = 10
+			Ex_Delay = 150
+			Ex_nLoopTime = 8000
+			Base_SoundIDAttack = 1606
+			Base_bSoundLoopeAttack = 1
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 16大范围冰锥（鱼BOSS用） = 395
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 21
+			Base_AttackOnceOrCtrl = 1
+			Ex_MagicIDRun = 237
+			Ex_Width = 20
+			Ex_Delay = 250
+			Ex_nLoopTime = 8000
+			Base_SoundIDAttack = 1321
+			Base_bSoundLoopeAttack = 1
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 17地面范围持续尖刺（鱼BOSS用） = 396
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 21
+			Base_AttackOnceOrCtrl = 1
+			Ex_MagicIDRun = 508
+			Ex_Width = 10
+			Ex_Delay = 150
+			Ex_nLoopTime = 8000
+			Base_bSoundLoopeAttack = 1
+			Base_ActIDAttackUseType = 1
+		}
+	}
+
+	Object 范围技能（持续性的，范围扇形）（以自己为中心8方向扇形技能） = 397
+	{
+
+		Object 1吸MP = 398
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+			Ex_MagicIDExplode = 156
+			Base_SoundIDAttack = 1509
+		}
+
+		Object 2吸HP = 399
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+			Ex_MagicIDExplode = 143
+			Base_SoundIDAttack = 1509
+		}
+	}
+
+	Object 范围技能（持续性的，范围矩形）（以自己为中心8方向圆形技能） = 400
+	{
+
+		Object 1吸MP = 401
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+			Ex_MagicIDExplode = 156
+			Base_SoundIDAttack = 1509
+		}
+
+		Object 2吸HP = 402
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDAttack = 112
+			Ex_MagicIDExplode = 143
+			Base_SoundIDAttack = 1509
+		}
+	}
+
+	Object 召唤技能 = 403
+	{
+
+		Object 1召唤 = 404
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 115
+			Ex_MagicIDRun = 164
+			Base_SoundIDPreAttack = 1505
+			Base_bSoundLoopPreAttack = 1
+			Base_SoundIDAttack = 1504
+		}
+
+		Object 2召唤亡灵生物 = 405
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDRun = 8
+			Base_SoundIDPreAttack = 1505
+			Base_bSoundLoopPreAttack = 1
+			Base_SoundIDAttack = 1504
+		}
+
+		Object 3召唤火系生物 = 406
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 120
+			Ex_MagicIDRun = 7
+			Base_SoundIDPreAttack = 1505
+			Base_bSoundLoopPreAttack = 1
+			Base_SoundIDAttack = 1504
+		}
+
+		Object 4召唤自然生物 = 407
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 111
+			Ex_MagicIDRun = 6
+			Base_SoundIDPreAttack = 1505
+			Base_bSoundLoopPreAttack = 1
+			Base_SoundIDAttack = 1504
+		}
+
+		Object 5召唤分身 = 408
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+		}
+	}
+
+	Object 范围技能（一次性的、前方9×9的圆形范围）（8方向光效、只播单方向） = 409
+	{
+
+		Object 1耀嘉喷火球（耀嘉BOSS专用） = 410
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 227
+			Base_SoundIDAttack = 1206
+			Base_ActIDAttackUseType = 1
+		}
+	}
+
+	Object 范围技能（一次性的、前方5×6的矩形范围）（8方向光效、只播单方向） = 411
+	{
+
+		Object 1耀嘉喷火球（耀嘉BOSS专用） = 412
+		{
+			Base_ActIDpreAttack = 0
+			Base_ActIDAttack = 12
+			Ex_MagicIDRun = 228
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 2BOSS旋龙索 = 413
+		{
+			Base_ActIDAttack = 10
+			Ex_MagicIDRun = 300
+			Base_SoundIDAttack = 1419
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 3大BOSS范围攻击1 = 414
+		{
+			Base_ActIDAttack = 11
+			Ex_MagicIDRun = 302
+			Base_SoundIDAttack = 1320
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 4大BOSS范围攻击2 = 415
+		{
+			Base_ActIDAttack = 12
+			Ex_MagicIDRun = 298
+			Ex_MagicIDExplode = 297
+			Base_SoundIDAttack = 1210
+			Base_ActIDAttackUseType = 1
+		}
+
+		Object 5暗BOSS范围攻击 = 416
+		{
+			Base_ActIDAttack = 9
+			Ex_MagicIDRun = 307
+			Base_SoundIDAttack = 1502
+			Base_ActIDAttackUseType = 1
+		}
+	}
+
+	Object 战士：群体眩晕 = 417
+	{
+
+		Object 1级 = 418
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 12,15
+			Ex_MagicIDRun = 218
+			Base_SoundIDAttack = 1206
+		}
+	}
+
+	Object 战士：万剑朝宗 = 419
+	{
+
+		Object 1级 = 420
+		{
+			Base_ActIDAttack = 11,14
+			Base_AttackOnceOrCtrl = 1
+			Base_MagicIDAttack = 118
+			Base_MagicIDBeHit = 156
+			Ex_Delay = 80
+			Base_SoundIDAttack = 1218
+		}
+	}
+
+	Object 法师：冰霜巨龙 = 421
+	{
+
+		Object 1级 = 422
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 118
+			Ex_MagicIDExplode = 520
+		}
+	}
+
+	Object 法师：火焰放射 = 423
+	{
+
+		Object 1级 = 424
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 10
+			Base_MagicIDPreAttack = 511
+			Ex_MagicIDRun = 69
+			Ex_MagicIDExplode = 215
+			Ex_FlyTileTime = 60
+			Ex_Width = 6
+			Ex_Delay = 30
+		}
+	}
+
+	Object 幻师：隐形 = 425
+	{
+
+		Object 1级 = 426
+		{
+			Base_ActIDAttack = 9
+			Base_SoundIDAttack = 1311
+		}
+	}
+
+	Object 幻师：九天神雷 = 427
+	{
+
+		Object 1级 = 428
+		{
+			Base_ActIDAttack = 10
+			Base_MagicIDAttack = 118
+			Ex_MagicIDRun = 266
+			Ex_Width = 6
+			Ex_Delay = 300
+			Ex_nLoopTime = 3500
+			Base_SoundIDAttack = 1608
+			Base_bSoundLoopeAttack = 1
+		}
+	}
+
+	Object 暗巫：群体惊吓 = 429
+	{
+
+		Object 1级 = 430
+		{
+			Base_NotAdjustDir = 1
+			Base_ActIDAttack = 7
+			Base_MagicIDAttack = 310
+			Ex_MagicIDRun = 221
+			Base_SoundIDAttack = 1507
+		}
+	}
+
+	Object 暗巫：自爆毒雾 = 431
+	{
+
+		Object 1级 = 432
+		{
+			Base_ActIDpreAttack = 7
+			Base_ActIDAttack = 9
+			Base_MagicIDPreAttack = 119
+			Ex_MagicIDRun = 95
+			Ex_MagicIDExplode = 187
+			Ex_nLoopTime = 2600
+			Ex_IsOnceAttack = 1
+		}
+	}
+}
+
+Object 通用动画 = 433
+{
+
+	Object 出生 = 434
+	{
+		MagicID = 48
+	}
+
+	Object 升级 = 435
+	{
+		MagicID = 141
+	}
+
+	Object 被选中_红圈 = 436
+	{
+		MagicID = 150
+	}
+
+	Object 被选中_绿圈 = 437
+	{
+		MagicID = 153
+	}
+
+	Object 被选中_黄圈 = 438
+	{
+		MagicID = 151
+	}
+
+	Object 被选中_蓝圈 = 439
+	{
+		MagicID = 152
+	}
+
+	Object 鼠标点击地面动画 = 440
+	{
+		MagicID = 209
+	}
+}
+
+Object 生物外观 = 441
+{
+
+	Object 寒光斩0 = 442
+	{
+		MagicID = 29
+	}
+
+	Object 地裂斩1 = 443
+	{
+		MagicID = 31
+	}
+
+	Object 羞辱2 = 444
+	{
+		MagicID = 21
+	}
+
+	Object 虎啸龙吟3 = 445
+	{
+		MagicID = 126
+	}
+
+	Object 剑气漫天4 = 446
+	{
+		MagicID = 27
+	}
+
+	Object 惊天一击5 = 447
+	{
+		MagicID = 14
+	}
+
+	Object 战意滔天6 = 448
+	{
+		MagicID = 20
+	}
+
+	Object 叫阵7 = 449
+	{
+		MagicID = 21
+	}
+
+	Object 劫杀8 = 450
+	{
+		MagicID = 125
+	}
+
+	Object 盾壁如山9 = 451
+	{
+		MagicID = 25
+	}
+
+	Object 金钟御体10 = 452
+	{
+		MagicID = 87
+	}
+
+	Object 炽火随身11 = 453
+	{
+		MagicID = 26
+	}
+
+	Object 悬冰冻12 = 454
+	{
+		MagicID = 37
+	}
+
+	Object 灵符御敌13 = 455
+	{
+		MagicID = 12
+	}
+
+	Object 炙炎破14 = 456
+	{
+		MagicID = 27
+	}
+
+	Object 归元15 = 457
+	{
+		MagicID = 177
+	}
+
+	Object 雷霆之怒16 = 458
+	{
+		MagicID = 522
+	}
+
+	Object 火舞红尘17 = 459
+	{
+		MagicID = 26
+	}
+
+	Object 雾隐迷踪18 = 460
+	{
+		MagicID = 313
+	}
+
+	Object 玉泉19 = 461
+	{
+		MagicID = 160
+	}
+
+	Object 真元20 = 462
+	{
+		MagicID = 6
+	}
+
+	Object 紫电21 = 463
+	{
+		MagicID = 129
+	}
+
+	Object 甘露22 = 464
+	{
+		MagicID = 175
+	}
+
+	Object 荆棘丛生23 = 465
+	{
+		MagicID = 36
+	}
+
+	Object 灵光禁魔24 = 466
+	{
+		MagicID = 88
+	}
+
+	Object 妙手回春25 = 467
+	{
+		MagicID = 43
+	}
+
+	Object 祥光普照26 = 468
+	{
+		MagicID = 73
+	}
+
+	Object 还魂术27 = 469
+	{
+		MagicID = 6
+	}
+
+	Object 斗气28 = 470
+	{
+		MagicID = 162
+	}
+
+	Object 鼎力回天29 = 471
+	{
+		MagicID = 154
+	}
+
+	Object 魔兽奉召30 = 472
+	{
+		MagicID = 96
+	}
+
+	Object 肝胆俱裂31 = 473
+	{
+		MagicID = 17
+	}
+
+	Object 举步维艰32 = 474
+	{
+		MagicID = 38
+	}
+
+	Object 魅影相随33 = 475
+	{
+		MagicID = 96
+	}
+
+	Object 刑伤34 = 476
+	{
+		MagicID = 11
+	}
+
+	Object 暴烈狂魔35 = 477
+	{
+		MagicID = 224
+	}
+
+	Object 巫毒36 = 478
+	{
+		MagicID = 128
+		ChangePal = 2
+	}
+
+	Object 腐骨37 = 479
+	{
+		MagicID = 127
+	}
+
+	Object 索命毒雾38 = 480
+	{
+		MagicID = 90
+		ChangePal = 2
+	}
+
+	Object 摄魄39 = 481
+	{
+		MagicID = 65
+		ChangePal = 4
+	}
+
+	Object 缚龙魔阵40 = 482
+	{
+		MagicID = 31
+	}
+
+	Object 冥念蚀魂41 = 483
+	{
+		MagicID = 127
+	}
+
+	Object 出生保护42 = 484
+	{
+		MagicID = 184
+	}
+
+	Object 被选中_红圈43 = 485
+	{
+		MagicID = 150
+	}
+
+	Object 喝红44 = 486
+	{
+		MagicID = 180
+	}
+
+	Object 喝蓝45 = 487
+	{
+		MagicID = 181
+	}
+
+	Object 加物攻46 = 488
+	{
+		MagicID = 162
+	}
+
+	Object 加物防47 = 489
+	{
+		MagicID = 25
+	}
+
+	Object 狂暴48 = 490
+	{
+		ChangePal = 3
+	}
+
+	Object 持续回血49 = 491
+	{
+		MagicID = 160
+	}
+
+	Object 禁魔50 = 492
+	{
+		MagicID = 88
+	}
+
+	Object 混乱51 = 493
+	{
+		MagicID = 17
+	}
+
+	Object 禁锢52 = 494
+	{
+		MagicID = 65
+		ChangePal = 4
+	}
+
+	Object 定身53 = 495
+	{
+		MagicID = 31
+	}
+
+	Object 抗被击54 = 496
+	{
+		MagicID = 278
+	}
+
+	Object 抗混乱55 = 497
+	{
+	}
+
+	Object 抗眩晕56 = 498
+	{
+	}
+
+	Object 抗流血57 = 499
+	{
+		MagicID = 277
+	}
+
+	Object 抗定身58 = 500
+	{
+		MagicID = 28
+	}
+
+	Object 抗物理攻击59 = 501
+	{
+		MagicID = 12
+	}
+
+	Object 抗火系法术60 = 502
+	{
+		MagicID = 231
+	}
+
+	Object 抗冰系法术61 = 503
+	{
+		MagicID = 232
+	}
+
+	Object 抗电系法术62 = 504
+	{
+		MagicID = 233
+	}
+
+	Object 抗暗系法术63 = 505
+	{
+		MagicID = 234
+	}
+
+	Object 单体加致命64 = 506
+	{
+		MagicID = 224
+	}
+
+	Object 单体加回避65 = 507
+	{
+		MagicID = 182
+	}
+
+	Object 燃烧66 = 508
+	{
+		MagicID = 26
+	}
+
+	Object 眩晕67 = 509
+	{
+		MagicID = 27
+		bNeedDoBeHit = 1
+	}
+
+	Object 冰减速68 = 510
+	{
+		ChangePal = 1
+	}
+
+	Object 冰定身69 = 511
+	{
+		MagicID = 37
+	}
+
+	Object 电系持续伤害70 = 512
+	{
+		MagicID = 129
+	}
+
+	Object 暗系持续伤害71 = 513
+	{
+		MagicID = 127
+	}
+
+	Object 减物防72 = 514
+	{
+		MagicID = 21
+	}
+
+	Object 减物攻73 = 515
+	{
+		MagicID = 89
+	}
+
+	Object 中毒74 = 516
+	{
+		MagicID = 90
+		ChangePal = 2
+	}
+
+	Object 流血75 = 517
+	{
+		MagicID = 29
+	}
+
+	Object 减MP76 = 518
+	{
+		MagicID = 124
+	}
+
+	Object 电击定身77 = 519
+	{
+		MagicID = 33
+	}
+
+	Object 单体加移动速度78 = 520
+	{
+		MagicID = 161
+	}
+
+	Object 单体加伤害吸收79 = 521
+	{
+		MagicID = 225
+	}
+
+	Object 无敌80 = 522
+	{
+		MagicID = 184
+	}
+
+	Object 睡眠81 = 523
+	{
+		MagicID = 18
+	}
+
+	Object 全属性增强82 = 524
+	{
+		MagicID = 19
+	}
+
+	Object 减法攻83 = 525
+	{
+		MagicID = 15
+	}
+
+	Object 减法防84 = 526
+	{
+		MagicID = 24
+	}
+
+	Object 拖影效果85 = 527
+	{
+		bNeedShadow = 1
+	}
+
+	Object 减速BUFF（马）86 = 528
+	{
+		MagicID = 196
+	}
+
+	Object 减速BUFF（卷轴）87 = 529
+	{
+		MagicID = 200
+	}
+
+	Object 减速BUFF（剑）88 = 530
+	{
+		MagicID = 89
+	}
+
+	Object 偿还89 = 531
+	{
+		MagicID = 143
+	}
+
+	Object 会心紫电石爆炸90 = 532
+	{
+		MagicID = 50
+	}
+
+	Object 会心紫电石状态91 = 533
+	{
+		MagicID = 198
+	}
+
+	Object 麻痹（晕）92 = 534
+	{
+		MagicID = 129
+		bNeedDoBeHit = 1
+	}
+
+	Object 隐身/透明93 = 535
+	{
+		Alpha = 0
+	}
+
+	Object 寒冰箭94 = 536
+	{
+		ChangePal = 1
+	}
+
+	Object 防打断95 = 537
+	{
+		MagicID = 185
+	}
+
+	Object 狂暴+致命96 = 538
+	{
+		MagicID = 224
+		ChangePal = 3
+	}
+
+	Object 受击97 = 539
+	{
+		bNeedDoBeHit = 1
+	}
+
+	Object 全属性减弱98 = 540
+	{
+		MagicID = 23
+	}
+
+	Object 男幻师变身99 = 541
+	{
+		ChangeShap = 29071,1
+	}
+
+	Object 变身为绿毛蜘蛛100 = 542
+	{
+		ChangeShap = 28724,5
+	}
+
+	Object 变身猎豹101 = 543
+	{
+		ChangeShap = 20574,5
+	}
+
+	Object 变身为蜘蛛102 = 544
+	{
+		ChangeShap = 21898,5
+	}
+
+	Object 变身为蝎子103 = 545
+	{
+		ChangeShap = 21910,5
+	}
+
+	Object 变身为鬣狗104 = 546
+	{
+		ChangeShap = 11390,5
+	}
+
+	Object 变身为熊105 = 547
+	{
+		ChangeShap = 28742,5
+	}
+
+	Object 变身为怒熊106 = 548
+	{
+		ChangeShap = 28745,5
+	}
+
+	Object 变身为煌叶贼107 = 549
+	{
+		ChangeShap = 15872,5
+	}
+
+	Object 变身为煌叶贼逃犯108 = 550
+	{
+		ChangeShap = 16092,5
+	}
+
+	Object 变身为煌叶贼头目109 = 551
+	{
+		ChangeShap = 15984,5
+	}
+
+	Object 变身为小山膏110 = 552
+	{
+		ChangeShap = 13277,5
+	}
+
+	Object 变身为山膏小卒111 = 553
+	{
+		ChangeShap = 13419,5
+	}
+
+	Object 变身为山膏打手112 = 554
+	{
+		ChangeShap = 13465,5
+	}
+
+	Object 变身为山膏统领113 = 555
+	{
+		ChangeShap = 26747,5
+	}
+
+	Object 变身为山膏参谋114 = 556
+	{
+		ChangeShap = 13442,5
+	}
+
+	Object 变身为狼蛛115 = 557
+	{
+		ChangeShap = 21901,5
+	}
+
+	Object 变身为凶残野狗116 = 558
+	{
+		ChangeShap = 11385,5
+	}
+
+	Object 变身为冷血黑熊117 = 559
+	{
+		ChangeShap = 22425,5
+	}
+
+	Object 变身为炎灵兽118 = 560
+	{
+		ChangeShap = 21935,5
+	}
+
+	Object 变身为巨犀鸟119 = 561
+	{
+		ChangeShap = 24867,5
+	}
+
+	Object 变身为蜥蜴120 = 562
+	{
+		ChangeShap = 21816,5
+	}
+
+	Object 变身为巨脚蜥蜴121 = 563
+	{
+		ChangeShap = 21830,5
+	}
+
+	Object 变身为长右盗贼122 = 564
+	{
+		ChangeShap = 8918,5
+	}
+
+	Object 变身为长右贼首123 = 565
+	{
+		ChangeShap = 9053,5
+	}
+
+	Object 变身为虎124 = 566
+	{
+		ChangeShap = 27058,5
+	}
+
+	Object 变身为猛虎125 = 567
+	{
+		ChangeShap = 27061,5
+	}
+
+	Object 变身为毛民伤兵126 = 568
+	{
+		ChangeShap = 26014,5
+	}
+
+	Object 变身为长股伤兵127 = 569
+	{
+		ChangeShap = 14219,5
+	}
+
+	Object 变身为长股逃犯128 = 570
+	{
+		ChangeShap = 14172,5
+	}
+
+	Object 变身为毛民逃犯129 = 571
+	{
+		ChangeShap = 24892,5
+	}
+
+	Object 变身为毛民重犯130 = 572
+	{
+		ChangeShap = 24927,5
+	}
+
+	Object 变身为长股重犯131 = 573
+	{
+		ChangeShap = 14287,5
+	}
+
+	Object 变身为花妖132 = 574
+	{
+		ChangeShap = 19412,5
+	}
+
+	Object 变身为飞虫133 = 575
+	{
+		ChangeShap = 28992,5
+	}
+
+	Object 变身为毛民恶徒134 = 576
+	{
+		ChangeShap = 25059,5
+	}
+
+	Object 变身为绿依杂役135 = 577
+	{
+		ChangeShap = 17795,5
+	}
+
+	Object 变身为绿依行商136 = 578
+	{
+		ChangeShap = 17669,5
+	}
+
+	Object 变身为绿依巨贾137 = 579
+	{
+		ChangeShap = 17711,5
+	}
+
+	Object 变身为长股恶徒138 = 580
+	{
+		ChangeShap = 14249,5
+	}
+
+	Object 变身为索魂139 = 581
+	{
+		ChangeShap = 22460,5
+	}
+
+	Object 变身为夺魂140 = 582
+	{
+		ChangeShap = 22578,5
+	}
+
+	Object 变身为沼泽蜥蜴141 = 583
+	{
+		ChangeShap = 21816,5
+	}
+
+	Object 变身为猎豹142 = 584
+	{
+		ChangeShap = 20560,5
+	}
+
+	Object 变身为孤怨143 = 585
+	{
+		ChangeShap = 24136,5
+	}
+
+	Object 变身为鹰144 = 586
+	{
+		ChangeShap = 23953,5
+	}
+
+	Object 变身为迷雾花妖145 = 587
+	{
+		ChangeShap = 19412,5
+	}
+
+	Object 变身为树妖146 = 588
+	{
+		ChangeShap = 11496,5
+	}
+
+	Object 变身为煌叶喽罗147 = 589
+	{
+		ChangeShap = 14268,5
+	}
+
+	Object 变身为猎蜥148 = 590
+	{
+		ChangeShap = 21830,5
+	}
+
+	Object 变身为煌叶盗贼149 = 591
+	{
+		ChangeShap = 14268,5
+	}
+
+	Object 变身为煌叶步将150 = 592
+	{
+		ChangeShap = 25026,5
+	}
+
+	Object 变身为煌叶哨卫151 = 593
+	{
+		ChangeShap = 24993,5
+	}
+
+	Object 变身为煌叶头目152 = 594
+	{
+		ChangeShap = 15872,5
+	}
+
+	Object 变身为煌叶首领153 = 595
+	{
+		ChangeShap = 15899,5
+	}
+
+	Object 变身为山膏流寇154 = 596
+	{
+		ChangeShap = 13327,5
+	}
+
+	Object 变身为山膏祭司155 = 597
+	{
+		ChangeShap = 26724,5
+	}
+
+	Object 变身为山膏贼首156 = 598
+	{
+		ChangeShap = 13373,5
+	}
+
+	Object 变身为游魂孤怨157 = 599
+	{
+		ChangeShap = 24249,5
+	}
+
+	Object 变身为孤怨158 = 600
+	{
+		ChangeShap = 24136,5
+	}
+
+	Object 变身为游魂孤怨159 = 601
+	{
+		ChangeShap = 24249,5
+	}
+
+	Object 变身为孤魂160 = 602
+	{
+		ChangeShap = 24218,5
+	}
+
+	Object 女幻师变身161 = 603
+	{
+		ChangeShap = 37037,1
+	}
+
+	Object 蛛网禁锢162 = 604
+	{
+		MagicID = 274
+	}
+
+	Object 水藻缠绕163 = 605
+	{
+		MagicID = 275
+	}
+
+	Object 气泡围困164 = 606
+	{
+		MagicID = 276
+	}
+
+	Object 喷网-大165 = 607
+	{
+		MagicID = 293
+	}
+
+	Object 喷网-小166 = 608
+	{
+		MagicID = 296
+	}
+
+	Object 抗法术攻击167 = 609
+	{
+		MagicID = 183
+	}
+
+	Object 变身为酣巨人168 = 610
+	{
+		ChangeShap = 5407,6
+	}
+
+	Object 变身为延维169 = 611
+	{
+		ChangeShap = 24506,6
+	}
+
+	Object 变身为树妖170 = 612
+	{
+		ChangeShap = 11522,6
+	}
+
+	Object 变身为大山膏171 = 613
+	{
+		ChangeShap = 42664,6
+	}
+
+	Object 变身为花精172 = 614
+	{
+		ChangeShap = 19490,6
+	}
+
+	Object 变身为石妖173 = 615
+	{
+		ChangeShap = 23206,6
+	}
+
+	Object 变身为大熊174 = 616
+	{
+		ChangeShap = 23931,6
+	}
+
+	Object 变身为小熊175 = 617
+	{
+		ChangeShap = 28745,6
+	}
+
+	Object 变身为魅惑176 = 618
+	{
+		ChangeShap = 40100,6
+	}
+
+	Object 变身为马车177 = 619
+	{
+		ChangeShap = 45319,6
+	}
+
+	Object 变身为兔女178 = 620
+	{
+		ChangeShap = 44691,6
+	}
+
+	Object 石化179 = 621
+	{
+		ChangePal = 4
+	}
+
+	Object 烟花180 = 622
+	{
+		MagicID = 158
+	}
+
+	Object 城战开旗状态181 = 623
+	{
+		MagicID = 519
+	}
+
+	Object 结婚花环182 = 624
+	{
+		MagicID = 516
+	}
+
+	Object 烟花183 = 625
+	{
+		MagicID = 512
+	}
+
+	Object 烟花184 = 626
+	{
+		MagicID = 513
+	}
+
+	Object 烟花185 = 627
+	{
+		MagicID = 514
+	}
+
+	Object 烟花186 = 628
+	{
+		MagicID = 515
+	}
+
+	Object 紫红烟_双武器187 = 629
+	{
+		Particle = 53,20
+	}
+
+	Object 橙红烟_双武器188 = 630
+	{
+		Particle = 54,20
+	}
+
+	Object 火圈_双武器189 = 631
+	{
+		Particle = 2,20
+	}
+
+	Object 电_双武器190 = 632
+	{
+		Particle = 3,20
+	}
+
+	Object 红寒气_双武器191 = 633
+	{
+		Particle = 5,20
+	}
+
+	Object 蓝寒气_双武器192                                                                                                                                                                                                                     = 634
+	{
+		Particle = 6,20
+	}
+
+	Object 紫寒气_双武器193 = 635
+	{
+		Particle = 7,20
+	}
+
+	Object 黄寒气_双武器194 = 636
+	{
+		Particle = 8,20
+	}
+
+	Object 白烟_双武器195 = 637
+	{
+		Particle = 12,20
+	}
+
+	Object 火焰_双武器196 = 638
+	{
+		Particle = 16,20
+	}
+
+	Object 绿_双武器197 = 639
+	{
+		Particle = 22,20
+	}
+
+	Object 红_双武器198 = 640
+	{
+		Particle = 23,20
+	}
+
+	Object 冰_双武器199 = 641
+	{
+		Particle = 26,20
+	}
+
+	Object 冰点_双武器200 = 642
+	{
+		Particle = 30,20
+	}
+
+	Object 毒寒气_双武器201 = 643
+	{
+		Particle = 34,20
+	}
+
+	Object 毒_双武器202 = 644
+	{
+		Particle = 45,20
+	}
+
+	Object 紫烟_双武器203 = 645
+	{
+		Particle = 52,20
+	}
+
+	Object 紫红烟_头部204 = 646
+	{
+		Particle = 0,0
+	}
+
+	Object 橙红烟_头部205 = 647
+	{
+		Particle = 1,0
+	}
+
+	Object 电_头部206 = 648
+	{
+		Particle = 3,0
+	}
+
+	Object 红寒气_头部207 = 649
+	{
+		Particle = 5,0
+	}
+
+	Object 蓝寒气_头部208 = 650
+	{
+		Particle = 6,0
+	}
+
+	Object 紫寒气_头部209 = 651
+	{
+		Particle = 7,0
+	}
+
+	Object 黄寒气_头部210 = 652
+	{
+		Particle = 8,0
+	}
+
+	Object 白烟_头部211 = 653
+	{
+		Particle = 12,0
+	}
+
+	Object 白雾_头部212 = 654
+	{
+		Particle = 15,0
+	}
+
+	Object 火焰_头部213 = 655
+	{
+		Particle = 16,0
+	}
+
+	Object 毒寒气_头部214 = 656
+	{
+		Particle = 45,0
+	}
+
+	Object 电球_头部215 = 657
+	{
+		Particle = 50,0
+	}
+
+	Object 火球_头部216 = 658
+	{
+		Particle = 51,0
+	}
+
+	Object 紫烟_头部217 = 659
+	{
+		Particle = 52,0
+	}
+
+	Object 紫红烟_上半身218 = 660
+	{
+		Particle = 0,2
+	}
+
+	Object 橙红烟_上半身219 = 661
+	{
+		Particle = 1,2
+	}
+
+	Object 电_上半身220 = 662
+	{
+		Particle = 3,2
+	}
+
+	Object 红寒气_上半身221 = 663
+	{
+		Particle = 5,2
+	}
+
+	Object 蓝寒气_上半身222 = 664
+	{
+		Particle = 6,2
+	}
+
+	Object 紫寒气_上半身223 = 665
+	{
+		Particle = 7,2
+	}
+
+	Object 黄寒气_上半身224 = 666
+	{
+		Particle = 8,2
+	}
+
+	Object 白烟_上半身225 = 667
+	{
+		Particle = 12,2
+	}
+
+	Object 白雾_上半身226 = 668
+	{
+		Particle = 15,2
+	}
+
+	Object 火焰_上半身227 = 669
+	{
+		Particle = 16,2
+	}
+
+	Object 毒寒气_上半身228 = 670
+	{
+		Particle = 45,2
+	}
+
+	Object 电球_上半身229 = 671
+	{
+		Particle = 50,2
+	}
+
+	Object 火球_上半身230 = 672
+	{
+		Particle = 51,2
+	}
+
+	Object 紫烟_上半身231 = 673
+	{
+		Particle = 52,2
+	}
+
+	Object 紫红烟_下半身232 = 674
+	{
+		Particle = 0,4
+	}
+
+	Object 橙红烟_下半身233 = 675
+	{
+		Particle = 1,4
+	}
+
+	Object 电_下半身234 = 676
+	{
+		Particle = 3,4
+	}
+
+	Object 红寒气_下半身235 = 677
+	{
+		Particle = 5,4
+	}
+
+	Object 蓝寒气_下半身236 = 678
+	{
+		Particle = 6,4
+	}
+
+	Object 紫寒气_下半身237 = 679
+	{
+		Particle = 7,4
+	}
+
+	Object 黄寒气_下半身238 = 680
+	{
+		Particle = 8,4
+	}
+
+	Object 白烟_下半身239 = 681
+	{
+		Particle = 12,4
+	}
+
+	Object 白雾_下半身240 = 682
+	{
+		Particle = 15,4
+	}
+
+	Object 火焰_下半身241 = 683
+	{
+		Particle = 16,4
+	}
+
+	Object 毒寒气_下半身242 = 684
+	{
+		Particle = 45,4
+	}
+
+	Object 电球_下半身243 = 685
+	{
+		Particle = 50,4
+	}
+
+	Object 火球_下半身244 = 686
+	{
+		Particle = 51,4
+	}
+
+	Object 紫烟_下半身245 = 687
+	{
+		Particle = 52,4
+	}
+
+	Object 紫红烟_左手246 = 688
+	{
+		Particle = 0,12
+	}
+
+	Object 橙红烟_左手247 = 689
+	{
+		Particle = 1,12
+	}
+
+	Object 电_左手248 = 690
+	{
+		Particle = 3,12
+	}
+
+	Object 红寒气_左手249 = 691
+	{
+		Particle = 5,12
+	}
+
+	Object 蓝寒气_左手250 = 692
+	{
+		Particle = 6,12
+	}
+
+	Object 紫寒气_左手251 = 693
+	{
+		Particle = 7,12
+	}
+
+	Object 黄寒气_左手252 = 694
+	{
+		Particle = 8,12
+	}
+
+	Object 白烟_左手253 = 695
+	{
+		Particle = 12,12
+	}
+
+	Object 白雾_左手254 = 696
+	{
+		Particle = 15,12
+	}
+
+	Object 火焰_左手255 = 697
+	{
+		Particle = 16,12
+	}
+
+	Object 毒寒气_左手256 = 698
+	{
+		Particle = 45,12
+	}
+
+	Object 电球_左手257 = 699
+	{
+		Particle = 50,12
+	}
+
+	Object 火球_左手258 = 700
+	{
+		Particle = 51,12
+	}
+
+	Object 紫烟_左手259 = 701
+	{
+		Particle = 52,12
+	}
+
+	Object 紫红烟_右手260 = 702
+	{
+		Particle = 0,14
+	}
+
+	Object 橙红烟_右手261 = 703
+	{
+		Particle = 1,14
+	}
+
+	Object 电_右手262 = 704
+	{
+		Particle = 3,14
+	}
+
+	Object 红寒气_右手263 = 705
+	{
+		Particle = 5,14
+	}
+
+	Object 蓝寒气_右手264 = 706
+	{
+		Particle = 6,14
+	}
+
+	Object 紫寒气_右手265 = 707
+	{
+		Particle = 7,14
+	}
+
+	Object 黄寒气_右手266 = 708
+	{
+		Particle = 8,14
+	}
+
+	Object 白烟_右手267 = 709
+	{
+		Particle = 12,14
+	}
+
+	Object 白雾_右手268 = 710
+	{
+		Particle = 15,14
+	}
+
+	Object 火焰_右手269 = 711
+	{
+		Particle = 16,14
+	}
+
+	Object 毒寒气_右手270 = 712
+	{
+		Particle = 45,14
+	}
+
+	Object 电球_右手271 = 713
+	{
+		Particle = 50,14
+	}
+
+	Object 火球_右手272 = 714
+	{
+		Particle = 51,14
+	}
+
+	Object 紫烟_右手273 = 715
+	{
+		Particle = 52,14
+	}
+
+	Object 紫红烟_右手武器274 = 716
+	{
+		Particle = 53,18
+	}
+
+	Object 橙红烟_右手武器275 = 717
+	{
+		Particle = 54,18
+	}
+
+	Object 火圈_右手武器276 = 718
+	{
+		Particle = 2,18
+	}
+
+	Object 电_右手武器277 = 719
+	{
+		Particle = 3,18
+	}
+
+	Object 红寒气_右手武器278 = 720
+	{
+		Particle = 5,18
+	}
+
+	Object 蓝寒气_右手武器279                                                                                                                                                                                                                  = 721
+	{
+		Particle = 6,18
+	}
+
+	Object 紫寒气_右手武器280 = 722
+	{
+		Particle = 7,18
+	}
+
+	Object 黄寒气_右手武器281 = 723
+	{
+		Particle = 8,18
+	}
+
+	Object 白烟_右手武器282 = 724
+	{
+		Particle = 12,18
+	}
+
+	Object 火焰_右手武器283 = 725
+	{
+		Particle = 16,18
+	}
+
+	Object 绿_右手武器284 = 726
+	{
+		Particle = 22,18
+	}
+
+	Object 红_右手武器285 = 727
+	{
+		Particle = 23,18
+	}
+
+	Object 冰_右手武器286 = 728
+	{
+		Particle = 26,18
+	}
+
+	Object 冰点_右手武器287 = 729
+	{
+		Particle = 30,18
+	}
+
+	Object 毒寒气_右手武器288 = 730
+	{
+		Particle = 34,18
+	}
+
+	Object 毒_右手武器289 = 731
+	{
+		Particle = 45,18
+	}
+
+	Object 紫烟_右手武器290 = 732
+	{
+		Particle = 52,18
+	}
+
+	Object 紫红烟_全身体291 = 733
+	{
+		Particle = 55,28
+	}
+
+	Object 橙红烟_全身体292 = 734
+	{
+		Particle = 56,28
+	}
+
+	Object 橙红雾_全身体293 = 735
+	{
+		Particle = 57,28
+	}
+
+	Object 黄寒气_全身体294 = 736
+	{
+		Particle = 58,28
+	}
+
+	Object 红烟_全身体295 = 737
+	{
+		Particle = 59,28
+	}
+
+	Object 蓝寒气_全身体296 = 738
+	{
+		Particle = 60,28
+	}
+
+	Object 冰/电_全身体297 = 739
+	{
+		Particle = 61,28
+	}
+
+	Object 毒泡_全身体298 = 740
+	{
+		Particle = 62,28
+	}
+
+	Object 紫寒气_全身体299 = 741
+	{
+		Particle = 63,28
+	}
+
+	Object 毒烟_全身体300 = 742
+	{
+		Particle = 64,28
+	}
+
+	Object 血雾_全身体301 = 743
+	{
+		Particle = 65,28
+	}
+
+	Object 火焰_全身体302 = 744
+	{
+		Particle = 66,28
+	}
+
+	Object 战士火_骑乘303 = 745
+	{
+		Particle = 67,30
+	}
+
+	Object 法师蓝_骑乘304 = 746
+	{
+		Particle = 68,30
+	}
+
+	Object 幻师电_骑乘305 = 747
+	{
+		Particle = 69,30
+	}
+
+	Object 幻师彩_骑乘306 = 748
+	{
+		Particle = 70,30
+	}
+
+	Object 暗巫泥_骑乘307 = 749
+	{
+		Particle = 71,30
+	}
+
+	Object 鲜红烟_头部308 = 750
+	{
+		Particle = 23,0
+	}
+
+	Object 鲜红烟_上半身309 = 751
+	{
+		Particle = 23,2
+	}
+
+	Object 鲜红烟_下半身310 = 752
+	{
+		Particle = 23,4
+	}
+
+	Object 鲜红烟_左手311 = 753
+	{
+		Particle = 23,12
+	}
+
+	Object 鲜红烟_右手312 = 754
+	{
+		Particle = 23,14
+	}
+
+	Object 火焰中_双武器313 = 755
+	{
+		Particle = 38,20
+	}
+
+	Object 紫寒气_左手武器314 = 756
+	{
+		Particle = 7,16
+	}
+
+	Object 骷髅_全身体315 = 757
+	{
+		Particle = 72,28
+	}
+
+	Object 红烟_左肩316 = 758
+	{
+		Particle = 23,8
+	}
+
+	Object 红烟_右肩317 = 759
+	{
+		Particle = 23,10
+	}
+
+	Object 深蓝_双武器318 = 760
+	{
+		Particle = 36,20
+	}
+
+	Object 红烟_背部319 = 761
+	{
+		Particle = 73,22
+	}
+
+	Object 红烟02_背部320 = 762
+	{
+		Particle = 59,22
+	}
+
+	Object 火焰_左手武器321 = 763
+	{
+		Particle = 1,16
+	}
+
+	Object 火焰_右手武器322 = 764
+	{
+		Particle = 1,18
+	}
+
+	Object 红烟_头部323 = 765
+	{
+		Particle = 20,0
+	}
+
+	Object 骷髅_双武器324 = 766
+	{
+		Particle = 72,20
+	}
+
+	Object 冰冻_头325 = 767
+	{
+		Particle = 46,0
+	}
+
+	Object 冰冻_上半身326 = 768
+	{
+		Particle = 46,2
+	}
+
+	Object 冰冻_下半身327 = 769
+	{
+		Particle = 46,4
+	}
+
+	Object 冰冻_左手328 = 770
+	{
+		Particle = 46,12
+	}
+
+	Object 冰冻_右手329 = 771
+	{
+		Particle = 46,14
+	}
+
+	Object 橙红烟02_下半身330 = 772
+	{
+		Particle = 56,4
+	}
+
+	Object 红烟_双武器331 = 773
+	{
+		Particle = 20,20
+	}
+
+	Object 紫红烟_背部332 = 774
+	{
+		Particle = 53,22
+	}
+
+	Object 紫红烟_附件333 = 775
+	{
+		Particle = 53,30
+	}
+
+	Object 淡紫红_右手武器334 = 776
+	{
+		Particle = 0,18
+	}
+
+	Object 红烟_附件335 = 777
+	{
+		Particle = 59,30
+	}
+
+	Object 鲜红烟_左手武器336 = 778
+	{
+		Particle = 23,16
+	}
+
+	Object 鲜红烟_右手武器337 = 779
+	{
+		Particle = 23,18
+	}
+
+	Object 毒骷髅_双武器338 = 780
+	{
+		Particle = 74,20
+	}
+
+	Object 淡蓝寒气_全身体339 = 781
+	{
+		Particle = 11,28
+	}
+
+	Object 泥沼_下半身340 = 782
+	{
+		Particle = 75,4
+	}
+
+	Object 骷髅_头341 = 783
+	{
+		Particle = 72,0
+	}
+
+	Object 蓝寒气索魂_下半身342 = 784
+	{
+		Particle = 60,4
+	}
+
+	Object 蓝寒气_左手武器343                                                                                                                                                                                                                 = 785
+	{
+		Particle = 6,16
+	}
+
+	Object 火焰_背部344 = 786
+	{
+		Particle = 33,22
+	}
+
+	Object 火焰_附件345 = 787
+	{
+		Particle = 33,30
+	}
+
+	Object 红烟02_右手武器346 = 788
+	{
+		Particle = 59,18
+	}
+
+	Object 火球_翅膀347 = 789
+	{
+		Particle = 51,26
+	}
+
+	Object 骷髅_右手武器348 = 790
+	{
+		Particle = 72,18
+	}
+
+	Object 红烟02_上半身349 = 791
+	{
+		Particle = 59,2
+	}
+
+	Object 红烟02_下半身350 = 792
+	{
+		Particle = 59,4
+	}
+
+	Object 化血351 = 793
+	{
+		MagicID = 523
+	}
+
+	Object 半透明100_全身体352 = 794
+	{
+		Particle = 76,0,2,4,6,8,10,12,14,22,28
+	}
+
+	Object 200透明353 = 795
+	{
+		Alpha = 200
+	}
+
+	Object 150透明354 = 796
+	{
+		Alpha = 150
+	}
+
+	Object 战士火_骑乘附件355 = 797
+	{
+		Particle = 67,31
+	}
+
+	Object 法师蓝_骑乘附件356 = 798
+	{
+		Particle = 68,31
+	}
+
+	Object 幻师电_骑乘附件357 = 799
+	{
+		Particle = 69,31
+	}
+
+	Object 幻师彩_骑乘附件358 = 800
+	{
+		Particle = 70,31
+	}
+
+	Object 暗巫泥_骑乘附件359 = 801
+	{
+		Particle = 71,31
+	}
+
+	Object 鞭炮360 = 802
+	{
+		MagicID = 316
+	}
+}
+
+Object 头顶光效 = 803
+{
+
+	Object 小卷轴亮（有任务，并满足接受条件） = 804
+	{
+		MagicID = 188
+	}
+
+	Object 小卷轴灰（有任务，但未满足接受条件） = 805
+	{
+		MagicID = 200
+	}
+
+	Object 闭合小卷轴亮（有可交付任务，并已完成 = 806
+	{
+		MagicID = 190
+	}
+
+	Object 闭合小卷轴灰（有可交付任务，但还未完成） = 807
+	{
+		MagicID = 189
+	}
+
+	Object 魔法门（传送员） = 808
+	{
+		MagicID = 197
+	}
+
+	Object 魔法球（技能学习师） = 809
+	{
+		MagicID = 198
+	}
+
+	Object 大药瓶（药品商） = 810
+	{
+		MagicID = 192
+	}
+
+	Object 刀剑（武器商） = 811
+	{
+		MagicID = 193
+	}
+
+	Object 铠甲（装备商） = 812
+	{
+		MagicID = 194
+	}
+
+	Object 马（骑乘商） = 813
+	{
+		MagicID = 196
+	}
+
+	Object 铁锤（铁匠） = 814
+	{
+		MagicID = 199
+	}
+
+	Object 包裹（杂货商） = 815
+	{
+		MagicID = 201
+	}
+}

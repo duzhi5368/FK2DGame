@@ -1,0 +1,5351 @@
+///////////////////////////////
+// *******  资源脚本  *******
+//
+//  每行最大长度2048字节
+///////////////////////////////
+
+MaxID = 95
+
+Object 魔法动画:MagicObj = 1
+{
+
+	Object 魔法动画:MagicObj = 2
+	{
+
+		Object 冰箭:MagicObj = 3
+		{
+			Anchor = 168,168
+			Offset = 0,-50
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 火球:MagicObj = 4
+		{
+			Anchor = 140,145
+			Offset = 0,-50
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			SoundID = 1108
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 6
+		{
+			Anchor = 161,167
+			DrawOrder = 1
+			Delay = 75
+			Life = 13
+			ReBuild = 0
+			SoundID = 1403
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 7
+		{
+			Anchor = 160,186
+			DrawOrder = 1
+			Delay = 75
+			Life = 13
+			ReBuild = 0
+			SoundID = 1320
+			bSoundLoop = 0
+			Offset = 0,0
+		}
+
+		Object 未知名:MagicObj = 8
+		{
+			Anchor = 158,200
+			Delay = 75
+			Life = 16
+			DrawOrder = 1
+			ReBuild = 0
+			SoundID = 1516
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 9
+		{
+			Anchor = 125,191
+			Offset = 0,0
+			Delay = 70
+			Life = 11
+			DrawOrder = 1
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 10
+		{
+			Anchor = 110,185
+			Delay = 70
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			DrawOrder = 1
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 11
+		{
+			Anchor = 89,126
+			Delay = 80
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			DrawOrder = 1
+			ReBuild = 0
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 12
+		{
+			Anchor = 89,152
+			Delay = 80
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			DrawOrder = 1
+			ReBuild = 0
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 14
+		{
+			Anchor = 43,51
+			DrawOrder = 1
+			Delay = 68
+			Life = 16
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 16
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 15
+		{
+			Anchor = 45,48
+			DrawOrder = 1
+			Delay = 65
+			Life = 12
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 16
+		{
+			Anchor = 45,53
+			DrawOrder = 1
+			Delay = 62
+			Life = 14
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 14
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 17
+		{
+			Anchor = 43,60
+			DrawOrder = 1
+			Delay = 75
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 18
+		{
+			Anchor = 47,63
+			DrawOrder = 1
+			Delay = 75
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 19
+		{
+			Anchor = 45,62
+			DrawOrder = 1
+			Delay = 75
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 20
+		{
+			Anchor = 45,70
+			DrawOrder = 1
+			Delay = 75
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 顶火圈:MagicObj = 21
+		{
+			Anchor = 44,61
+			DrawOrder = 1
+			Offset = 0,-13
+			Delay = 75
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 22
+		{
+			Anchor = 44,57
+			DrawOrder = 1
+			Delay = 68
+			Life = 8
+			ReBuild = 0
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 未知名:MagicObj = 23
+		{
+			Anchor = 46,60
+			DrawOrder = 1
+			Delay = 70
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 24
+		{
+			Anchor = 45,58
+			DrawOrder = 1
+			Delay = 70
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 25
+		{
+			Anchor = 45,58
+			DrawOrder = 1
+			Delay = 75
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 5
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 26
+		{
+			Anchor = 46,58
+			DrawOrder = 1
+			Delay = 70
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 火光:MagicObj = 27
+		{
+			Anchor = 43,58
+			DrawOrder = 1
+			Delay = 70
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 28
+		{
+			Anchor = 44,58
+			DrawOrder = 1
+			Delay = 70
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 29
+		{
+			Anchor = 44,61
+			DrawOrder = 1
+			Delay = 70
+			Life = 8
+			ReBuild = 0
+			bAddCrtHeight = 1
+			offset = 0,-13
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 31
+		{
+			Anchor = 140,144
+			DrawOrder = 1
+			Delay = 75
+			Life = 8
+			ReBuild = 0
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 32
+		{
+			Anchor = 140,157
+			Delay = 75
+			Life = 8
+			ReBuild = 0
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 33
+		{
+			ReBuild = 0
+			Anchor = 140,157
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			Delay = 75
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+			looptime = 0
+		}
+
+		Object 未知名:MagicObj = 34
+		{
+			ReBuild = 0
+			Anchor = 140,148
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			Delay = 75
+			Life = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 35
+		{
+			Anchor = 140,148
+			DrawOrder = 1
+			Offset = 0,-90
+			Delay = 75
+			LoopStartIndex = 1
+			LoopEndIndex = 10
+			Life = 10
+			ReBuild = 0
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 36
+		{
+			ReBuild = 0
+			Anchor = 145,177
+			LoopStartIndex = 12
+			LoopEndIndex = 13
+			Delay = 75
+			Life = 13
+			looptime = 0
+			SoundID = 1404
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object 未知名:MagicObj = 37
+		{
+			ReBuild = 0
+			Anchor = 147,136
+			Delay = 90
+			Life = 8
+			Offset = 0,0
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object 未知名:MagicObj = 38
+		{
+			Anchor = 139,155
+			DrawOrder = 0
+			Delay = 80
+			Life = 8
+			ReBuild = 0
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 41
+		{
+			Anchor = 158,169
+			Delay = 75
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			ReBuild = 0
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 42
+		{
+			Anchor = 162,213
+			DrawOrder = 1
+			Delay = 80
+			Life = 10
+			ReBuild = 0
+			SoundID = 1306
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 43
+		{
+			Anchor = 159,194
+			Delay = 75
+			Life = 9
+			ReBuild = 0
+			SoundID = 1409
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 44
+		{
+			Anchor = 166,213
+			DrawOrder = 0
+			Delay = 68
+			Life = 8
+			ReBuild = 0
+			SoundID = 1417
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 45
+		{
+			Anchor = 156,216
+			DrawOrder = 1
+			Delay = 60
+			Life = 11
+			ReBuild = 0
+			SoundID = 1402
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 46
+		{
+			Anchor = 180,188
+			Delay = 68
+			Life = 8
+			ReBuild = 0
+			SoundID = 1212
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 47
+		{
+			Anchor = 185,182
+			Delay = 68
+			Life = 8
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 48
+		{
+			Anchor = 161,213
+			Delay = 60
+			Life = 8
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 电球爆炸:MagicObj = 50
+		{
+			ReBuild = 0
+			Anchor = 140,140
+			Offset = 0,-50
+			Delay = 60
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 火弹爆炸:MagicObj = 51
+		{
+			ReBuild = 0
+			Anchor = 100,112
+			Offset = 0,-50
+			Delay = 70
+			Life = 9
+			SoundID = 1301
+			bSoundLoop = 0
+		}
+
+		Object 冰弹爆炸:MagicObj = 52
+		{
+			ReBuild = 0
+			Anchor = 160,166
+			Offset = 0,-50
+			Delay = 70
+			Life = 7
+			SoundID = 1323
+			bSoundLoop = 0
+		}
+
+		Object 火弹爆炸2:MagicObj = 53
+		{
+			ReBuild = 0
+			Anchor = 78,89
+			Offset = 0,-50
+			Delay = 70
+			Life = 7
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 65
+		{
+			Anchor = 140,158
+			Delay = 70
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			DrawOrder = 1
+			ReBuild = 0
+			LoopTime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 66
+		{
+			Anchor = 143,135
+			Offset = 0,-50
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 67
+		{
+			Anchor = 112,120
+			Offset = 0,0
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 火墙:MagicObj = 68
+		{
+			ReBuild = 0
+			Anchor = 223,237
+			LoopStartIndex = 11
+			LoopEndIndex = 18
+			Delay = 70
+			LayerValue = 0
+			SoundID = 1326
+			bSoundLoop = 1
+		}
+
+		Object 火球:MagicObj = 69
+		{
+			Anchor = 104,119
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 70
+			ReBuild = 0
+			offset = 0,-50
+			SoundID = 1312
+			bSoundLoop = 0
+		}
+
+		Object 未知名MagicObj = 70
+		{
+			Offset = 0,-50
+			Anchor = 165,165
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 70
+			ReBuild = 0
+			SoundID = 1304
+			bSoundLoop = 0
+		}
+
+		Object 暴风雪:MagicObj = 71
+		{
+			ReBuild = 0
+			Anchor = 89,221
+			Delay = 40
+			Life = 27
+			Offset = 140,-336
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			StepOffset = -10,24
+		}
+
+		Object 火弹爆炸3:MagicObj = 72
+		{
+			ReBuild = 0
+			Anchor = 188,184
+			Offset = 0,-50
+			Delay = 60
+			Life = 18
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 群补:MagicObj = 73
+		{
+			ReBuild = 0
+			Anchor = 241,263
+			Delay = 65
+			LayerValue = 0
+			SoundID = 1416
+			bSoundLoop = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 13
+			looptime = 0
+		}
+
+		Object 未知名MagicObj = 74
+		{
+			Anchor = 160,160
+			Offset = 0,-50
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名MagicObj = 75
+		{
+			Anchor = 145,150
+			Offset = 0,-50
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 未知名MagicObj = 76
+		{
+			Anchor = 110,112
+			Offset = 0,-50
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 电球:MagicObj = 77
+		{
+			Anchor = 50,55
+			Offset = 0,-50
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			FramesPerDir = 8
+			nDir = 1
+			Delay = 60
+			SoundID = 1401
+			bSoundLoop = 0
+		}
+
+		Object 电球:MagicObj = 78
+		{
+			Anchor = 264,241
+			FramesPerDir = 13
+			nDir = 8
+			Delay = 60
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+			life = 13
+			Offset = 0,-50
+		}
+
+		Object 未知名MagicObj = 79
+		{
+			Anchor = 163,146
+			FramesPerDir = 13
+			nDir = 8
+			Delay = 60
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+			life = 13
+			Offset = 0,-50
+		}
+
+		Object 未知名:MagicObj = 80
+		{
+			Anchor = 244,242
+			FramesPerDir = 12
+			nDir = 8
+			Delay = 60
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+			life = 12
+			Offset = 0,-50
+		}
+
+		Object 未知名:MagicObj = 81
+		{
+			Anchor = 131,132
+			FramesPerDir = 12
+			nDir = 8
+			Delay = 60
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+			life = 12
+			Offset = 0,-50
+		}
+
+		Object 飞行石头带火:MagicObj = 82
+		{
+			Anchor = 126,121
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			ReBuild = 0
+			Offset = 0,-50
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 飞行石头带毒:MagicObj = 83
+		{
+			Anchor = 131,122
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			ReBuild = 0
+			Offset = 0,-50
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 飞行石头带冰:MagicObj = 84
+		{
+			Anchor = 130,124
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			ReBuild = 0
+			Offset = 0,-50
+			SoundID = 1208
+			bSoundLoop = 0
+		}
+
+		Object 飞行石头:MagicObj = 85
+		{
+			Anchor = 131,123
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			ReBuild = 0
+			Offset = 0,-50
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 飞行熔岩块:MagicObj = 86
+		{
+			Anchor = 129,123
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			ReBuild = 0
+			Offset = 0,-50
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object D02:MagicObj = 87
+		{
+			Anchor = 109,161
+			Delay = 70
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			LoopTime = 0
+			DrawOrder = 1
+			ReBuild = 0
+			SoundID = 1214
+			bSoundLoop = 1
+		}
+
+		Object 火弹爆炸3:MagicObj = 88
+		{
+			ReBuild = 0
+			Anchor = 45,56
+			Offset = 0,-12
+			Delay = 70
+			Life = 8
+			looptime = 0
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 未知名MagicObj = 89
+		{
+			ReBuild = 0
+			Anchor = 45,65
+			Offset = 0,-12
+			Delay = 60
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+			looptime = 0
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			bAddCrtHeight = 1
+		}
+
+		Object 未知名MagicObj = 90
+		{
+			ReBuild = 0
+			Anchor = 21,35
+			Offset = 0,-12
+			Delay = 60
+			Life = 12
+			looptime = 0
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 火弹爆炸:MagicObj = 91
+		{
+			ReBuild = 0
+			Anchor = 116,124
+			Offset = 0,-50
+			Delay = 60
+			Life = 9
+			SoundID = 1312
+			bSoundLoop = 0
+		}
+
+		Object 火弹爆炸:MagicObj = 92
+		{
+			ReBuild = 0
+			Anchor = 160,160
+			Offset = 0,-50
+			Delay = 70
+			Life = 10
+			SoundID = 1301
+			bSoundLoop = 0
+		}
+
+		Object 火弹爆炸:MagicObj = 93
+		{
+			ReBuild = 0
+			Anchor = 139,143
+			Offset = 0,-50
+			Delay = 60
+			Life = 9
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 火弹爆炸:MagicObj = 94
+		{
+			ReBuild = 0
+			Anchor = 158,158
+			Offset = 0,-50
+			Delay = 64
+			Life = 7
+			SoundID = 1501
+			bSoundLoop = 0
+		}
+
+		Object 火弹爆炸:MagicObj = 95
+		{
+			ReBuild = 0
+			Anchor = 140,147
+			Offset = 0,-50
+			Delay = 64
+			Life = 9
+			SoundID = 1518
+			bSoundLoop = 0
+		}
+
+		Object 未知名MagicObj = 96
+		{
+			Anchor = 138,159
+			Delay = 60
+			Life = 14
+			LoopStartIndex = 8
+			LoopEndIndex = 14
+			LoopTime = 0
+			DrawOrder = 1
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 长矛_带冰 = 97
+		{
+			Anchor = 124,125
+			Offset = 0,-50
+			FramesPerDir = 5
+			nDir = 32
+			Delay = 60
+			SoundID = 0
+			bSoundLoop = 0
+			ReBuild = 0
+		}
+
+		Object 长矛_带电 = 98
+		{
+			ReBuild = 0
+			Anchor = 124,125
+			Delay = 60
+			nDir = 32
+			FramesPerDir = 5
+			SoundID = 0
+			bSoundLoop = 0
+			Offset = 0,-50
+		}
+
+		Object 长矛_带毒:MagicObj = 99
+		{
+			ReBuild = 0
+			Anchor = 124,125
+			Delay = 60
+			Offset = 0,-50
+			nDir = 32
+			FramesPerDir = 5
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 长矛_带火:MagicObj = 100
+		{
+			ReBuild = 0
+			Anchor = 125,120
+			Delay = 60
+			Offset = 0,-50
+			nDir = 32
+			FramesPerDir = 5
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 飞镖_冰:MagicObj = 101
+		{
+			ReBuild = 0
+			Anchor = 40,40
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 5
+			nDir = 32
+		}
+
+		Object 飞镖_电:MagicObj = 102
+		{
+			ReBuild = 0
+			Anchor = 40,40
+			Delay = 60
+			Offset = 0,0
+			FramesPerDir = 5
+			SoundID = 0
+			bSoundLoop = 0
+			nDir = 32
+		}
+
+		Object 飞镖_毒:MagicObj = 103
+		{
+			ReBuild = 0
+			Anchor = 40,40
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 5
+			SoundID = 0
+			bSoundLoop = 0
+			nDir = 32
+		}
+
+		Object 飞镖_火:MagicObj = 104
+		{
+			ReBuild = 0
+			Anchor = 40,40
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 5
+			SoundID = 0
+			bSoundLoop = 0
+			nDir = 32
+		}
+
+		Object 箭_带冰:MagicObj = 105
+		{
+			ReBuild = 0
+			Anchor = 111,89
+			Delay = 60
+			Offset = 0,-50
+			nDir = 32
+			FramesPerDir = 4
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 箭_带电:MagicObj = 106
+		{
+			ReBuild = 0
+			Anchor = 127,99
+			Delay = 60
+			Offset = 0,-50
+			nDir = 32
+			FramesPerDir = 4
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 箭_带毒:MagicObj = 107
+		{
+			ReBuild = 0
+			Anchor = 106,77
+			Delay = 60
+			Offset = 0,-50
+			nDir = 32
+			FramesPerDir = 4
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 箭_带火:MagicObj = 108
+		{
+			ReBuild = 0
+			Anchor = 205,150
+			Delay = 60
+			Offset = 0,-50
+			nDir = 32
+			FramesPerDir = 4
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 闪电箭:MagicObj = 109
+		{
+			ReBuild = 0
+			Anchor = 88,89
+			Delay = 60
+			Offset = 0,-50
+			nDir = 32
+			FramesPerDir = 5
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object a20:MagicObj = 111
+		{
+			ReBuild = 0
+			Anchor = 100,110
+			Delay = 65
+			Offset = 0,0
+			Life = 7
+			LoopStartIndex = 1
+			LoopEndIndex = 7
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object a19:MagicObj = 112
+		{
+			ReBuild = 0
+			Anchor = 100,102
+			Delay = 60
+			Offset = 0,0
+			Life = 7
+			LoopStartIndex = 1
+			LoopEndIndex = 7
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A17:MagicObj = 113
+		{
+			ReBuild = 0
+			Anchor = 103,106
+			Delay = 65
+			Offset = 0,0
+			Life = 12
+			looptime = 0
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A16:MagicObj = 114
+		{
+			ReBuild = 0
+			Anchor = 103,106
+			Delay = 65
+			Offset = 0,0
+			Life = 12
+			looptime = 0
+			LoopStartIndex = 1
+			LoopEndIndex = 14
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A12:MagicObj = 115
+		{
+			ReBuild = 0
+			Anchor = 100,108
+			Delay = 64
+			Offset = 0,0
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A18:MagicObj = 116
+		{
+			ReBuild = 0
+			Anchor = 96,111
+			Delay = 61
+			Offset = 0,0
+			Life = 13
+			LoopStartIndex = 1
+			LoopEndIndex = 13
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A09:MagicObj = 117
+		{
+			ReBuild = 0
+			Anchor = 97,109
+			Delay = 70
+			Offset = 0,-50
+			Life = 7
+			LoopStartIndex = 1
+			LoopEndIndex = 7
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A15:MagicObj = 118
+		{
+			ReBuild = 0
+			Anchor = 102,100
+			Delay = 65
+			Offset = 0,0
+			Life = 7
+			LoopStartIndex = 1
+			LoopEndIndex = 7
+			looptime = 0
+			SoundID = 1324
+			bSoundLoop = 0
+		}
+
+		Object A14:MagicObj = 119
+		{
+			ReBuild = 0
+			Anchor = 102,100
+			Delay = 65
+			Offset = 0,0
+			Life = 7
+			LoopStartIndex = 1
+			LoopEndIndex = 7
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A13:MagicObj = 120
+		{
+			ReBuild = 0
+			Anchor = 102,100
+			Delay = 65
+			Offset = 0,0
+			Life = 7
+			LoopStartIndex = 1
+			LoopEndIndex = 7
+			looptime = 0
+			SoundID = 1327
+			bSoundLoop = 0
+		}
+
+		Object A10:MagicObj = 121
+		{
+			ReBuild = 0
+			Anchor = 105,107
+			Delay = 65
+			Offset = 0,0
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A11:MagicObj = 122
+		{
+			ReBuild = 0
+			Anchor = 100,120
+			Delay = 60
+			Offset = 0,0
+			Life = 9
+			LoopStartIndex = 1
+			LoopEndIndex = 9
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A16:MagicObj = 124
+		{
+			ReBuild = 0
+			Anchor = 99,103
+			Delay = 70
+			Offset = 0,-12
+			Life = 13
+			bAddCrtHeight = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 13
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A15:MagicObj = 125
+		{
+			ReBuild = 0
+			Anchor = 100,110
+			Delay = 65
+			Offset = 0,-12
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A14:MagicObj = 126
+		{
+			ReBuild = 0
+			Anchor = 98,111
+			Delay = 60
+			Offset = 0,-12
+			Life = 11
+			LoopStartIndex = 1
+			LoopEndIndex = 11
+			looptime = 5
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A13:MagicObj = 127
+		{
+			ReBuild = 0
+			Anchor = 98,111
+			Delay = 60
+			Offset = 0,-12
+			Life = 16
+			LoopStartIndex = 1
+			LoopEndIndex = 16
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A12:MagicObj = 128
+		{
+			ReBuild = 0
+			Anchor = 98,111
+			Delay = 60
+			Offset = 0,-12
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A11:MagicObj = 129
+		{
+			ReBuild = 0
+			Anchor = 98,113
+			Delay = 60
+			Offset = 0,-12
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A10:MagicObj = 130
+		{
+			ReBuild = 0
+			Anchor = 102,107
+			Delay = 32
+			Offset = 0,-12
+			Life = 47
+			LoopStartIndex = 1
+			LoopEndIndex = 47
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object A09:MagicObj = 131
+		{
+			ReBuild = 0
+			Anchor = 102,107
+			Delay = 50
+			Offset = 0,-12
+			Life = 10
+			LoopStartIndex = 1
+			LoopEndIndex = 10
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 1407
+			bSoundLoop = 0
+		}
+
+		Object F10:MagicObj = 155
+		{
+			ReBuild = 0
+			Anchor = 133,126
+			Delay = 55
+			Offset = 0,-50
+			Life = 12
+			SoundID = 1522
+			bSoundLoop = 0
+		}
+
+		Object F11:MagicObj = 156
+		{
+			ReBuild = 0
+			Anchor = 142,157
+			Delay = 60
+			Offset = 0,-50
+			Life = 15
+			SoundID = 1054
+			bSoundLoop = 0
+		}
+
+		Object f12:MagicObj = 157
+		{
+			ReBuild = 0
+			Anchor = 88,100
+			Delay = 75
+			Offset = 0,-50
+			Life = 9
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object F13:MagicObj = 158
+		{
+			ReBuild = 0
+			Anchor = 72,70
+			Delay = 60
+			Offset = 0,-30
+			Life = 9
+			SoundID = 1701
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+			looptime = 10
+		}
+
+		Object C09:MagicObj = 159
+		{
+			ReBuild = 0
+			Anchor = 160,164
+			Delay = 60
+			Offset = 0,0
+			Life = 14
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object B17:MagicObj = 160
+		{
+			ReBuild = 0
+			Anchor = 44,60
+			Delay = 80
+			Offset = 0,-12
+			Life = 8
+			DrawOrder = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			bAddCrtHeight = 1
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object B18:MagicObj = 161
+		{
+			ReBuild = 0
+			Anchor = 44,65
+			Delay = 70
+			Offset = 0,-12
+			Life = 8
+			DrawOrder = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			bAddCrtHeight = 1
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object B19:MagicObj = 162
+		{
+			ReBuild = 0
+			Anchor = 43,68
+			Delay = 70
+			Offset = 0,-12
+			Life = 8
+			looptime = 5
+			bAddCrtHeight = 1
+			LoopEndIndex = 8
+			LoopStartIndex = 1
+			DrawOrder = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object B21:MagicObj = 163
+		{
+			ReBuild = 0
+			Anchor = 44,65
+			Delay = 60
+			Offset = 0,-12
+			Life = 12
+			DrawOrder = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			bAddCrtHeight = 1
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object B22:MagicObj = 164
+		{
+			ReBuild = 0
+			Anchor = 158,223
+			Delay = 63
+			Offset = 0,0
+			Life = 12
+			SoundID = 1504
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object A02:MagicObj = 166
+		{
+			ReBuild = 0
+			Anchor = 284,301
+			Delay = 60
+			Offset = 0,0
+			nDir = 8
+			FramesPerDir = 7
+			Life = 7
+			SoundID = 1216
+			bSoundLoop = 0
+		}
+
+		Object A03:MagicObj = 167
+		{
+			ReBuild = 0
+			Anchor = 324,312
+			Delay = 60
+			Offset = 0,0
+			nDir = 8
+			FramesPerDir = 7
+			Life = 7
+			SoundID = 1215
+			bSoundLoop = 0
+		}
+
+		Object 未知名:MagicObj = 168
+		{
+			ReBuild = 0
+			Anchor = 305,290
+			FramesPerDir = 10
+			nDir = 8
+			Delay = 30
+			SoundID = 1201
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 未知名:MagicObj = 169
+		{
+			Anchor = 303,290
+			FramesPerDir = 10
+			nDir = 8
+			Delay = 35
+			ReBuild = 0
+			SoundID = 1204
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 未知名:MagicObj = 170
+		{
+			ReBuild = 0
+			Anchor = 306,290
+			nDir = 8
+			FramesPerDir = 10
+			Offset = 0,0
+			Delay = 35
+			SoundID = 1210
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 未知名:MagicObj = 171
+		{
+			Anchor = 306,290
+			FramesPerDir = 10
+			nDir = 8
+			Delay = 35
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 未知名:MagicObj = 172
+		{
+			Anchor = 248,277
+			FramesPerDir = 12
+			Life = 12
+			Delay = 60
+			ReBuild = 0
+			SoundID = 1206
+			bSoundLoop = 0
+			nDir = 8
+		}
+
+		Object 未知名:MagicObj = 173
+		{
+			Anchor = 325,350
+			FramesPerDir = 10
+			nDir = 8
+			Delay = 40
+			ReBuild = 0
+			SoundID = 1209
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object F16:MagicObj = 174
+		{
+			ReBuild = 0
+			Anchor = 76,86
+			Delay = 60
+			Offset = 0,0
+			Life = 12
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object F14:MagicObj = 175
+		{
+			ReBuild = 0
+			Anchor = 76,86
+			Delay = 60
+			Offset = 0,-12
+			Life = 12
+			bAddCrtHeight = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object F15:MagicObj = 176
+		{
+			ReBuild = 0
+			Anchor = 75,87
+			Delay = 50
+			Offset = 0,0
+			Life = 12
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object F17:MagicObj = 177
+		{
+			ReBuild = 0
+			Anchor = 75,87
+			Delay = 70
+			Offset = 0,-12
+			Life = 8
+			bAddCrtHeight = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object B35:MagicObj = 178
+		{
+			ReBuild = 0
+			Anchor = 101,97
+			Delay = 40
+			Offset = 0,-50
+			Life = 11
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object B32:MagicObj = 179
+		{
+			ReBuild = 0
+			Anchor = 78,113
+			Delay = 40
+			Offset = 0,0
+			Life = 12
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 喝红药:MagicObj = 180
+		{
+			ReBuild = 0
+			Anchor = 150,205
+			Delay = 30
+			Offset = 0,0
+			Life = 29
+			DrawOrder = 1
+		}
+
+		Object 喝蓝药:MagicObj = 181
+		{
+			ReBuild = 0
+			Anchor = 150,205
+			Delay = 30
+			Offset = 0,0
+			Life = 29
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object B31:MagicObj = 182
+		{
+			ReBuild = 0
+			Anchor = 78,113
+			Delay = 30
+			Offset = 0,0
+			Life = 12
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object d11:MagicObj = 183
+		{
+			ReBuild = 0
+			Anchor = 112,158
+			Delay = 65
+			Offset = 0,0
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			DrawOrder = 1
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object d10:MagicObj = 184
+		{
+			ReBuild = 0
+			Anchor = 110,160
+			Delay = 70
+			Offset = 0,0
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			DrawOrder = 1
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object d09:MagicObj = 185
+		{
+			ReBuild = 0
+			Anchor = 111,164
+			Delay = 70
+			Offset = 0,0
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			DrawOrder = 1
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object h02:MagicObj = 187
+		{
+			ReBuild = 0
+			Anchor = 150,163
+			Delay = 50
+			Offset = 0,0
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 1514
+			bSoundLoop = 0
+		}
+
+		Object 冷气团shi:MagicObj = 195
+		{
+			ReBuild = 0
+			Anchor = 247,283
+			Delay = 62
+			Offset = 0,0
+			Life = 16
+			SoundID = 1323
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object F18:MagicObj = 203
+		{
+			ReBuild = 0
+			Anchor = 200,217
+			Delay = 30
+			Offset = 0,0
+			Life = 12
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object F06xiao:MagicObj = 204
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 9
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 厉凿01:MagicObj = 205
+		{
+			ReBuild = 0
+			Anchor = 149,158
+			Delay = 150
+			Offset = 0,-50
+			Life = 56
+			SoundID = 0
+			bSoundLoop = 0
+			FramesPerDir = 7
+			nDir = 8
+		}
+
+		Object 幻影爪:MagicObj = 206
+		{
+			ReBuild = 0
+			Anchor = 234,202
+			Delay = 50
+			Offset = 0,-50
+			Life = 96
+			SoundID = 0
+			bSoundLoop = 0
+			FramesPerDir = 12
+			nDir = 8
+		}
+
+		Object 合掌断魂01:MagicObj = 207
+		{
+			ReBuild = 0
+			Anchor = 135,160
+			Delay = 130
+			Offset = 0,-50
+			Life = 72
+			SoundID = 0
+			bSoundLoop = 0
+			FramesPerDir = 9
+			nDir = 8
+		}
+
+		Object 旋龙索:MagicObj = 208
+		{
+			ReBuild = 0
+			Anchor = 350,380
+			Delay = 80
+			Offset = 0,-20
+			Life = 64
+			SoundID = 0
+			bSoundLoop = 0
+			FramesPerDir = 8
+			nDir = 8
+		}
+
+		Object 鼠标点中地面动画:MagicObj = 209
+		{
+			ReBuild = 0
+			Anchor = 102,102
+			Delay = 30
+			Offset = 0,0
+			Life = 8
+		}
+
+		Object 恢复魔法施放光效:MagicObj = 210
+		{
+			ReBuild = 0
+			Anchor = 159,207
+			Delay = 60
+			Offset = 0,0
+			Life = 18
+			DrawOrder = 0
+			SoundID = 1411
+			bSoundLoop = 0
+		}
+
+		Object 恢复魔法蓄气光效:MagicObj = 211
+		{
+			ReBuild = 0
+			Anchor = 159,203
+			Delay = 70
+			Offset = 0,0
+			Life = 14
+			DrawOrder = 1
+		}
+
+		Object 恢复魔法施放光效3:MagicObj = 212
+		{
+			ReBuild = 0
+			Anchor = 160,212
+			Delay = 70
+			Offset = 0,0
+			Life = 16
+			SoundID = 1407
+			bSoundLoop = 0
+		}
+
+		Object 恢复魔法施放光效2:MagicObj = 213
+		{
+			ReBuild = 0
+			Anchor = 158,224
+			Delay = 30
+			Offset = 0,0
+			Life = 15
+		}
+
+		Object F19:MagicObj = 214
+		{
+			ReBuild = 0
+			Anchor = 148,208
+			Delay = 30
+			Offset = 0,0
+			Life = 14
+		}
+
+		Object F20:MagicObj = 215
+		{
+			ReBuild = 0
+			Anchor = 121,162
+			Delay = 30
+			Offset = 0,0
+			Life = 16
+			SoundID = 1320
+			bSoundLoop = 0
+		}
+
+		Object a21:MagicObj = 216
+		{
+			ReBuild = 0
+			Anchor = 119,172
+			Delay = 30
+			Offset = 0,0
+			Life = 15
+		}
+
+		Object a22:MagicObj = 217
+		{
+			ReBuild = 0
+			Anchor = 120,176
+			Delay = 60
+			Offset = 0,0
+			Life = 15
+			DrawOrder = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 15
+			looptime = 0
+		}
+
+		Object 暗系魔法爆炸光效2shi01:MagicObj = 218
+		{
+			ReBuild = 0
+			Anchor = 230,274
+			Delay = 70
+			Offset = 0,0
+			Life = 13
+			DrawOrder = 1
+		}
+
+		Object 暗系魔法爆炸光效1:MagicObj = 219
+		{
+			ReBuild = 0
+			Anchor = 156,178
+			Delay = 30
+			Offset = 0,0
+			Life = 13
+		}
+
+		Object 恢复魔法爆炸光效2:MagicObj = 220
+		{
+			ReBuild = 0
+			Anchor = 160,140
+			Delay = 30
+			Offset = 0,0
+			Life = 12
+		}
+
+		Object 暗系魔法释放光效2:MagicObj = 221
+		{
+			ReBuild = 0
+			Anchor = 140,158
+			Delay = 70
+			Offset = 0,0
+			Life = 14
+		}
+
+		Object 毒系魔法爆炸光效:MagicObj = 222
+		{
+			ReBuild = 0
+			Anchor = 158,198
+			Delay = 30
+			Offset = 0,0
+			Life = 13
+		}
+
+		Object 恢复魔法爆炸光效1:MagicObj = 223
+		{
+			ReBuild = 0
+			Anchor = 150,147
+			Delay = 70
+			Offset = 0,-50
+			Life = 14
+			DrawOrder = 1
+			SoundID = 1406
+			bSoundLoop = 0
+			bAddCrtHeight = 0
+		}
+
+		Object 暗系魔法释放光效1:MagicObj = 224
+		{
+			ReBuild = 0
+			Anchor = 157,198
+			Delay = 70
+			Offset = 0,0
+			Life = 14
+			DrawOrder = 1
+		}
+
+		Object 恢复魔法头顶光效1:MagicObj = 225
+		{
+			ReBuild = 0
+			Anchor = 62,84
+			Delay = 60
+			Offset = 0,0
+			Life = 8
+			DrawOrder = 1
+			bAddCrtHeight = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			LoopTime = 0
+		}
+
+		Object 恢复魔法头顶光效2:MagicObj = 226
+		{
+			ReBuild = 0
+			Anchor = 59,65
+			Delay = 60
+			Offset = 0,0
+			Life = 8
+			DrawOrder = 1
+			bAddCrtHeight = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 11
+			LoopTime = 0
+		}
+
+		Object 耀嘉喷火球:MagicObj = 227
+		{
+			ReBuild = 0
+			Anchor = 500,626
+			Offset = 0,0
+			Life = 14
+			Delay = 60
+			FramesPerDir = 14
+			nDir = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 耀嘉劈地斩:MagicObj = 228
+		{
+			ReBuild = 0
+			Anchor = 508,620
+			Delay = 80
+			Offset = 0,0
+			Life = 13
+			FramesPerDir = 13
+			nDir = 8
+			SoundID = 1619
+			bSoundLoop = 0
+		}
+
+		Object 火系爆炸光效1:MagicObj = 229
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 8
+		}
+
+		Object ANniu:MagicObj = 230
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 8
+		}
+
+		Object 火盾:MagicObj = 231
+		{
+			ReBuild = 0
+			Anchor = 48,61
+			Delay = 60
+			Offset = 0,-12
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 冰盾:MagicObj = 232
+		{
+			ReBuild = 0
+			Anchor = 48,62
+			Delay = 60
+			Offset = 0,-12
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 电盾:MagicObj = 233
+		{
+			ReBuild = 0
+			Anchor = 48,62
+			Delay = 60
+			Offset = 0,-12
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 暗盾:MagicObj = 234
+		{
+			ReBuild = 0
+			Anchor = 48,63
+			Delay = 60
+			Offset = 0,-12
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 狂扫八方:MagicObj = 235
+		{
+			ReBuild = 0
+			Anchor = 273,293
+			Delay = 60
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1206
+			bSoundLoop = 0
+			life = 10
+		}
+
+		Object 冰环:MagicObj = 236
+		{
+			ReBuild = 0
+			Anchor = 251,272
+			Delay = 60
+			Offset = 0,0
+			Life = 12
+			DrawOrder = 0
+			SoundID = 1601
+			bSoundLoop = 0
+		}
+
+		Object 冰锥:MagicObj = 237
+		{
+			ReBuild = 0
+			Anchor = 154,192
+			Delay = 60
+			Offset = 0,0
+			Life = 15
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object 黑洞:MagicObj = 238
+		{
+			ReBuild = 0
+			Anchor = 159,138
+			Delay = 70
+			Offset = 0,0
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			SoundID = 1618
+			bSoundLoop = 1
+		}
+
+		Object 火球-大:MagicObj = 239
+		{
+			ReBuild = 0
+			Anchor = 158,238
+			Life = 30
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			Offset = 140,-336
+			StepOffset = -10,24
+			Delay = 50
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 火球-小:MagicObj = 240
+		{
+			ReBuild = 0
+			Anchor = 120,149
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			Offset = 140,-336
+			StepOffset = -10,24
+			Delay = 50
+			Life = 27
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 小型电球:MagicObj = 241
+		{
+			ReBuild = 0
+			Anchor = 102,104
+			Offset = 0,-50
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			FramesPerDir = 12
+			nDir = 1
+			Delay = 60
+			SoundID = 1401
+			bSoundLoop = 0
+		}
+
+		Object 旋风-大型:MagicObj = 242
+		{
+			ReBuild = 0
+			Life = 12
+			Anchor = 162,208
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			Delay = 70
+			SoundID = 1616
+			bSoundLoop = 1
+			DrawOrder = 1
+		}
+
+		Object 旋风-小型:MagicObj = 243
+		{
+			ReBuild = 0
+			Anchor = 111,162
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			Delay = 70
+			SoundID = 1616
+			bSoundLoop = 1
+			DrawOrder = 1
+		}
+
+		Object 冰弹-小:MagicObj = 244
+		{
+			Life = 28
+			ReBuild = 0
+			Anchor = 160,193
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			Offset = 0,-336
+			StepOffset = 0,24
+			Delay = 50
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 攻击范围001:MagicObj = 245
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 1
+		}
+
+		Object 攻击范围002:MagicObj = 246
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 1
+		}
+
+		Object 攻击范围003:MagicObj = 247
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 1
+		}
+
+		Object 狂扫八方范围选择:MagicObj = 248
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 8
+		}
+
+		Object 龙腾的范围选择:MagicObj = 249
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 8
+		}
+
+		Object 电阵扇形-大:MagicObj = 250
+		{
+			ReBuild = 0
+			Anchor = 260,273
+			Delay = 60
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1602
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 电阵扇形-小:MagicObj = 251
+		{
+			ReBuild = 0
+			Anchor = 190,198
+			Delay = 60
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1602
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 电阵圆形:MagicObj = 252
+		{
+			ReBuild = 0
+			Anchor = 261,269
+			Delay = 60
+			Offset = 0,0
+			Life = 14
+			SoundID = 1602
+			bSoundLoop = 0
+		}
+
+		Object 喷墨汁-黑:MagicObj = 253
+		{
+			ReBuild = 0
+			Anchor = 303,298
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1609
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 喷墨汁-紫:MagicObj = 254
+		{
+			ReBuild = 0
+			Anchor = 303,299
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1609
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 喷蛇毒-黑:MagicObj = 255
+		{
+			ReBuild = 0
+			Anchor = 251,254
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1610
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 喷蛇毒-红:MagicObj = 256
+		{
+			ReBuild = 0
+			Anchor = 251,254
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1610
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 喷蛇毒-黄:MagicObj = 257
+		{
+			ReBuild = 0
+			Anchor = 251,255
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1610
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 喷蛇毒-绿:MagicObj = 258
+		{
+			ReBuild = 0
+			Anchor = 252,253
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1610
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 喷蛇毒-紫:MagicObj = 259
+		{
+			ReBuild = 0
+			Anchor = 251,253
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1610
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 喷水柱-大:MagicObj = 260
+		{
+			ReBuild = 0
+			Anchor = 302,305
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1611
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 喷水柱-小:MagicObj = 261
+		{
+			ReBuild = 0
+			Anchor = 251,255
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1611
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 气泡攻击-蓝:MagicObj = 262
+		{
+			ReBuild = 0
+			Anchor = 253,277
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1614
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 气泡攻击-绿:MagicObj = 263
+		{
+			ReBuild = 0
+			Anchor = 253,277
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1614
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 气泡攻击-紫:MagicObj = 264
+		{
+			ReBuild = 0
+			Anchor = 253,281
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1614
+			bSoundLoop = 0
+			Life = 12
+		}
+
+		Object 强力飞行暗球:MagicObj = 265
+		{
+			Anchor = 160,159
+			Offset = 0,-50
+			FramesPerDir = 6
+			nDir = 32
+			Delay = 60
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 闪电-大:MagicObj = 266
+		{
+			ReBuild = 0
+			Anchor = 217,490
+			Delay = 62
+			Offset = 0,0
+			Life = 12
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			StepOffset = 0,0
+		}
+
+		Object 闪电-小:MagicObj = 267
+		{
+			ReBuild = 0
+			Anchor = 136,308
+			Delay = 62
+			Offset = 0,0
+			Life = 12
+			SoundID = 1607
+			bSoundLoop = 0
+			DrawOrder = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			StepOffset = 0,0
+		}
+
+		Object 漩涡-大:MagicObj = 268
+		{
+			ReBuild = 0
+			Life = 12
+			Anchor = 161,216
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			Delay = 70
+			SoundID = 1617
+			bSoundLoop = 1
+			DrawOrder = 1
+		}
+
+		Object 漩涡-小:MagicObj = 269
+		{
+			ReBuild = 0
+			Life = 12
+			Anchor = 97,142
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			Delay = 70
+			SoundID = 1617
+			bSoundLoop = 1
+			DrawOrder = 1
+		}
+
+		Object 刀光-红:MagicObj = 270
+		{
+			ReBuild = 0
+			Anchor = 303,294
+			Delay = 60
+			Offset = 0,0
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 0
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 刀光-黄:MagicObj = 271
+		{
+			ReBuild = 0
+			Anchor = 302,297
+			Delay = 60
+			Offset = 0,0
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 0
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 刀光-蓝:MagicObj = 272
+		{
+			ReBuild = 0
+			Anchor = 302,297
+			Delay = 60
+			Offset = 0,0
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 0
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 刀光-紫:MagicObj = 273
+		{
+			ReBuild = 0
+			Anchor = 302,297
+			Delay = 60
+			Offset = 0,0
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 0
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 蛛网禁锢:MagicObj = 274
+		{
+			ReBuild = 0
+			Anchor = 109,131
+			Delay = 90
+			Offset = 0,0
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object 水藻缠绕:MagicObj = 275
+		{
+			ReBuild = 0
+			Anchor = 140,182
+			Delay = 90
+			Offset = 0,0
+			Life = 14
+			LoopStartIndex = 1
+			LoopEndIndex = 14
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object 气泡围困:MagicObj = 276
+		{
+			ReBuild = 0
+			Anchor = 161,213
+			Delay = 90
+			Offset = 0,0
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object 抗流血:MagicObj = 277
+		{
+			ReBuild = 0
+			Anchor = 40,58
+			Delay = 60
+			Offset = 0,-12
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 抗被击:MagicObj = 278
+		{
+			ReBuild = 0
+			Anchor = 44,63
+			Delay = 60
+			Offset = 0,-12
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			bAddCrtHeight = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 毒针-紫:MagicObj = 279
+		{
+			ReBuild = 0
+			Anchor = 187,197
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1612
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 毒雾近程攻击-红:MagicObj = 280
+		{
+			ReBuild = 0
+			Anchor = 115,119
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1615
+			bSoundLoop = 0
+			Life = 10
+			DrawOrder = 1
+		}
+
+		Object 毒雾近程攻击-黄:MagicObj = 281
+		{
+			ReBuild = 0
+			Anchor = 115,119
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1615
+			bSoundLoop = 0
+			Life = 10
+			DrawOrder = 1
+		}
+
+		Object 毒雾近程攻击-绿:MagicObj = 282
+		{
+			ReBuild = 0
+			Anchor = 115,119
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1615
+			bSoundLoop = 0
+			Life = 10
+			DrawOrder = 1
+		}
+
+		Object 毒雾近程攻击-紫:MagicObj = 283
+		{
+			ReBuild = 0
+			Anchor = 115,119
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1615
+			bSoundLoop = 0
+			Life = 10
+			DrawOrder = 1
+		}
+
+		Object 毒雾远程攻击-黑:MagicObj = 284
+		{
+			ReBuild = 0
+			Anchor = 190,198
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 12
+			nDir = 8
+			SoundID = 1615
+			bSoundLoop = 0
+			Life = 12
+			DrawOrder = 1
+		}
+
+		Object 毒针飞行-黑:MagicObj = 285
+		{
+			ReBuild = 0
+			Anchor = 187,200
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1613
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 毒针飞行-红:MagicObj = 286
+		{
+			ReBuild = 0
+			Anchor = 187,200
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1613
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 毒针飞行-绿:MagicObj = 287
+		{
+			ReBuild = 0
+			Anchor = 187,199
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1613
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 毒针飞行-紫:MagicObj = 288
+		{
+			ReBuild = 0
+			Anchor = 187,200
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1613
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 毒针-黑:MagicObj = 289
+		{
+			ReBuild = 0
+			Anchor = 188,198
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1612
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 毒针-红:MagicObj = 290
+		{
+			ReBuild = 0
+			Anchor = 187,197
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1612
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 毒针-绿:MagicObj = 291
+		{
+			ReBuild = 0
+			Anchor = 187,197
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1612
+			bSoundLoop = 0
+			Life = 10
+		}
+
+		Object 毒雾近程攻击-黑:MagicObj = 292
+		{
+			ReBuild = 0
+			Anchor = 115,121
+			Delay = 60
+			Offset = 0,-50
+			FramesPerDir = 10
+			nDir = 8
+			SoundID = 1615
+			bSoundLoop = 0
+			Life = 10
+			DrawOrder = 1
+		}
+
+		Object 喷网-大:MagicObj = 293
+		{
+			Anchor = 135,170
+			Delay = 80
+			LoopStartIndex = 6
+			LoopEndIndex = 13
+			DrawOrder = 1
+			ReBuild = 0
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 喷网飞-大:MagicObj = 294
+		{
+			Anchor = 109,126
+			Offset = 0,-50
+			FramesPerDir = 8
+			nDir = 32
+			Delay = 60
+			ReBuild = 0
+			SoundID = 1604
+			bSoundLoop = 0
+		}
+
+		Object 喷网飞-小:MagicObj = 295
+		{
+			Anchor = 64,74
+			Offset = 0,-50
+			FramesPerDir = 8
+			nDir = 32
+			Delay = 60
+			ReBuild = 0
+			SoundID = 1604
+			bSoundLoop = 0
+		}
+
+		Object 喷网-小:MagicObj = 296
+		{
+			Anchor = 108,133
+			Delay = 80
+			LoopStartIndex = 6
+			LoopEndIndex = 13
+			DrawOrder = 1
+			ReBuild = 0
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object Boss1单手武器攻击2_命中:MagicObj = 297
+		{
+			ReBuild = 0
+			Anchor = 590,688
+			Delay = 60
+			Offset = 0,0
+			Life = 19
+			DrawOrder = 1
+			SoundID = 1330
+			bSoundLoop = 0
+		}
+
+		Object Boss1单手武器攻击2_刀光:MagicObj = 298
+		{
+			ReBuild = 0
+			Anchor = 600,650
+			Delay = 60
+			Offset = 0,0
+			Life = 15
+			FramesPerDir = 15
+			nDir = 8
+		}
+
+		Object Boss1施法1:MagicObj = 299
+		{
+			ReBuild = 0
+			Anchor = 754,668
+			Delay = 60
+			Offset = 0,-80
+			Life = 20
+			DrawOrder = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object Boss1施法2:MagicObj = 300
+		{
+			ReBuild = 0
+			Anchor = 507,565
+			Delay = 60
+			Offset = 0,0
+			Life = 22
+			FramesPerDir = 22
+			nDir = 8
+		}
+
+		Object Boss1死亡:MagicObj = 301
+		{
+			ReBuild = 0
+			Anchor = 504,750
+			Delay = 60
+			Offset = 0,0
+			Life = 28
+			DrawOrder = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object Boss1单手武器攻击1:MagicObj = 302
+		{
+			ReBuild = 0
+			Anchor = 1000,1000
+			Delay = 80
+			Offset = 0,0
+			Life = 20
+			FramesPerDir = 20
+			nDir = 8
+		}
+
+		Object Boss2单手武器攻击1_飞行:MagicObj = 303
+		{
+			ReBuild = 0
+			Anchor = 89,89
+			Delay = 60
+			Offset = 0,-50
+			Life = 8
+			FramesPerDir = 8
+			nDir = 8
+		}
+
+		Object Boss2单手武器攻击1_命中:MagicObj = 304
+		{
+			ReBuild = 0
+			Anchor = 67,71
+			Delay = 60
+			Offset = 0,0
+			Life = 11
+			DrawOrder = 1
+			SoundID = 1501
+			bSoundLoop = 0
+		}
+
+		Object Boss2施法1:MagicObj = 305
+		{
+			ReBuild = 0
+			Anchor = 296,314
+			Delay = 60
+			Offset = 0,-50
+			Life = 20
+			FramesPerDir = 20
+			nDir = 8
+		}
+
+		Object Boss2死亡:MagicObj = 306
+		{
+			ReBuild = 0
+			Anchor = 147,212
+			Delay = 60
+			Offset = 0,0
+			Life = 31
+			DrawOrder = 1
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object Boss2施法3:MagicObj = 307
+		{
+			ReBuild = 0
+			Anchor = 345,347
+			Delay = 80
+			Offset = 0,-50
+			Life = 15
+			FramesPerDir = 15
+			nDir = 8
+		}
+
+		Object Boss2施法2:MagicObj = 308
+		{
+			ReBuild = 0
+			Anchor = 294,408
+			Delay = 90
+			Offset = 0,0
+			Life = 17
+			FramesPerDir = 17
+			nDir = 8
+		}
+
+		Object 东夷族徽:MagicObj = 309
+		{
+			ReBuild = 0
+			Anchor = 129,136
+			Delay = 70
+			SoundID = 0
+			bSoundLoop = 0
+			Life = 21
+			DrawOrder = 1
+			Offset = 0,-50
+		}
+
+		Object 遗逐族徽:MagicObj = 310
+		{
+			ReBuild = 0
+			Anchor = 102,102
+			Delay = 70
+			SoundID = 0
+			bSoundLoop = 0
+			Life = 21
+			DrawOrder = 1
+			Offset = 0,-70
+		}
+
+		Object 寂幻族徽:MagicObj = 311
+		{
+			ReBuild = 0
+			Anchor = 102,99
+			Delay = 60
+			SoundID = 0
+			bSoundLoop = 0
+			Life = 21
+			DrawOrder = 1
+			Offset = 0,-50
+		}
+
+		Object 百果族徽:MagicObj = 312
+		{
+			ReBuild = 0
+			Anchor = 99,98
+			Delay = 60
+			SoundID = 0
+			bSoundLoop = 0
+			Life = 21
+			DrawOrder = 1
+			Offset = 0,-50
+		}
+
+		Object 雾隐:MagicObj = 313
+		{
+			ReBuild = 0
+			Anchor = 143,195
+			Delay = 70
+			LoopStartIndex = 6
+			LoopEndIndex = 19
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object 龙绊脚:MagicObj = 314
+		{
+			ReBuild = 0
+			Anchor = 195,211
+			Delay = 80
+			Offset = 0,0
+			Life = 30
+			DrawOrder = 1
+			SoundID = 1330
+			bSoundLoop = 0
+		}
+
+		Object 狮头:MagicObj = 315
+		{
+			ReBuild = 0
+			Anchor = 123,114
+			Offset = 0,0
+			FramesPerDir = 14
+			nDir = 8
+			Delay = 80
+			SoundID = 0
+			bSoundLoop = 0
+			Life = 14
+			DrawOrder = 1
+		}
+
+		Object 鞭炮:MagicObj = 316
+		{
+			ReBuild = 0
+			Anchor = 95,147
+			Delay = 100
+			Offset = 0,0
+			Life = 12
+			DrawOrder = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			SoundID = 1702
+			bSoundLoop = 0
+		}
+
+		Object 普通箭:MagicObj = 500
+		{
+			ReBuild = 0
+			Anchor = 203,162
+			Delay = 60
+			nDir = 32
+			FramesPerDir = 4
+			Offset = 0,-50
+		}
+
+		Object 无属性箭:MagicObj = 501
+		{
+			ReBuild = 0
+			Anchor = 150,115
+			Delay = 60
+			nDir = 32
+			FramesPerDir = 4
+			Offset = 0,-50
+		}
+
+		Object 冰箭爆炸:MagicObj = 502
+		{
+			ReBuild = 0
+			Anchor = 149,146
+			Delay = 60
+			Offset = 0,-50
+			Life = 10
+		}
+
+		Object 无属性箭爆炸:MagicObj = 503
+		{
+			ReBuild = 0
+			Anchor = 165,150
+			Delay = 60
+			Offset = 0,-50
+			Life = 18
+		}
+
+		Object 血沼泽:MagicObj = 504
+		{
+			ReBuild = 0
+			Anchor = 159,157
+			Delay = 70
+			Offset = 0,0
+			Life = 16
+			SoundID = 1514
+			bSoundLoop = 0
+		}
+
+		Object 毒沼泽:MagicObj = 505
+		{
+			ReBuild = 0
+			Anchor = 159,157
+			Delay = 70
+			Offset = 0,0
+			Life = 16
+			SoundID = 1514
+			bSoundLoop = 0
+		}
+
+		Object BOSS技能-范围爆炸:MagicObj = 506
+		{
+			ReBuild = 0
+			Anchor = 309,264
+			Delay = 100
+			Offset = 0,0
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 高级暗系蓄气:MagicObj = 507
+		{
+			ReBuild = 0
+			Anchor = 83,64
+			Delay = 60
+			Offset = 0,0
+			Life = 11
+			LoopStartIndex = 1
+			LoopEndIndex = 11
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 尖刺:MagicObj = 508
+		{
+			ReBuild = 0
+			Anchor = 114,129
+			Delay = 60
+			Offset = 0,0
+			Life = 14
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object 九天神雷:MagicObj = 509
+		{
+			Anchor = 301,700
+			DrawOrder = 1
+			Delay = 90
+			Life = 11
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+			Offset = 0,0
+		}
+
+		Object 地裂斩:MagicObj = 510
+		{
+			ReBuild = 0
+			Anchor = 299,310
+			FramesPerDir = 9
+			nDir = 8
+			Delay = 90
+			SoundID = 0
+			bSoundLoop = 0
+			Life = 9
+		}
+
+		Object 高级火系蓄气:MagicObj = 511
+		{
+			ReBuild = 0
+			Anchor = 99,77
+			Delay = 60
+			Offset = 0,0
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 1327
+			bSoundLoop = 0
+		}
+
+		Object 烟花1:MagicObj = 512
+		{
+			ReBuild = 0
+			Anchor = 365,370
+			Delay = 120
+			Life = 7
+			Offset = 0,0
+			SoundID = 1701
+			bSoundLoop = 0
+		}
+
+		Object 烟花2:MagicObj = 513
+		{
+			ReBuild = 0
+			Anchor = 149,253
+			Delay = 120
+			Life = 11
+			Offset = 0,0
+			DrawOrder = 1
+			bAddCrtHeight = 1
+			SoundID = 1701
+			bSoundLoop = 0
+		}
+
+		Object 烟花3:MagicObj = 514
+		{
+			ReBuild = 0
+			Anchor = 199,385
+			Delay = 120
+			Life = 11
+			Offset = 0,0
+			DrawOrder = 1
+			SoundID = 1701
+			bSoundLoop = 0
+		}
+
+		Object 烟花4:MagicObj = 515
+		{
+			ReBuild = 0
+			Anchor = 154,330
+			Delay = 100
+			Life = 11
+			Offset = 0,0
+			SoundID = 1701
+			bSoundLoop = 0
+		}
+
+		Object 表白书:MagicObj = 516
+		{
+			ReBuild = 0
+			Anchor = 146,247
+			Delay = 60
+			Offset = 0,0
+			DrawOrder = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 19
+			looptime = 0
+		}
+
+		Object 蓄气1:MagicObj = 517
+		{
+			ReBuild = 0
+			Anchor = 110,133
+			Delay = 60
+			Offset = 0,0
+			Life = 16
+			DrawOrder = 1
+		}
+
+		Object 蓄气2:MagicObj = 518
+		{
+			ReBuild = 0
+			Anchor = 100,106
+			Delay = 80
+			Offset = 0,-50
+			Life = 8
+			DrawOrder = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+		}
+
+		Object 开旗:MagicObj = 519
+		{
+			ReBuild = 0
+			Anchor = 50,88
+			Delay = 70
+			Offset = 0,0
+			Life = 9
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+			looptime = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 冰霜世龙:MagicObj = 520
+		{
+			ReBuild = 0
+			Anchor = 361,370
+			Delay = 100
+			Offset = 0,0
+			Life = 16
+			DrawOrder = 1
+			SoundID = 1330
+			bSoundLoop = 0
+		}
+
+		Object 刀光提升:MagicObj = 521
+		{
+			Anchor = 106,97
+			Delay = 90
+			Life = 19
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 法师-雷霆:MagicObj = 522
+		{
+			ReBuild = 0
+			Anchor = 136,128
+			Delay = 68
+			Offset = 0,35
+			Life = 10
+			DrawOrder = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 10
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 暗巫-吸血:MagicObj = 523
+		{
+			ReBuild = 0
+			Anchor = 53,98
+			Delay = 120
+			Offset = 0,0
+			Life = 12
+			DrawOrder = 1
+			bAddCrtHeight = 1
+		}
+
+		Object 凤凰-决灭斩:MagicObj = 524
+		{
+			ReBuild = 0
+			Anchor = 361,361
+			Delay = 130
+			Offset = 0,-50
+			Life = 32
+			FramesPerDir = 4
+			SoundID = 1210
+			bSoundLoop = 0
+		}
+
+		Object 斧头-劫杀:MagicObj = 525
+		{
+			ReBuild = 0
+			Anchor = 165,149
+			Delay = 120
+			Offset = 0,0
+			Life = 72
+			FramesPerDir = 9
+		}
+
+		Object 双刀-逆血 = 526
+		{
+			ReBuild = 0
+			Anchor = 141,183
+			Delay = 120
+			Offset = 0,0
+			Life = 104
+			FramesPerDir = 13
+			SoundID = 1215
+			bSoundLoop = 0
+		}
+	}
+
+	Object 界面动画 = 57
+	{
+
+		Object 按钮02:MagicObj = 58
+		{
+			ReBuild = 0
+			Anchor = 60,50
+			Delay = 50
+			Life = 15
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 气体:MagicObj = 59
+		{
+			ReBuild = 0
+			Anchor = 65,60
+			Delay = 30
+			Life = 12
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 箱子闪光01:MagicObj = 62
+		{
+			Anchor = 90,88
+			Delay = 140
+			Life = 12
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 箱子闪光02:MagicObj = 63
+		{
+			Anchor = 90,88
+			Delay = 140
+			Life = 12
+			ReBuild = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 按钮01:MagicObj = 64
+		{
+			ReBuild = 0
+			Anchor = 52,50
+			Delay = 30
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 光环:MagicObj = 132
+		{
+			ReBuild = 0
+			Anchor = 88,132
+			Delay = 60
+			Offset = 0,0
+			Life = 12
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 合成成功:MagicObj = 133
+		{
+			ReBuild = 0
+			Anchor = 17,18
+			Delay = 65
+			Offset = 0,0
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 环绕物品:MagicObj = 134
+		{
+			ReBuild = 0
+			Anchor = 17,18
+			Delay = 65
+			Offset = 0,0
+			Life = 9
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 技能学习:MagicObj = 135
+		{
+			ReBuild = 0
+			Anchor = 17,18
+			Delay = 65
+			Offset = 0,0
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 进入按钮:MagicObj = 136
+		{
+			ReBuild = 0
+			Anchor = 17,18
+			Delay = 65
+			Offset = 0,0
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 精练成功:MagicObj = 137
+		{
+			ReBuild = 0
+			Anchor = 17,18
+			Delay = 65
+			Offset = 0,0
+			Life = 10
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 冷却完成:MagicObj = 138
+		{
+			ReBuild = 0
+			Anchor = 45,46
+			Delay = 65
+			Offset = 0,0
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 任务提示:MagicObj = 139
+		{
+			ReBuild = 0
+			Anchor = 140,190
+			Delay = 62
+			Offset = 0,0
+			Life = 15
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 升级光圈:MagicObj = 140
+		{
+			ReBuild = 0
+			Anchor = 32,35
+			Delay = 63
+			Offset = 0,0
+			Life = 12
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 升级光效:MagicObj = 141
+		{
+			ReBuild = 0
+			Anchor = 151,217
+			Delay = 63
+			Offset = 0,0
+			Life = 16
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object 升腾光效:MagicObj = 142
+		{
+			ReBuild = 0
+			Anchor = 78,481
+			Delay = 60
+			Offset = 0,0
+			Life = 18
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 失血光圈:MagicObj = 143
+		{
+			ReBuild = 0
+			Anchor = 119,124
+			Delay = 80
+			Offset = 0,-50
+			Life = 15
+			SoundID = 0
+			bSoundLoop = 0
+			DrawOrder = 1
+		}
+
+		Object 提炼成功:MagicObj = 144
+		{
+			ReBuild = 0
+			Anchor = 18,18
+			Delay = 50
+			Offset = 0,0
+			Life = 15
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 提示点按钮:MagicObj = 145
+		{
+			ReBuild = 0
+			Anchor = 74,26
+			Delay = 70
+			Offset = 0,0
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 物品使用01:MagicObj = 146
+		{
+			ReBuild = 0
+			Anchor = 18,18
+			Delay = 60
+			Offset = 0,0
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 物品使用02:MagicObj = 147
+		{
+			ReBuild = 0
+			Anchor = 18,18
+			Delay = 60
+			Offset = 0,0
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 物品使用03:MagicObj = 148
+		{
+			ReBuild = 0
+			Anchor = 18,18
+			Delay = 60
+			Offset = 0,0
+			Life = 8
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 镶嵌成功:MagicObj = 149
+		{
+			ReBuild = 0
+			Anchor = 18,18
+			Delay = 60
+			Offset = 0,0
+			Life = 10
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 选中红:MagicObj = 150
+		{
+			ReBuild = 0
+			Anchor = 45,47
+			Delay = 60
+			Offset = 0,0
+			Life = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 1
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 选中黄:MagicObj = 151
+		{
+			ReBuild = 0
+			Anchor = 45,47
+			Delay = 60
+			Offset = 0,0
+			Life = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 1
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 选中蓝:MagicObj = 152
+		{
+			ReBuild = 0
+			Anchor = 44,46
+			Delay = 60
+			Offset = 0,0
+			Life = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 1
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 选中绿:MagicObj = 153
+		{
+			ReBuild = 0
+			Anchor = 45,47
+			Delay = 60
+			Offset = 0,0
+			Life = 1
+			LoopStartIndex = 1
+			LoopEndIndex = 1
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 学习:MagicObj = 154
+		{
+			ReBuild = 0
+			Anchor = 128,154
+			Delay = 60
+			Offset = 0,0
+			Life = 14
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 小卷轴-亮:MagicObj = 188
+		{
+			ReBuild = 0
+			Anchor = 149,84
+			Delay = 30
+			Offset = 0,-36
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 闭合小卷轴-灰:MagicObj = 189
+		{
+			ReBuild = 0
+			Anchor = 150,88
+			Delay = 30
+			Offset = 0,-36
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 闭合小卷轴-亮:MagicObj = 190
+		{
+			ReBuild = 0
+			Anchor = 150,88
+			Delay = 30
+			Offset = 0,-36
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 传送点:MagicObj = 191
+		{
+			ReBuild = 0
+			Anchor = 196,204
+			Delay = 40
+			Offset = 0,0
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+		Object 大药瓶:MagicObj = 192
+		{
+			ReBuild = 0
+			Anchor = 150,88
+			Delay = 50
+			Offset = 0,-36
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 刀剑:MagicObj = 193
+		{
+			ReBuild = 0
+			Anchor = 150,88
+			Delay = 50
+			Offset = 0,-36
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 铠甲:MagicObj = 194
+		{
+			ReBuild = 0
+			Anchor = 148,85
+			Delay = 50
+			Offset = 0,-36
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 马:MagicObj = 196
+		{
+			ReBuild = 0
+			Anchor = 148,87
+			Delay = 50
+			Offset = 0,-36
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 魔法门:MagicObj = 197
+		{
+			ReBuild = 0
+			Anchor = 149,87
+			Delay = 50
+			Offset = 0,-36
+			Life = 12
+			LoopStartIndex = 1
+			LoopEndIndex = 12
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 魔法球:MagicObj = 198
+		{
+			ReBuild = 0
+			Anchor = 150,89
+			Delay = 30
+			Offset = 0,-36
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 铁锤:MagicObj = 199
+		{
+			ReBuild = 0
+			Anchor = 150,89
+			Delay = 50
+			Offset = 0,-36
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 小卷轴-灰:MagicObj = 200
+		{
+			ReBuild = 0
+			Anchor = 148,90
+			Delay = 50
+			Offset = 0,-36
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 包裹:MagicObj = 201
+		{
+			ReBuild = 0
+			Anchor = 148,93
+			Delay = 50
+			Offset = 0,-36
+			Life = 8
+			LoopStartIndex = 1
+			LoopEndIndex = 8
+			looptime = 0
+			SoundID = 0
+			bSoundLoop = 0
+			bAddCrtHeight = 1
+		}
+
+		Object 聊天窗口光效:MagicObj = 202
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 9
+			SoundID = 0
+			bSoundLoop = 0
+		}
+
+	}
+
+	Object 0 = 9999
+	{
+
+		Object 黄A1:MagicObj = 10000
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10001
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10002
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10003
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10004
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10005
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10006
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10007
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10008
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10009
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 1 = 10010
+	{
+
+		Object 黄A1:MagicObj = 10011
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10012
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10013
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10014
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10015
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10016
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10017
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10018
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10019
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10020
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 2 = 10021
+	{
+
+		Object 黄A1:MagicObj = 10022
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10023
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10024
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10025
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10026
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10027
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10028
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10029
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10030
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10031
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 3 = 10032
+	{
+
+		Object 黄A1:MagicObj = 10033
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10034
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10035
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10036
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10037
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10038
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10039
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10040
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10041
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10042
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 4 = 10043
+	{
+
+		Object 黄A1:MagicObj = 10044
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10045
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10046
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10047
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10048
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10049
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10050
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10051
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10052
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10053
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 5 = 10054
+	{
+
+		Object 黄A1:MagicObj = 10055
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10056
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10057
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10058
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10059
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10060
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10061
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10062
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10063
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10064
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 6 = 10065
+	{
+
+		Object 黄A1:MagicObj = 10066
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10067
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10068
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10069
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10070
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10071
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10072
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10073
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10074
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10075
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 7 = 10076
+	{
+
+		Object 黄A1:MagicObj = 10077
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10078
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10079
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10080
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10081
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10082
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10083
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10084
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10085
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10086
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 8 = 10087
+	{
+
+		Object 黄A1:MagicObj = 10088
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10089
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10090
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10091
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10092
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10093
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10094
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10095
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10096
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10097
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 9 = 10098
+	{
+
+		Object 黄A1:MagicObj = 10099
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10100
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10101
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10102
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10103
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10104
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10105
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10106
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10107
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10108
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 加号 = 10109
+	{
+
+		Object 黄A1:MagicObj = 10110
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10111
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10112
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10113
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10114
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10115
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10116
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10117
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10118
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10119
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 减号 = 10120
+	{
+
+		Object 黄A1:MagicObj = 10121
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 黄A2:MagicObj = 10122
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A1:MagicObj = 10123
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 橙A2:MagicObj = 10124
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A1:MagicObj = 10125
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 红A2:MagicObj = 10126
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A1:MagicObj = 10127
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 粉A2:MagicObj = 10128
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A1:MagicObj = 10129
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 绿A2:MagicObj = 10130
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 致命 = 10131
+	{
+
+		Object 致命_黄:MagicObj = 10132
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 致命_橙:MagicObj = 10133
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 致命_红:MagicObj = 10134
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 致命_粉:MagicObj = 10135
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+
+		Object 致命_绿:MagicObj = 10136
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 吸收 = 10137
+	{
+
+		Object 吸收:MagicObj = 10138
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 躲闪 = 10139
+	{
+
+		Object 躲闪:MagicObj = 10140
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object 抵抗 = 10141
+	{
+
+		Object 抵抗:MagicObj = 10142
+		{
+			ReBuild = 0
+			Anchor = 0,0
+			Delay = 30
+			Offset = 0,0
+			Life = 3
+		}
+	}
+
+	Object z技能冷却 = 1067
+	{
+
+		Object 技能CD:MagicObj = 1068
+		{
+			ReBuild = 0
+			Anchor = 60,50
+			Delay = 30
+			Life = 60
+			SoundID = 0
+			bSoundLoop = 0
+		}
+	}
+}

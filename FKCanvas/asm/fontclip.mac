@@ -1,0 +1,110 @@
+;
+;                ..;;;;,                     ;;;,    
+;            ..;;;"` ;;:           ,;;;;;: ,;;;:.,;..          _/
+;      ,;..,;;"`    :;;'            :;;"`,;;;;;;"":;;         _/ 
+;      ;;;"  `:;;. ;;'           ..;;:  .;;,.;;:',;;"    _/_/_/_/_/
+;     .;;`   ,;;" .;"          ,;;;;;;" :;`',;",;;"         _/
+;    ,;;,:.,;;;  ,;:          :" ,;:` , `:.;;;;;'`         _/   
+;    ;;"'':;;:. .;; .          ,;;;,;:;;,;;;, ,;             _/
+;   :;;..;;;;;; :;' :.        :;;;"` `:;;;;;,;,.;.          _/
+; .;;":;;`  '"";;:  ';;       '""   .;;`.;";:;;;;` ;,  _/_/_/_/_/
+;;;;" `'       "::. ,;;:          .;"`  ::. '   .,;;;     _/ 
+;""             ';;;;;;;"        ""     ';;;;;;;;;;`     _/
+;
+;                       Windsoul++
+;
+;                 基于 DirectX 的游戏程序库               
+;       A Game Programming Library Base On DirectX    
+; 
+;               by 云风 (Cloud Wu)  1999-2000                          
+;
+;       http://member.netease.com/~cloudwu 
+;		mailto:cloudwu@263.net
+; 
+;		请阅读 readme.txt 中的版权信息
+;		See readme.txt for copyright information.
+;
+;		Description:		Font Blit 剪裁宏
+;		Original Author:	云风
+;		Authors:
+;		Create Time:		2001/3/12
+;		Modify Time:		2001/6/6
+;
+;:*W*:._.:*I*:._.:*N*:._.:*D*:._.:*S*:._.:*O*:._.:*U*:._.:*L*:._.:
+
+%ifndef _FONTCLIP_
+%define _FONTCLIP_
+
+%imacro fontclip 1
+
+	mov eax,[ecx+WBmpStruct.ky]
+	mov edi,[ecx+WBmpStruct.ptr]	; back 的数据指针
+	mov edx,[ebx+WCharStruct.h]	; 读出 char 的高度
+	mov esi,[ebx+WCharStruct.data]	; Char 的数据指针
+	mov var(%$h),edx
+	test edx,edx
+	jz .endclip
+	sub eax,[ebx+WCharStruct.ky]
+	jns .under_firstline
+
+	add var(%$h),eax		; 修正需要BLIT的行数
+	jle .endclip
+	imul eax,[ebx+WCharStruct.w]	; 算出 eax 行的指针偏移 (负的)
+	sub esi,eax
+	mov eax,var(%$h)
+	jmp .adjust_height
+
+.endclip:
+	xor eax,eax
+	endproc -1
+	
+.under_firstline:
+	cmp eax,[ecx+WBmpStruct.h]	; 比较 back 位图的高度
+	jge .endclip
+	mov edx,eax
+	add eax,var(%$h)
+	imul edx,[ecx+WBmpStruct.pitch]	; 修正 this 位图指针
+	add edi,edx
+
+.adjust_height:
+	
+	sub eax,[ecx+WBmpStruct.h]	; bmp 图的下端和 this 图下端差(负的)
+	jl .dealwith_width
+	sub var(%$h),eax		; 修正需要 blit 的行数
+
+.dealwith_width:
+	mov edx,[ebx+WCharStruct.w]	; 读出 bmp 的宽度
+	mov eax,[ecx+WBmpStruct.kx]
+	mov var(%$w),edx
+	sub eax,[ebx+WCharStruct.kx]	; eax = BLIT 到 this 位图的列位置
+	jns .right_firstcol
+
+	add var(%$w),eax		; 修正需要 BLIT 的列数
+	jle .endclip
+	sub esi,eax
+	mov eax,var(%$w)
+	jmp .adjust_width
+
+.right_firstcol:
+	cmp eax,[ecx+WBmpStruct.w]	; 比较 back 位图的宽度
+	jge .endclip			; 超出位图则跳转
+%if %1 = 8
+	add edi,eax
+%elif %1 = 16
+	lea edi,[edi+eax*2]		; 修正 back 位图指针
+%elif %1 = 24
+	lea edi,[edi+eax*2]
+	add edi,eax
+%elif %1 = 32
+	lea edi,[edi+eax*4]
+%endif
+	add eax,var(%$w)
+
+.adjust_width:
+	sub eax,[ecx+WBmpStruct.w]	; bmp 图的右端和 this 位图右端差(负的)
+	jl .blit
+	sub var(%$w),eax
+
+%endmacro
+
+%endif

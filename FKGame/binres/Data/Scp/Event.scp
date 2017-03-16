@@ -1,0 +1,92 @@
+///////////////////////////////
+// *******  资源脚本  *******
+//
+//  每行最大长度2048字节
+///////////////////////////////
+
+MaxID = 36
+
+Object THING = 14
+{
+	TypeID = 1
+
+	Object 生物 = 15
+	{
+		TypeID = 2
+
+		Object 玩家 = 16
+		{
+			TypeID = 3
+		}
+
+		Object 怪物 = 17
+		{
+			TypeID = 4
+		}
+	}
+
+	Object Goods = 23
+	{
+		TypeID = 6
+	}
+
+	Object 传送门 = 27
+	{
+		TypeID = 9
+	}
+
+	Object 盒子 = 28
+	{
+		TypeID = 10
+	}
+
+	Object 摊位 = 34
+	{
+		TypeID = 15
+	}
+}
+
+Object 聊天 = 20
+{
+	TypeID = 5
+}
+
+Object 通用物品栏 = 22
+{
+	TypeID = 7
+}
+
+Object 好友 = 24
+{
+	TypeID = 8
+}
+
+Object 状态 = 29
+{
+	TypeID = 11
+}
+
+Object 组队 = 30
+{
+	TypeID = 12
+}
+
+Object 系统 = 31
+{
+	TypeID = 13
+}
+
+Object 资源 = 32
+{
+	TypeID = 14
+}
+
+Object 氏族 = 35
+{
+	TypeID = 16
+}
+
+Object 社会关系 = 36
+{
+	TypeID = 17
+}

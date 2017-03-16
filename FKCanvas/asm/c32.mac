@@ -1,0 +1,259 @@
+;
+;                ..;;;;,                     ;;;,    
+;            ..;;;"` ;;:           ,;;;;;: ,;;;:.,;..          _/
+;      ,;..,;;"`    :;;'            :;;"`,;;;;;;"":;;         _/ 
+;      ;;;"  `:;;. ;;'           ..;;:  .;;,.;;:',;;"    _/_/_/_/_/
+;     .;;`   ,;;" .;"          ,;;;;;;" :;`',;",;;"         _/
+;    ,;;,:.,;;;  ,;:          :" ,;:` , `:.;;;;;'`         _/   
+;    ;;"'':;;:. .;; .          ,;;;,;:;;,;;;, ,;             _/
+;   :;;..;;;;;; :;' :.        :;;;"` `:;;;;;,;,.;.          _/
+; .;;":;;`  '"";;:  ';;       '""   .;;`.;";:;;;;` ;,  _/_/_/_/_/
+;;;;" `'       "::. ,;;:          .;"`  ::. '   .,;;;     _/ 
+;""             ';;;;;;;"        ""     ';;;;;;;;;;`     _/
+;
+;                       Windsoul++
+;
+;                 基于 DirectX 的游戏程序库               
+;       A Game Programming Library Base On DirectX    
+; 
+;               by 云风 (Cloud Wu)  1999-2000                          
+;
+;       http://member.netease.com/~cloudwu 
+;		mailto:cloudwu@263.net
+; 
+;		请阅读 readme.txt 中的版权信息
+;		See readme.txt for copyright information.
+;
+;		Description:		stdcall 函数宏
+;		Original Author:	云风
+;		Authors:
+;		Create Time:		2000/9/23
+;		Modify Time:		
+;
+;:*W*:._.:*I*:._.:*N*:._.:*D*:._.:*S*:._.:*O*:._.:*U*:._.:*L*:._.:
+
+%ifndef _C32_
+%define _C32_
+
+%imacro function 1
+	global %1
+%1:
+%endmacro
+
+%imacro proc 1			; begin a procedure definition
+
+	%push proc
+	global %1
+%1:       
+	%assign %$tempsksize 0
+	%assign %$retstack 0
+	%assign %$arg 4
+	%assign %$locvar -4
+	%assign %$esp2ebp 0
+	%assign %$beginarg 0
+	%define %$procname %1
+	%define %$stackp esp
+	%assign %$savestack 0
+	%assign %$endlocvar -1
+	%assign %$savereg 0
+	%assign %$saveebp 0
+	%assign %$saveebx 0
+	%assign %$saveesi 0
+	%assign %$saveedi 0
+
+%endmacro
+
+%imacro esp2ebp	0
+
+	%ifnctx	proc
+		%error Missing 'proc'
+	%elif %$esp2ebp = 0 && %$beginarg = 0
+		%assign %$esp2ebp 1
+	
+		push ebp
+		mov ebp,esp
+		%assign %$arg %$arg+4
+		%define %$stackp ebp
+	%else
+		%error Wrong place 'esp2ebp'
+	%endif
+
+%endmacro
+
+%imacro arg 0-1 4		; 传入的参数
+
+	%00	equ %$arg
+	%assign %$arg %$arg+%1
+	%assign %$retstack %$retstack+%1
+	%assign %$beginarg 1
+
+%endmacro
+
+%imacro saveebp 0		; 保护 ebp
+	
+	%if %$beginarg = 1 || %$saveebp = 1
+		%error Wrong place 'saveebp'
+	%elif %$esp2ebp = 0 || %$savestack = 0
+		%if %$esp2ebp = 0
+			%assign %$arg %$arg+4
+			%assign %$endlocvar 0
+			%assign %$saveebp 1
+		%endif
+	%endif
+
+%endmacro
+
+%imacro saveebx 0		; 保护 ebx
+	
+	%if %$beginarg = 1 || %$saveebx = 1
+		%error Wrong place 'saveebx'
+	%else
+		%if %$esp2ebp = 0 || %$savestack = 0
+			%if %$esp2ebp = 1
+				%assign %$locvar %$locvar-4
+			%else
+				%assign %$arg %$arg+4
+			%endif
+		%endif
+		%assign %$endlocvar 0
+		%assign %$saveebx 1
+	%endif
+
+%endmacro
+
+%imacro saveesi 0		; 保护 esi
+	
+	%if %$beginarg = 1 || %$saveesi = 1
+		%error Wrong place 'saveesi'
+	%else
+		%if %$esp2ebp = 0 || %$savestack = 0
+			%if %$esp2ebp = 1
+				%assign %$locvar %$locvar-4
+			%else
+				%assign %$arg %$arg+4
+			%endif
+		%endif
+		%assign %$endlocvar 0
+		%assign %$saveesi 1
+	%endif
+
+%endmacro
+
+%imacro saveedi 0		; 保护 edi
+	
+	%if %$beginarg = 1 || %$saveedi = 1
+		%error Wrong place 'saveedi'
+	%else
+		%if %$esp2ebp = 0 || %$savestack = 0
+			%if %$esp2ebp = 1 && %$savestack == 0
+				%assign %$locvar %$locvar-4
+			%else
+				%assign %$arg %$arg+4
+			%endif
+		%endif
+		%assign %$endlocvar 0
+		%assign %$saveedi 1
+	%endif
+
+%endmacro
+
+%imacro savereg 0
+	%if %$savereg = 0
+		%if %$saveebp = 1
+			push ebp
+		%endif
+		%if %$saveebx = 1
+			push ebx
+		%endif
+		%if %$saveesi = 1
+			push esi
+		%endif
+		%if %$saveedi = 1
+			push edi
+		%endif
+		%assign %$savereg 1
+	%endif
+%endmacro
+
+%imacro locvar 0-1 4	; 局部变量
+
+	%00	equ %$locvar
+	%assign %$locvar %$locvar-%1
+	%assign %$tempsksize %$tempsksize+%1
+	%assign %$endlocvar 0
+
+%endmacro
+
+%imacro savestack 0
+
+	%assign %$savestack 1
+
+%endmacro
+
+%imacro endlocvar 0
+
+	%if %$savestack ==1
+		%if %$esp2ebp <> 1
+			savereg
+		%endif
+
+		%if %$tempsksize <> 0
+			sub esp,%$tempsksize
+		%endif
+	%endif
+
+	savereg
+
+	%if %$esp2ebp = 1 || %$savestack = 0
+		%assign %$tempsksize 0
+	%endif
+	%assign %$endlocvar 1
+
+%endmacro
+
+%idefine var(a) [%$stackp+a+%$tempsksize]
+
+%imacro endproc 0-1 0
+
+	%if %1 != 1
+
+	%ifnctx	proc
+		%error Mismatched 'endproc/proc'
+	%else
+		%if %$endlocvar <> 1
+			%error Missing 'endlocvar'
+		%else 
+			%if %$savestack =1 && %$esp2ebp = 0
+				add esp,%$tempsksize
+			%endif
+			%if %$saveedi = 1
+				pop edi
+			%endif
+			%if %$saveesi = 1
+				pop esi
+			%endif
+			%if %$saveebx = 1
+				pop ebx
+			%endif
+			%if %$saveebp = 1
+				pop ebp
+			%endif
+			%if	%$esp2ebp = 1
+				mov esp,ebp
+				pop ebp		; leave
+			%endif
+		%endif
+
+		ret	%$retstack
+	%endif
+
+		%if %1 != -1
+__end_%$procname:		; useful for calculating function size
+			%pop
+		%endif
+
+	%endif
+
+%endmacro
+
+%endif
